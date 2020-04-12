@@ -3,37 +3,34 @@
 <head>
 	<meta charset="utf-8">
 	<title>header</title>
-	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<meta name="viewport" content="width=device-width">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
-<body>
-	<div class="header">
+<header class="header">
+	<div class="content">
 		<div class="logo">
-			<div class="logo__circle">
-				<img src="img/circle.svg">
-				<div class="logo__line">
-					<img src="img/01.svg">
-				</div>
-				<div class="logo__line">
-					<img src="img/02.svg">
-				</div>
-			</div>
-			<div class="logo__text">
-				<img src="img/logo.svg">	
-			</div>
+			<img src="img/Logo.svg" alt="логотип">
 		</div>
-		<nav class="menu">
-				<li><a href="#" class="menu__link">О нас</a></li>
-				<li><a href="#" class="menu__link">Услуги</a></li>
-				<li><a href="#" class="menu__link">Вакансии</a></li>
-				<li><a href="#" class="menu__link">Новости</a></li>
-				<li><a href="#" class="menu__link">Соглашения</a></li>
-		</nav>
-		<div class="button">
-			<a href='#' class="button__entrance">Войти</a>
-			<a href='#' class="button__registration">Зарегистрироваться</a>
+		<div class="main-menu">
+			<div class="main-menu__list">
+				<a href="#">О нас</a>
+				<a class="main-menu__list_dropdown" href="#">Услуги
+				<img src="img/arrow.svg" alt="стрелочка"></a>
+				<a href="#">Вакансии</a>
+				<a href="#">Новости</a>
+				<a class="main-menu__list_dropdown" href="#">Соглашения
+				<img src="img/arrow.svg" alt="стрелочка"></a>
+				<span class="main-menu__entrance">
+					<a href="#">Войти</a>
+				</span>
+				<span class="main-menu__registration">
+					<a href="#">Зарегистрироваться</a>
+				</span>
+			</div>
 		</div>
 	</div>
+
+</header>
 </body>
 </html>
