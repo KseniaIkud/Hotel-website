@@ -1,8 +1,6 @@
-@charset "UTF-8";
 .header {
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
   max-width: 1440px;
-  width: 100%;
 }
 
 .content {
@@ -24,43 +22,30 @@
 .main-menu {
   max-width: 822px;
   width: 100%;
-  white-space: nowrap;
-  /* кнопка входа*/
-  /*кнопка регистрации*/
 }
 .main-menu__list {
-  padding-left: 0;
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  list-style: none;
 }
-.main-menu__link {
-  position: relative;
-}
-.main-menu__link a {
+.main-menu__list a {
   text-decoration: none;
-  font-size: 14px;
+  font: 14px;
   font-family: Montserrat;
   color: rgba(31, 32, 65, 0.5);
 }
-.main-menu__link:hover .sub-menu {
-  display: block;
-}
 .main-menu__entrance a {
-  font-family: Montserrat;
   color: #BC9CFF;
   text-transform: uppercase;
-  text-decoration: none;
   font-size: 12px;
   font-weight: bold;
   background-color: #FFF;
   border: 2px solid transparent;
-  padding: 7.5px 18.5px;
+  padding: 7px 18px;
   position: relative;
   border-radius: 20px;
   background-clip: padding-box;
   margin: auto;
-  /*добавление белой полупрозрачной обводки*/
 }
 .main-menu__entrance a:before {
   content: "";
@@ -78,27 +63,14 @@
   border: 2px solid rgba(255, 255, 255, 0.5);
 }
 .main-menu__registration a {
-  font-family: Montserrat;
-  text-decoration: none;
   color: #FFF;
   text-transform: uppercase;
   font-size: 12px;
   font-weight: bold;
-  padding: 9.5px 22px;
+  padding: 9px 20px;
   border-radius: 22px;
   background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
 }
 .main-menu__registration a:hover {
   opacity: 0.5;
-}
-
-.sub-menu {
-  display: none;
-  padding: 5px;
-  position: absolute;
-}
-.sub-menu__link {
-  padding: 2px;
-  list-style: none;
-  white-space: nowrap;
 }

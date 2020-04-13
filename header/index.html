@@ -12,23 +12,54 @@
 		<div class="logo">
 			<img src="img/Logo.svg" alt="логотип">
 		</div>
-		<div class="main-menu">
-			<div class="main-menu__list">
-				<a href="#">О нас</a>
-				<a class="main-menu__list_dropdown" href="#">Услуги
-				<img src="img/arrow.svg" alt="стрелочка"></a>
-				<a href="#">Вакансии</a>
-				<a href="#">Новости</a>
-				<a class="main-menu__list_dropdown" href="#">Соглашения
-				<img src="img/arrow.svg" alt="стрелочка"></a>
+		<nav class="main-menu">
+			<ul class="main-menu__list">
+				<li class="main-menu__link">
+					<a href="#">О нас</a>	
+				</li>
+				<li class="main-menu__link">
+					<a href="#">Услуги
+						<img src="img/arrow.svg" alt="стрелочка">
+					</a>
+					<ul class="sub-menu">
+						<li class="sub-menu__link">
+							<a href="#">Трансфер</a>
+						</li>
+						<li class="sub-menu__link">
+							<a href="#">Ранний въезд</a>
+						</li>
+						<li class="sub-menu__link">
+							<a href="#">Поздний выезд</a>
+						</li>
+					</ul>		
+				</li>
+				<li class="main-menu__link">
+					<a href="#">Вакансии</a>	
+				</li>
+				<li class="main-menu__link">
+					<a href="#">Новости</a>	
+				</li>
+				<li class="main-menu__link">
+					<a href="#">Соглашения
+						<img src="img/arrow.svg" alt="стрелочка">
+					</a>
+					<ul class="sub-menu">
+						<li class="sub-menu__link">
+							<a href="">Общие положения</a>
+						</li>
+						<li class="sub-menu__link">
+							<a href="">Обязательства сторон</a>
+						</li>
+					</ul>	
+				</li>
 				<span class="main-menu__entrance">
 					<a href="#">Войти</a>
 				</span>
 				<span class="main-menu__registration">
 					<a href="#">Зарегистрироваться</a>
 				</span>
-			</div>
-		</div>
+			</ul>
+		</nav>
 	</div>
 
 </header>

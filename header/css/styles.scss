@@ -1,14 +1,13 @@
 .header {
 	box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
 	max-width: 1440px;
-	
+	width: 100%;	
 }
 .content {
 	max-width: 1160px;
 	height: 70px;
 	display: flex;
 	align-items: center;
-
 	justify-content: space-between;
 	margin: 0 auto;
 }
@@ -21,35 +20,49 @@
 
 	}
 }
+
 .main-menu {
 	max-width: 822px;
 	width: 100%;
+	white-space: nowrap;
+
 	&__list {
+		padding-left: 0;
 		display: flex;
-		align-items: center;
 		justify-content: space-between;
+		list-style: none;	
+	}
+
+	&__link {
+		position: relative;
 		a {
 			text-decoration: none;
-			font: 14px;
+			font-size: 14px;
 			font-family: Montserrat;
 			color: rgba(31, 32, 65, 0.5);
+			}
+		&:hover .sub-menu{
+				display: block;
 		}
 	}
+
+/* кнопка входа*/
 	&__entrance {
 		a{
+			font-family: Montserrat;
 			color: #BC9CFF;
 			text-transform: uppercase;
+			text-decoration: none;
 			font-size: 12px;
 			font-weight: bold;
 			
 			background-color: #FFF;
 			border: 2px solid transparent;
-			padding: 7px 18px;
+			padding: 7.5px 18.5px;
 			position: relative;
 			border-radius: 20px;
 			background-clip: padding-box;
 			margin: auto;
-
 			&:before {
 				content: '';
 				position: absolute;
@@ -59,6 +72,7 @@
 				z-index: -1;
 				border-radius: 20px;
 			}
+			/*добавление белой полупрозрачной обводки*/
 			&:hover {
 				border: 2px solid rgba(255, 255, 255, 0.5);
 			}
@@ -66,13 +80,16 @@
 			
 		}
 	}
+/*кнопка регистрации*/
 	&__registration {
 		a{
+			font-family: Montserrat;
+			text-decoration: none;
 			color: #FFF;
 			text-transform: uppercase;
 			font-size: 12px;
 			font-weight: bold;
-			padding: 9px 20px;
+			padding: 9.5px 22px;
 			border-radius: 22px;
 			background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
 			&:hover {
@@ -80,4 +97,16 @@
 			}
 		}
 	}
+}
+
+.sub-menu {
+	display: none;
+	padding: 5px;
+	position: absolute;
+	&__link {
+		padding: 2px;
+		list-style: none;
+		white-space: nowrap;
+	}
+
 }
