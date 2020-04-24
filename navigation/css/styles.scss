@@ -131,5 +131,12 @@
 		& :last-child {
 			padding: 13px;
 		}
+		&_text {
+			font-family: Montserrat;
+			font-size: 14px;
+			line-height: 24px;
+			color: rgba(31, 32, 65, 0.25);
+			padding-left: 15px;
+		}
 	}
 }
