@@ -1,4 +1,4 @@
-body {
+.body {
 	background-image: url(../img/background-photo.png);
 	background-repeat: no-repeat;
 	max-width: 1440px;
@@ -79,6 +79,9 @@ body {
 			line-height: 15px;
 			text-transform: uppercase;
 			margin: 0 auto;
+			&:hover {
+				opacity: 0.5;
+			}
 		}
 		input {
 		position: absolute;
