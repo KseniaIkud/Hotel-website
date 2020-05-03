@@ -1,0 +1,431 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*header*/
+.header {
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  max-width: 1440px;
+  width: 100%;
+  background-color: #FFF;
+}
+
+.header-content {
+  max-width: 1160px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.main-menu {
+  max-width: 822px;
+  width: 100%;
+  white-space: nowrap;
+  /* кнопка входа*/
+  /*кнопка регистрации*/
+}
+.main-menu__list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+.main-menu__link {
+  position: relative;
+}
+.main-menu__link a {
+  text-decoration: none;
+  font-size: 14px;
+  font-family: Montserrat;
+  color: rgba(31, 32, 65, 0.5);
+}
+.main-menu__link:hover .sub-menu {
+  display: block;
+}
+.main-menu__entrance a {
+  font-family: Montserrat;
+  color: #BC9CFF;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+  background-color: #FFF;
+  border: 2px solid transparent;
+  padding: 7.5px 18.5px;
+  position: relative;
+  border-radius: 20px;
+  background-clip: padding-box;
+  margin: auto;
+  z-index: 1;
+  /*добавление белой полупрозрачной обводки*/
+}
+.main-menu__entrance a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  margin: -2px;
+  z-index: -1;
+  border-radius: 20px;
+}
+.main-menu__entrance a:hover {
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+.main-menu__registration a {
+  font-family: Montserrat;
+  text-decoration: none;
+  color: #FFF;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 9.5px 22px;
+  border-radius: 22px;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+}
+.main-menu__registration a:hover {
+  opacity: 0.5;
+}
+
+.sub-menu {
+  display: none;
+  padding: 5px;
+  position: absolute;
+  background-color: #FFF;
+  border-radius: 2px;
+}
+.sub-menu__link {
+  padding: 2px;
+  list-style: none;
+  white-space: nowrap;
+}
+
+/*main body content*/
+.body {
+  background-image: url(../img/background-photo.png);
+  background-repeat: no-repeat;
+  max-width: 1440px;
+}
+
+.content {
+  max-width: 1160px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  min-height: 830px;
+}
+.content__text {
+  max-width: 297px;
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+  align-self: flex-end;
+  margin-bottom: 1.5%;
+}
+
+.container {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  background-color: white;
+  width: 380px;
+  height: 374px;
+  align-self: flex-start;
+  margin-top: 6%;
+}
+
+.search {
+  width: 320px;
+  height: 304px;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.search__title {
+  font-family: "Open sans";
+  max-width: 320px;
+  font-size: 24px;
+  line-height: 30px;
+  color: #1F2041;
+}
+.search__text {
+  font-family: Montserrat;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1F2041;
+  font-weight: 700;
+}
+.search__button {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.search__button a {
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-radius: 22px;
+  width: 100%;
+  padding: 4% 29%;
+  text-decoration: none;
+  color: white;
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+.search__button a:hover {
+  opacity: 0.5;
+}
+.search__button input {
+  position: absolute;
+  margin-left: 90%;
+}
+
+.dates {
+  display: flex;
+  justify-content: space-between;
+}
+.dates form :first-child {
+  width: 115px;
+}
+
+.form {
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 4px;
+  height: 44px;
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.form__text {
+  outline: none;
+  border: none;
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+/*calendar*/
+.ui-datepicker {
+  margin: 20px -11px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 4px;
+  width: 318px;
+  display: block;
+  background: #FFF;
+}
+.ui-datepicker-trigger {
+  cursor: pointer;
+}
+.ui-datepicker-header {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  align-items: center;
+}
+.ui-datepicker-prev {
+  color: rgba(0, 0, 0, 0);
+  position: relative;
+}
+.ui-datepicker-prev::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 17px;
+  height: 17px;
+  background: url(../img/arrow_back_2.svg);
+}
+.ui-datepicker .ui-datepicker-next {
+  color: rgba(0, 0, 0, 0);
+  max-width: 17px;
+  order: 2;
+  position: relative;
+}
+.ui-datepicker .ui-datepicker-next::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  width: 17px;
+  height: 17px;
+  background: url(../img/arrow_forward_2.svg);
+}
+.ui-datepicker-title {
+  font-style: normal;
+  color: #1F2041;
+  font-size: 19px;
+  line-height: 24px;
+}
+.ui-datepicker-month {
+  font-family: "Open sans";
+}
+.ui-datepicker-year {
+  font-family: Quicksand;
+}
+.ui-datepicker-calendar {
+  width: 280px;
+  margin-top: 30px;
+  margin-left: 13px;
+  margin-bottom: 20px;
+  color: #BC9CFF;
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+}
+.ui-datepicker-calendar a {
+  color: rgba(31, 32, 65, 0.5);
+  text-decoration: none;
+}
+.ui-datepicker-calendar td {
+  width: 40px;
+  height: 40px;
+}
+.ui-datepicker-current-day {
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-radius: 50%;
+  font-weight: bold;
+}
+.ui-datepicker-current-day a {
+  color: white;
+}
+.ui-datepicker-today {
+  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+  border-radius: 50%;
+  color: white;
+  font-weight: bold;
+}
+.ui-datepicker-today a {
+  color: white;
+}
+.ui-datepicker-other-month a {
+  color: rgba(31, 32, 65, 0.25);
+}
+
+/*footer navigation*/
+.footer {
+  max-width: 1440px;
+}
+
+.info {
+  max-width: 1160px;
+  margin: 7% auto;
+  height: 172px;
+  display: flex;
+  justify-content: space-between;
+}
+.info__logo, .info__subscription {
+  max-width: 260px;
+}
+.info__list {
+  max-width: 200px;
+}
+.info__title {
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1F2041;
+}
+.info__link {
+  list-style: none;
+  margin-top: 20px;
+}
+.info__link a {
+  font-family: Montserrat;
+  font-weight: normal;
+  text-decoration: none;
+  color: rgba(31, 32, 65, 0.75);
+  line-height: 17px;
+  font-size: 14px;
+  text-transform: none;
+}
+
+.logo__img {
+  margin-bottom: 20px;
+}
+.logo__description {
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.subscription {
+  margin-top: 0;
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1F2041;
+}
+.subscription__description {
+  text-transform: none;
+  font-weight: normal;
+  color: rgba(31, 32, 65, 0.75);
+  line-height: 24px;
+  font-size: 14px;
+  margin: 20px 0;
+}
+.subscription__form {
+  display: flex;
+  align-items: center;
+  width: 260px;
+  height: 44px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 4px;
+}
+.subscription__form_text {
+  border: none;
+  outline: none;
+  width: 216px;
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.25);
+  padding-left: 15px;
+}
+
+/*footer copyright*/
+.footer-content {
+  max-width: 1160px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.copyright {
+  max-width: 367px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.soc-media {
+  max-width: 112px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.soc-media__icon {
+  max-width: 20px;
+}
