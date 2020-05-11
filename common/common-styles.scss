@@ -1,0 +1,120 @@
+
+//variables
+//colors
+$dark-shade-100-color: #1F2041;
+$dark-shade-75-color: rgba(31, 32, 65, 0.75);
+$dark-shade-50-color: rgba(31, 32, 65, 0.50);
+$dark-shade-25-color: rgba(31, 32, 65, 0.25);
+$dark-shade-05-color: rgba(31, 32, 65, 0.05);
+$purple-color: #BC9CFF;
+$green-color: #6fcf97;
+
+
+//fonts
+@font-face {
+	font-family: 'Montserrat';
+	src: url('fonts/Montserrat-Regular.eot');
+	src: local('☺'), url('fonts/Montserrat-Regular.woff') format('woff'), url('fonts/Montserrat-Regular.ttf') format('truetype'), url('fonts/Montserrat-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('fonts/Montserrat-Bold.eot');
+	src: local('☺'), url('fonts/Montserrat-Bold.woff') format('woff'), url('fonts/Montserrat-Bold.ttf') format('truetype'), url('fonts/Montserrat-Bold.svg') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Quicksand';
+	src: url('fonts/Quicksand-Regular.eot');
+	src: local('☺'), url('fonts/Quicksand-Regular.woff') format('woff'), url('fonts/Quicksand-Regular.ttf') format('truetype'), url('fonts/Quicksand-Regular.svg') format('svg');
+	font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: 'Quicksand';
+	src: url('fonts/Quicksand-Bold.eot');
+	src: local('☺'), url('fonts/Quicksand-Bold.woff') format('woff'), url('fonts/Quicksand-Bold.ttf') format('truetype'), url('fonts/Quicksand-Bold.svg') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'OpenSans';
+	src: url('fonts/OpenSans-Regular.eot');
+	src: local('☺'), url('fonts/OpenSans-Regular.woff') format('woff'), url('fonts/OpenSans-Regular.ttf') format('truetype'), url('fonts/OpenSans-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'OpenSans';
+	src: url('fonts/OpenSans-Regular.eot');
+	src: local('☺'), url('fonts/OpenSans-Bold.woff') format('woff'), url('fonts/OpenSans-Bold.ttf') format('truetype'), url('fonts/OpenSans-Bold.svg') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+
+
+//mixins
+
+@mixin h1-text {
+    font: {
+        family: Quicksand, OpenSans;
+        weight: 700;
+        size: 24px;
+    }
+    color: $dark-shade-100-color;
+    line-height: 30px;
+}
+
+@mixin h2-text {
+    font: {
+        family: Quicksand, OpenSans;
+        weight: 700;
+        size: 19px;
+    }
+    color: $dark-shade-100-color;
+    line-height: 24px;
+}
+
+@mixin h3-text {
+    font: {
+        family: Montserrat;
+        weight: 700;
+        size: 12px;
+    }
+    color: $dark-shade-100-color;
+    line-height: 15px;
+    text-transform: uppercase;
+}
+
+@mixin body-text {
+    font: {
+        family: Montserrat;
+        weight: normal;
+        size: 14px;
+    }
+    color: $dark-shade-75-color;
+    line-height: 24px;
+}
+
+//nulling styles
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+li {
+    list-style-type: none;
+}
+
+
+
