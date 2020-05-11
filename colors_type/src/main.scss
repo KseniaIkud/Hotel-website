@@ -1,0 +1,84 @@
+@import '../../common/common-styles';
+
+body {
+    max-width: 1440px;
+}
+.logo {
+    margin: 30px;
+}
+.colors-type {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 67px auto;
+}
+
+.colors {
+    &__data {
+        margin-bottom: 20px;
+        display: flex;
+    }
+    &__box {
+        width: 70px;
+        height: 70px;
+        border-radius: 6px;
+        margin-right: 40px;
+    }
+    &__text {
+        @include h2-text;
+    }
+    &__number {
+        font-weight: normal;
+    }
+}
+#dark-shade-100 {
+    background: $dark-shade-100-color;
+}
+#dark-shade-75 {
+    background: $dark-shade-75-color;
+}
+#dark-shade-50 {
+    background: $dark-shade-50-color;
+}
+#dark-shade-25 {
+    background: $dark-shade-25-color;
+}
+#dark-shade-05 {
+    background: $dark-shade-05-color;
+}
+#purple {
+    background: $purple-color;
+}
+#green {
+    background: $green-color;
+}
+.type {
+    &__data {
+        width: 396px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+        
+        
+    }
+    &__name {
+        color: $dark-shade-25-color;
+        font-weight: normal;
+    }
+    &__example {
+        width: 336px;
+    }
+}
+#h1 {
+    @include h1-text;
+}
+#h2 {
+    @include h2-text;
+}
+#h3 {
+    @include h3-text;
+}
+#body {
+    @include body-text;
+}
+
