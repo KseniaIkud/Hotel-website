@@ -10,55 +10,6 @@ $purple-color: #BC9CFF;
 $green-color: #6fcf97;
 
 
-//fonts
-@font-face {
-	font-family: 'Montserrat';
-	src: url('fonts/Montserrat-Regular.eot');
-	src: local('☺'), url('fonts/Montserrat-Regular.woff') format('woff'), url('fonts/Montserrat-Regular.ttf') format('truetype'), url('fonts/Montserrat-Regular.svg') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Montserrat';
-	src: url('fonts/Montserrat-Bold.eot');
-	src: local('☺'), url('fonts/Montserrat-Bold.woff') format('woff'), url('fonts/Montserrat-Bold.ttf') format('truetype'), url('fonts/Montserrat-Bold.svg') format('svg');
-	font-weight: 700;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Quicksand';
-	src: url('fonts/Quicksand-Regular.eot');
-	src: local('☺'), url('fonts/Quicksand-Regular.woff') format('woff'), url('fonts/Quicksand-Regular.ttf') format('truetype'), url('fonts/Quicksand-Regular.svg') format('svg');
-	font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-	font-family: 'Quicksand';
-	src: url('fonts/Quicksand-Bold.eot');
-	src: local('☺'), url('fonts/Quicksand-Bold.woff') format('woff'), url('fonts/Quicksand-Bold.ttf') format('truetype'), url('fonts/Quicksand-Bold.svg') format('svg');
-	font-weight: 700;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'OpenSans';
-	src: url('fonts/OpenSans-Regular.eot');
-	src: local('☺'), url('fonts/OpenSans-Regular.woff') format('woff'), url('fonts/OpenSans-Regular.ttf') format('truetype'), url('fonts/OpenSans-Regular.svg') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'OpenSans';
-	src: url('fonts/OpenSans-Regular.eot');
-	src: local('☺'), url('fonts/OpenSans-Bold.woff') format('woff'), url('fonts/OpenSans-Bold.ttf') format('truetype'), url('fonts/OpenSans-Bold.svg') format('svg');
-	font-weight: 700;
-	font-style: normal;
-}
-
 
 //mixins
 
@@ -108,6 +59,7 @@ $green-color: #6fcf97;
     margin: 0;
     padding: 0;
     border: none;
+    list-style: none;
 }
 
 *,*:before,*:after{
@@ -155,10 +107,9 @@ button::-moz-focus-inner {
 
 a, a:visited {
     text-decoration: none;
+    color: inherit;
 }
-ul li {
-    list-style-type: none;
-}
+
 h1, h2, h3, h4, h5, h6 {
     font-size: inherit;
     font-weight: normal;
