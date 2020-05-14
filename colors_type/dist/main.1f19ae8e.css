@@ -54,6 +54,7 @@ button::-moz-focus-inner {
 
 a, a:visited {
   text-decoration: none;
+  color: inherit;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -108,19 +109,21 @@ body {
 }
 
 .logo {
-  margin: 30px;
+  position: absolute;
+  margin: -115px 49px;
 }
 
 .colors-type {
   display: flex;
   justify-content: space-between;
   max-width: 1100px;
-  margin: 67px auto;
+  margin: 145px auto;
 }
 
 .colors__data {
   margin-bottom: 20px;
   display: flex;
+  align-items: center;
 }
 .colors__box {
   width: 70px;
@@ -134,6 +137,7 @@ body {
   font-size: 19px;
   color: #1F2041;
   line-height: 24px;
+  line-height: 29px;
 }
 .colors__number {
   font-weight: normal;
@@ -168,17 +172,19 @@ body {
 }
 
 .type__data {
-  width: 396px;
+  width: 403px;
   display: flex;
-  justify-content: space-between;
   margin-bottom: 50px;
 }
 .type__name {
   color: rgba(31, 32, 65, 0.25);
   font-weight: normal;
+  font-family: Montserrat;
+  min-width: 37px;
+  text-align: right;
 }
 .type__example {
-  width: 336px;
+  margin-left: 30px;
 }
 
 #h1 {

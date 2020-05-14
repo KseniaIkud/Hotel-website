@@ -54,19 +54,21 @@ body {
     max-width: 1440px;
 }
 .logo {
-    margin: 30px;
+    position: absolute;
+    margin: -115px 49px;
 }
 .colors-type {
     display: flex;
     justify-content: space-between;
     max-width: 1100px;
-    margin: 67px auto;
+    margin: 145px auto;
 }
 
 .colors {
     &__data {
         margin-bottom: 20px;
         display: flex;
+        align-items: center;
     }
     &__box {
         width: 70px;
@@ -76,6 +78,8 @@ body {
     }
     &__text {
         @include h2-text;
+        line-height: 29px;
+        
     }
     &__number {
         font-weight: normal;
@@ -104,19 +108,21 @@ body {
 }
 .type {
     &__data {
-        width: 396px;
+        width: 403px;
         display: flex;
-        justify-content: space-between;
         margin-bottom: 50px;
-        
         
     }
     &__name {
         color: $dark-shade-25-color;
         font-weight: normal;
+        font-family: Montserrat;
+        min-width: 37px;
+        text-align: right;
+        
     }
     &__example {
-        width: 336px;
+        margin-left: 30px;
     }
 }
 #h1 {
