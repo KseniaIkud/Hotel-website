@@ -1,0 +1,61 @@
+@import '../../common/common-styles.scss';
+@import '../src/includes/headers/main-menu.scss';
+@import '../src/includes/headers/designer.scss';
+@import '../../common/mixins.scss';
+
+
+//fonts
+@font-face {
+	font-family: 'Montserrat';
+	src: url('fonts/Montserrat-Regular.eot');
+	src: local('☺'), url('fonts/Montserrat-Regular.woff') format('woff'), url('fonts/Montserrat-Regular.ttf') format('truetype'), url('fonts/Montserrat-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('fonts/Montserrat-Bold.eot');
+	src: local('☺'), url('fonts/Montserrat-Bold.woff') format('woff'), url('fonts/Montserrat-Bold.ttf') format('truetype'), url('fonts/Montserrat-Bold.svg') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+
+.header {
+	max-width: 1440px;
+	height: 70px;
+	@include body-text;
+    color: $dark-shade-50-color;
+	margin: auto;
+	background: #FFFFFF;
+	//нужно удалить марджин и сделать через флексы
+	margin-top: 40px;
+	box-shadow: 0px 10px 20px $dark-shade-05-color;	
+	
+	&__content	{
+		height: 100%;
+		max-width: 1160px;
+		margin: auto;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__buttons {
+		display: flex;
+		width: 250px;
+		justify-content: space-between;
+		margin-left: 30px;
+		&_transparent{
+			@include transparent-button;
+			&:hover{
+				@include transparent-button-hover;
+			}
+		}
+		&_purple {
+			@include purple-button;
+			&:hover{
+				@include purple-button-hover;
+			}
+		}
+	}
+}

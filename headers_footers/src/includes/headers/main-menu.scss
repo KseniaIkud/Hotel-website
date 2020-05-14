@@ -1,0 +1,25 @@
+.main-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        width: 530px;
+        text-align: right;
+        
+
+    }
+    &__link {
+        &_main {
+            font-weight: bold;
+            color: $dark-shade-75-color;
+        }
+        &_sub{
+            img {
+                margin-left: 4px;
+            }
+        }
+    }
+}
