@@ -1,0 +1,51 @@
+//buttons
+
+@mixin transparent-button {
+    white-space: nowrap;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+
+    color: $purple-color;
+    text-transform: uppercase;
+
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 2px solid transparent;
+    border-radius: 20px;
+
+    padding: 8px 17.5px;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0; left: 0; bottom: 0; right:0;
+        margin: -2px;
+        z-index: -1;
+
+        background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+        border-radius: 20px;
+    }
+
+}
+
+@mixin transparent-button-hover {
+    border: 2px solid rgba(225, 225, 225, 0.5);
+}
+
+@mixin purple-button {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+
+    color: #FFF;
+    padding: 9.5px 20px;
+    border-radius: 22px;
+	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+}
+
+@mixin purple-button-hover {
+    opacity: 0.5;
+}
