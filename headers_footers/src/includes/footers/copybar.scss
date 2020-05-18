@@ -1,3 +1,16 @@
 .copybar {
-    color: blue;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__text {
+        @include body-text;
+        line-height: 17px;
+    }
+    &__socials{
+        max-width: 112px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
 }

@@ -183,7 +183,24 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .copybar {
-  color: blue;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.copybar__text {
+  font-family: Montserrat;
+  font-weight: normal;
+  font-size: 14px;
+  color: rgba(31, 32, 65, 0.75);
+  line-height: 24px;
+  line-height: 17px;
+}
+.copybar__socials {
+  max-width: 112px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .creative {
