@@ -1,0 +1,30 @@
+@mixin subscription {
+    border: 1px solid $dark-shade-25-color;
+    background-color: #FFF;
+    border-radius: 4px;
+    .email-form {
+        //parent width - 260px or 267px
+        width: 90%;
+        margin: auto;
+        height: 42px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        &__text{
+           &::placeholder {
+            @include body-text;
+            color: $dark-shade-25-color;
+            margin-left: 10px;
+        }
+            &:focus::placeholder {
+                color: transparent;
+        }
+        }
+        &__arrow{
+           background: url('img/arrow_subscription.png') 100% 50% no-repeat;
+           width: 20px;
+           cursor: pointer;
+        }
+    }
+}

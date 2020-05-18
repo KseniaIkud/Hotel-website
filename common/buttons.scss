@@ -1,6 +1,7 @@
 //buttons
 
 @mixin transparent-button {
+    @include body-text;
     white-space: nowrap;
     text-transform: uppercase;
     font-size: 12px;
@@ -36,6 +37,7 @@
 }
 
 @mixin purple-button {
+    @include body-text;
     text-transform: uppercase;
     font-size: 12px;
     font-weight: bold;

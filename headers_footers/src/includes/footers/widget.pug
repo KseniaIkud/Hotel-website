@@ -1,0 +1,33 @@
+include ../../../../common/footer-list-mixins
+include ../../../../common/inputs-mixins
+
+.widget-footer
+    .widget-footer__information
+        img(src="img/logo.svg", alt="").logo
+        .widget-footer__text Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.
+    nav.widget-footer__navigation
+        ul.widget-footer__list
+            +widget-list-title("navigation")
+            +widget-list("About Us", '#')
+            +widget-list("News", '#')
+            +widget-list("Support", '#')
+            +widget-list("Products", '#')
+        ul.widget-footer__list
+            +widget-list-title("about us")
+            +widget-list("Who we are", '#')
+            +widget-list("Our team", '#')
+            +widget-list("Careers", '#')
+            +widget-list("Investors", '#')    
+    
+        ul.widget-footer__list
+            +widget-list-title("support")
+            +widget-list("Documentation", '#')
+            +widget-list("Community", '#')
+            +widget-list("Get in Touch", '#')
+    .widget-footer__information
+        .widget-footer__title_last Subscribe to our newsletter
+        .widget-footer__text Receive our latest news and promotions in your inbox!
+        .widget-footer__form
+            +input-email("Your email address")
+            
+    

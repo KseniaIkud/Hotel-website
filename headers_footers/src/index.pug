@@ -5,19 +5,34 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title Headers & footers
         script(src='./main.js')
-    header
-        .header
-            .header__content
-                include includes/headers/main-menu
-                .header__buttons
-                    .button
-                        a(href="#").header__buttons_transparent login
-                    .button
-                        a(href="#").header__buttons_purple register
-
-        .header
-            .header__content
-                include includes/headers/main-menu
-                include includes/headers/designer
     body
-       
+        .bar
+            .bar__content
+                .main-menu
+                    .main-menu__logo
+                        img(src='img/logo.svg', alt='logo').logo
+                    .main-menu__navigation
+                        include includes/headers/navigation
+                .buttons
+                    .button
+                        a(href="#").buttons__transparent login
+                    .button
+                        a(href="#").buttons__purple register
+        .bar
+            .bar__content
+                .main-menu
+                    .main-menu__logo
+                            img(src='img/logo.svg', alt='logo').logo
+                    .main-menu__navigation
+                        include includes/headers/navigation
+                .designer
+                    include includes/headers/designer
+        .footer-standard
+            .widget
+                .widget__content
+                    include includes/footers/widget
+            .bar
+                .bar__content
+                    include includes/footers/copybar
+        .footer-creative
+            include includes/footers/creative

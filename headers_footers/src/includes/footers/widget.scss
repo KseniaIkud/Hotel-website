@@ -1,0 +1,39 @@
+.widget-footer {
+    display: flex;
+    justify-content: space-between;
+    @include body-text;
+    
+    &__information {
+        width: 260px;
+        .logo {
+            margin: -4px 0 10px;
+        }
+    }
+    &__navigation {
+        display: flex;
+        justify-content: space-between;
+        width: 513px;
+        margin-right: 4%;
+    }
+    &__title{
+        @include h3-text;
+        margin-bottom: 21px;
+        &_last{
+            @include h3-text;
+            margin-bottom: 18px;
+        }
+        
+    }
+    &__list {
+        color: $dark-shade-50-color;
+        line-height: 17px;
+    }
+    &__text {
+        margin-bottom: 22px;
+        
+    }
+    &__form {
+        @include subscription;
+        width: 260px;
+    }
+}
