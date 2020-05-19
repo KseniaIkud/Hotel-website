@@ -32,14 +32,29 @@
 	font-style: normal;
 }
 
+.headers-footers {
+	background: rgba($color: #E5E5E5, $alpha: 0.5);
+	max-width: 1440px;
+	margin: auto;
+	padding-top: 150px;
+	padding-bottom: 130px;
+	position: relative;
+}
+
+.bw-logo {
+	position: absolute;
+	top: 30px;
+	left: 30px;
+}
+
 .bar {
 	max-width: 1440px;
 	width: 100%;
 	height: 70px;
 	margin: auto;
 	background: #FFFFFF;
-	//нужно удалить марджин и сделать через флексы
-	margin-top: 40px;
+	
+	margin-bottom: 40px;
 	box-shadow: 0px 10px 20px $dark-shade-05-color;	
 	
 	&__content	{
@@ -83,14 +98,30 @@
 }
 .widget {
 	max-width: 1440px;
-	height: 268px;
+	height: 372px;
 	margin: auto;
-	//поменять через флексы
-	margin-top: 40px;
+
+
 	background: #FFFFFF;
 	box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
+	border: 1px solid transparent;
 	&__content {    
         max-width: 1160px;
         margin: 7% auto;
     }
+}
+
+.footer-creative{
+	max-width: 1440px;
+	height: 367px;
+	margin: auto;
+
+	background: #FFFFFF;
+	box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+	border: 1px solid transparent;
+	&__content {
+		max-width: 560px;
+		margin: auto;
+		margin-top: 100px;
+	}
 }

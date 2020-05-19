@@ -1,3 +1,16 @@
-.creative {
-    color:green;
+.creative-footer {
+    text-align: center;
+    &__text {
+        margin-top: 17px;
+        margin-bottom: 28px;
+        @include body-text;
+        text-align: center;
+    }
+    &__socials{
+        margin: auto;
+        max-width: 112px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
 }
