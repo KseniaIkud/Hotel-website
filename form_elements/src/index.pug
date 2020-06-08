@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Form elements
+        script(src='./main.js')
+    body
+        .form-elements
+            .text-fields
+                .text-fields__email
+                    div text field
+                    input(type="text", name="email", placeholder="Email")
+                .text-fields__hover
+                    div text field
+                    input(type="text", placeholder="This is pretty awesome")
+                .text-fields__default
+                    div dropdown
+                    input(type="text", name="guests-number", placeholder="Сколько гостей")
+            .inputs
+                .inputs__checkbox
+                    div
+                        input(type="checkbox", name='smoking', id='smoking')
+                        label(for="smoking") Можно курить
+                    div 
+                        input(type="checkbox", name='pets', id='pets', checked)
+                        label(for="pets") Можно с питомцами
+                    div   
+                        input(type="checkbox", name='guests-allowed', id='guests', checked)
+                        label(for="guests-allowed") Можно пригласить гостей (до 10 человек)
+                .inputs__radio
+                    div
+                        input(type="radio", name='sex', id='male')
+                        label(for="male") Мужчина
+                    div
+                        input(type="radio", name='sex', id='female')
+                        label(for="female") Женщина
+            .buttons
+                .buttons__range-slider
+                    div Range slider
+                    input(type="range", name='price', id='price', min='0', max='20000')
+                .buttons__main
+                    div Buttons
+                    button click me
+                    button click me
+                    div 
+                        button перейти к оплате
+            .dropdown
+                div Спальни
+            .dropdown
+                div Взрослые
+            .dropdown
+                div Очистить
+                    

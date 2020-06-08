@@ -1,0 +1,22 @@
+.form-elements {
+    max-width: 1440px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 20px;
+}
+.dropdown {
+    height: 200px;
+    border: 1px solid #000;
+}
+
+.inputs {
+    &__checkbox{
+        display: flex;
+        flex-direction: column;
+    }
+    &__radio{
+        margin-top: 15px;
+        display: flex;
+    }
+}
