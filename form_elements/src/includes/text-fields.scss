@@ -1,0 +1,63 @@
+
+.inputs {
+
+    &__regular {
+        height: 322px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 40px;
+    }
+    &__small {
+        height: 274px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+}
+
+.text-field {
+    &__description {
+        display: flex;
+        justify-content: space-between;
+        max-width: 320px;
+        margin-bottom: 5px;
+        @include h3-text;
+        &_add {
+            color: $dark-shade-50-color;
+            font-weight: normal;
+        }
+
+    }
+    &__default {
+        @include default;
+    }
+    &__focus {
+        @include focus-demonstration;
+        
+    }
+    &__dropdown-default {
+        @include dropdown;
+        max-width: 320px;
+    }
+
+    &__date-dropdown {
+        display: flex;
+        justify-content: space-between;
+        max-width: 320px;
+        &_single{
+            max-width: 150px;
+        }
+    }
+
+    &__filter {
+        @include dropdown;
+        max-width: 266px;
+    }
+
+    &__email {
+        @include subscription;
+        max-width: 267px;
+    }
+}

@@ -1,0 +1,13 @@
+include ../../../common/dropdown-mixins
+.guests
+    .guests__field
+        +input-dropdown("Сколько гостей")
+    .guests__dropdown
+        .guests__rows
+            +dropdown("Взрослые", "adults")
+            +dropdown("Дети", "children")
+            +dropdown("Младенцы", "infants")
+        .guests__buttons
+            .guests__clear Очистить
+            .guests__submit Применить
+    

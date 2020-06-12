@@ -1,12 +1,41 @@
+//nulling, common colors, etc
+@import '../../common/common-styles.scss';
+
+//primitives
+@import '../../common/inputs.scss';
+@import '../../common/dropdown-mixins.scss';
+
+//text-fields styles
+@import '../src/includes/text-fields.scss';
+@import '../src/includes/dropdown-guests-default.scss';
+
+//fonts
+@font-face {
+	font-family: 'Montserrat';
+	src: url('fonts/Montserrat-Regular.eot');
+	src: local('☺'), url('fonts/Montserrat-Regular.woff') format('woff'), url('fonts/Montserrat-Regular.ttf') format('truetype'), url('fonts/Montserrat-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('fonts/Montserrat-Bold.eot');
+	src: local('☺'), url('fonts/Montserrat-Bold.woff') format('woff'), url('fonts/Montserrat-Bold.ttf') format('truetype'), url('fonts/Montserrat-Bold.svg') format('svg');
+	font-weight: 700;
+	font-style: bold;
+}
+
 .form-elements {
     max-width: 1440px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 50px;
     grid-row-gap: 20px;
+    margin: 140px;
 }
 .dropdown {
-    height: 200px;
+    height: 350px;
     border: 1px solid #000;
 }
 

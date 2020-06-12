@@ -1,5 +1,19 @@
 
-mixin input-email(name)
-    form(action="" method="post").email-form
-        input(type="text" placeholder= name name="email").email-form__text
+//method: post or get?
+
+//name and action attributes will be needed for the real page
+
+
+mixin input-email(placeholder, action)
+    form(action= action method="post").email-form
+        input(type="email" placeholder= placeholder name="email").email-form__text
         input(type="submit" value="").email-form__arrow
+
+mixin input-text(placeholder, name, action)
+    form(action= action method="post").text-form
+        input(type="text" placeholder= placeholder name= name).text-form__input
+
+mixin input-dropdown(placeholder, name, action)
+    form(action= action method="post", id= id).dropdown-form
+        input(type="text" placeholder= placeholder name= name readonly).dropdown-form__input
+        input(type="button").dropdown-form__arrow

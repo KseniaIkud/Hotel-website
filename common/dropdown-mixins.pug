@@ -1,0 +1,8 @@
+mixin dropdown(name, id)
+    .dropdown-row
+        .label= name
+        .counter
+            button(data-direction="minus").counter__btn.minus-btn -
+            input(type="text" value="0", id= id).counter__value
+            button(data-direction="plus").counter__btn +
+

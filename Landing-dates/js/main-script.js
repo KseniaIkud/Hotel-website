@@ -7,7 +7,7 @@ $(document).ready(function() {
 		showOtherMonths: true,
 		selectOtherMonths: true,
 		showOn: "both",
-		buttonImage: "../img/arrow.svg",
+		buttonImage: "img/arrow.png",
 		buttonImageOnly: true,
 		onSelect: function() {
 			$(this).datepicker("refresh");

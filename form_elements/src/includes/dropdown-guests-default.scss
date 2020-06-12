@@ -1,0 +1,54 @@
+.guests {
+    height: 154px;
+    width: 320px;
+    background-color: #FFF;
+    &__field {
+        @include dropdown;
+        border-color: $dark-shade-50-color;
+        border-radius: 4px 4px 0 0;
+    }
+    &__dropdown {
+        margin-top: -1px;
+        height: 159px;
+        width: 320px;
+        padding: 5px 5px 12px 15px;
+        border: 1px solid $dark-shade-50-color;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border-radius: 0 0 4px 4px;
+    }
+    &__rows {
+        height: 105px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__buttons {
+        display: flex;
+        justify-content: space-between;
+    }
+        font-family: Montserrat;
+        font-size: 12px;
+        line-height: 15px;
+        color: $purple-color;
+        text-transform: uppercase;
+        font-weight: bold;    
+    &__clear {
+        color: $dark-shade-50-color;
+        visibility: hidden;
+    }
+    &__submit {
+        cursor: pointer;
+    }
+}
+.button-appearance {
+    visibility: visible;
+    cursor: pointer;
+}
+.hidden {
+    display: none;
+}
+.border {
+    border-radius: 4px;
+}

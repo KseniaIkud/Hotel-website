@@ -7,16 +7,7 @@ html(lang="ru")
         script(src='./main.js')
     body
         .form-elements
-            .text-fields
-                .text-fields__email
-                    div text field
-                    input(type="text", name="email", placeholder="Email")
-                .text-fields__hover
-                    div text field
-                    input(type="text", placeholder="This is pretty awesome")
-                .text-fields__default
-                    div dropdown
-                    input(type="text", name="guests-number", placeholder="Сколько гостей")
+            include includes/text-fields
             .inputs
                 .inputs__checkbox
                     div
@@ -47,8 +38,10 @@ html(lang="ru")
                         button перейти к оплате
             .dropdown
                 div Спальни
-            .dropdown
-                div Взрослые
+            .dropdownj
+                include includes/dropdown-guests-default
             .dropdown
                 div Очистить
+        .test test
+        script(src='./js/dropdown-guests-default.js')
                     
