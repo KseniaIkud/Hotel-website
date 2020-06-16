@@ -178,16 +178,16 @@ btns.forEach(function (btn) {
 
       if (sumGuests < 10 || sumGuests > 20) {
         if (sumGuests % 10 === 1) {
-          barGuest.placeholder = +sumGuests + " Гость";
+          barGuest.placeholder = +sumGuests + " гость";
         } else {
-          if (sumGuests % 10 === 2 || sumGuests % 10 === 3 || sumGuests % 10 === 4) barGuest.placeholder = +sumGuests + " Гостя";else {
-            barGuest.placeholder = +sumGuests + " Гостей";
+          if (sumGuests % 10 === 2 || sumGuests % 10 === 3 || sumGuests % 10 === 4) barGuest.placeholder = +sumGuests + " гостя";else {
+            barGuest.placeholder = +sumGuests + " гостей";
           }
         }
 
         ;
       } else {
-        barGuest.placeholder = +sumGuests + " Гостей";
+        barGuest.placeholder = +sumGuests + " гостей";
       }
 
       ;
@@ -252,7 +252,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "35829" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "34157" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

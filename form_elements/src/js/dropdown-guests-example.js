@@ -61,16 +61,16 @@ btns.forEach(btn=> {
                 };
                 if (sumGuests < 10 || sumGuests > 20) {
                     if (sumGuests % 10 === 1) {
-                        barGuest.placeholder = +sumGuests + " Гость";
+                        barGuest.placeholder = +sumGuests + " гость";
                     } else {
                         if (sumGuests % 10 === 2 || sumGuests % 10 === 3 || sumGuests % 10 === 4)
-                        barGuest.placeholder = +sumGuests + " Гостя";
+                        barGuest.placeholder = +sumGuests + " гостя";
                         else {
-                            barGuest.placeholder = +sumGuests + " Гостей";
+                            barGuest.placeholder = +sumGuests + " гостей";
                         }
                     };
                 } else { 
-                    barGuest.placeholder = +sumGuests + " Гостей"; 
+                    barGuest.placeholder = +sumGuests + " гостей"; 
                 };
                 
                 if (infants.value > 0) {
