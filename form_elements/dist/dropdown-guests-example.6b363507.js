@@ -117,11 +117,11 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"js/dropdown-guests-default.js":[function(require,module,exports) {
-var btns = document.querySelectorAll('.counter__btn');
-var adult = document.querySelector('#adults');
-var children = document.querySelector('#children');
-var infants = document.querySelector('#infants');
+})({"js/dropdown-guests-example.js":[function(require,module,exports) {
+var btns = document.querySelectorAll('.example-counter__btn');
+var adult = document.querySelector('#exampleAdults');
+var children = document.querySelector('#exampleChildren');
+var infants = document.querySelector('#exampleInfants');
 /* I added so many parentElement 's because there are several guest dropdowns on 
 the page and I didn't want to define id everytime the block is needed. 
 It's only for UI kit */
@@ -428,5 +428,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/dropdown-guests-default.js"], null)
-//# sourceMappingURL=/dropdown-guests-default.ad838450.js.map
+},{}]},{},["../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/dropdown-guests-example.js"], null)
+//# sourceMappingURL=/dropdown-guests-example.6b363507.js.map

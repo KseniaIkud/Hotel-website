@@ -1,0 +1,15 @@
+include ../../../common/dropdown-mixins
+.guests
+    .guests__field
+        +input-dropdown("3 гостя")
+    .guests__dropdown
+        .guests__rows
+            +dropdown("Взрослые", 2, "exampleAdults", "example-counter__btn")
+            +dropdown("Дети", 1, "exampleChildren", "example-counter__btn")
+            +dropdown("Младенцы", 0, "exampleInfants", "example-counter__btn")
+        .guests__buttons
+            .guests__clear.button-appearance Очистить
+            .guests__submit Применить
+
+script(src='./js/dropdown-guests-example.js')
+    
