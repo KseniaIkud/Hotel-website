@@ -164,7 +164,6 @@ btns.forEach(function (btn) {
     };
 
     if (sumGuests > 0) {
-      barGuest.placeholder = +sumGuests + " Гостей";
       clearBtn.classList.add('button-appearance');
 
       clearBtn.onclick = function () {
@@ -177,8 +176,38 @@ btns.forEach(function (btn) {
         barGuest.placeholder = "Сколько гостей";
       };
 
+      if (sumGuests < 10 || sumGuests > 20) {
+        if (sumGuests % 10 === 1) {
+          barGuest.placeholder = +sumGuests + " Гость";
+        } else {
+          if (sumGuests % 10 === 2 || sumGuests % 10 === 3 || sumGuests % 10 === 4) barGuest.placeholder = +sumGuests + " Гостя";else {
+            barGuest.placeholder = +sumGuests + " Гостей";
+          }
+        }
+
+        ;
+      } else {
+        barGuest.placeholder = +sumGuests + " Гостей";
+      }
+
+      ;
+
       if (infants.value > 0) {
-        barGuest.placeholder = barGuest.placeholder + ", " + infants.value + " младенцев";
+        if (infants.value < 10 || infants.value > 20) {
+          if (infants.value % 10 === 1) {
+            barGuest.placeholder = barGuest.placeholder + ", " + infants.value + "  младенец";
+          } else {
+            if (infants.value % 10 === 2 || infants.value % 10 === 3 || infants.value % 10 === 4) barGuest.placeholder = barGuest.placeholder + ", " + infants.value + "  младенца";else {
+              barGuest.placeholder = barGuest.placeholder + ", " + infants.value + "  младенцев";
+            }
+          }
+
+          ;
+        } else {
+          barGuest.placeholder = barGuest.placeholder + ", " + infants.value + "  младенцев";
+        }
+
+        ; //barGuest.placeholder = barGuest.placeholder + ", " + infants.value + " младенцев";
       }
 
       submitBtn.onclick = function () {
@@ -188,6 +217,8 @@ btns.forEach(function (btn) {
       };
     } else {
       infants.value = 0;
+      barGuest.placeholder = "Сколько гостей";
+      clearBtn.classList.remove('button-appearance');
     }
 
     ;
@@ -221,7 +252,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "36191" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "39687" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

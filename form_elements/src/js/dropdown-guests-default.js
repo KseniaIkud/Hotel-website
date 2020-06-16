@@ -48,7 +48,7 @@ btns.forEach(btn=> {
             };
 
             if (sumGuests > 0) {
-                barGuest.placeholder = +sumGuests + " Гостей";
+                
                 clearBtn.classList.add('button-appearance');
                 clearBtn.onclick = function() {
                     sumGuests = 0;
@@ -59,8 +59,35 @@ btns.forEach(btn=> {
                     console.log(sumGuests);
                     barGuest.placeholder = "Сколько гостей"
                 };
+                if (sumGuests < 10 || sumGuests > 20) {
+                    if (sumGuests % 10 === 1) {
+                        barGuest.placeholder = +sumGuests + " Гость";
+                    } else {
+                        if (sumGuests % 10 === 2 || sumGuests % 10 === 3 || sumGuests % 10 === 4)
+                        barGuest.placeholder = +sumGuests + " Гостя";
+                        else {
+                            barGuest.placeholder = +sumGuests + " Гостей";
+                        }
+                    };
+                } else { 
+                    barGuest.placeholder = +sumGuests + " Гостей"; 
+                };
+                
                 if (infants.value > 0) {
-                    barGuest.placeholder = barGuest.placeholder + ", " + infants.value + " младенцев";
+                    if (infants.value < 10 || infants.value > 20) {
+                        if (infants.value % 10 === 1) {
+                            barGuest.placeholder = barGuest.placeholder + ", " + infants.value + "  младенец";
+                        } else {
+                            if (infants.value % 10 === 2 || infants.value % 10 === 3 || infants.value % 10 === 4)
+                            barGuest.placeholder = barGuest.placeholder + ", " + infants.value + "  младенца";
+                            else {
+                                barGuest.placeholder = barGuest.placeholder + ", " + infants.value + "  младенцев";
+                            }
+                        };
+                    } else { 
+                        barGuest.placeholder = barGuest.placeholder + ", " + infants.value + "  младенцев";
+                    };
+                    //barGuest.placeholder = barGuest.placeholder + ", " + infants.value + " младенцев";
                 }
                 submitBtn.onclick = function() {
                     dropGuest.classList.add('hidden');
@@ -70,6 +97,8 @@ btns.forEach(btn=> {
 
             } else {
                 infants.value = 0;
+                barGuest.placeholder = "Сколько гостей";
+                clearBtn.classList.remove('button-appearance');
             };
             
             
