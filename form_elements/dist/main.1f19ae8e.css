@@ -134,7 +134,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 15px;
   text-transform: uppercase;
 }
-.text-field__description_add {
+.text-field__description-add {
   color: rgba(31, 32, 65, 0.5);
   font-weight: normal;
 }
@@ -301,15 +301,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .guests {
-  height: 154px;
   width: 320px;
   background-color: #FFF;
-  font-family: Montserrat;
-  font-size: 12px;
-  line-height: 15px;
-  color: #BC9CFF;
-  text-transform: uppercase;
-  font-weight: bold;
 }
 .guests__field {
   border: 1px solid rgba(31, 32, 65, 0.25);
@@ -361,6 +354,12 @@ h1, h2, h3, h4, h5, h6 {
 .guests__buttons {
   display: flex;
   justify-content: space-between;
+  font-family: Montserrat;
+  font-size: 12px;
+  line-height: 15px;
+  color: #BC9CFF;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 .guests__clear {
   color: rgba(31, 32, 65, 0.5);
@@ -381,6 +380,51 @@ h1, h2, h3, h4, h5, h6 {
 
 .border {
   border-radius: 4px;
+}
+
+.room {
+  width: 320px;
+  background-color: #FFF;
+}
+.room__field {
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  background-color: #FFF;
+  border-radius: 4px;
+  height: 44px;
+  border-color: rgba(31, 32, 65, 0.5);
+  border-radius: 4px 4px 0 0;
+}
+.room__field .dropdown-form {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.room__field .dropdown-form__input {
+  width: 100%;
+}
+.room__field .dropdown-form__input::placeholder {
+  font-family: Montserrat;
+  font-weight: normal;
+  font-size: 14px;
+  color: rgba(31, 32, 65, 0.75);
+  line-height: 24px;
+}
+.room__field .dropdown-form__arrow {
+  background: url("/expand_more.60ec3e73.png") 100% 50% no-repeat;
+  width: 20px;
+  cursor: pointer;
+}
+.room__dropdown {
+  height: 130px;
+  margin-top: -1px;
+  padding: 5px 5px 12px 15px;
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  display: flex;
+  flex-direction: column;
+  border-radius: 0 0 4px 4px;
+  justify-content: space-between;
 }
 
 @font-face {

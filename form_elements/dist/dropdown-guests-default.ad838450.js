@@ -118,7 +118,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"js/dropdown-guests-default.js":[function(require,module,exports) {
-var btns = document.querySelectorAll('.counter__btn');
+var btns = document.querySelectorAll('.guests-counter__btn');
 var adult = document.querySelector('#adults');
 var children = document.querySelector('#children');
 var infants = document.querySelector('#infants');
@@ -252,7 +252,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "34157" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "34433" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

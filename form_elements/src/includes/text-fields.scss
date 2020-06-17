@@ -24,11 +24,10 @@
         max-width: 320px;
         margin-bottom: 5px;
         @include h3-text;
-        &_add {
+        &-add {
             color: $dark-shade-50-color;
             font-weight: normal;
         }
-
     }
     &__default {
         @include default;

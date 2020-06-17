@@ -1,4 +1,4 @@
-const btns = document.querySelectorAll('.counter__btn');
+const btns = document.querySelectorAll('.guests-counter__btn');
 
 const adult = document.querySelector('#adults');
 const children = document.querySelector('#children');

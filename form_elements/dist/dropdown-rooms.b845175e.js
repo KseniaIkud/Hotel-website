@@ -117,15 +117,11 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"js/dropdown-guests-example.js":[function(require,module,exports) {
-var btns = document.querySelectorAll('.example-counter__btn');
-var adult = document.querySelector('#exampleAdults');
-var children = document.querySelector('#exampleChildren');
-var infants = document.querySelector('#exampleInfants');
-/* I added so many parentElement 's because there are several guest dropdowns on 
-the page and I didn't want to define id everytime the block is needed. 
-It's only for UI kit */
-
+})({"js/dropdown-rooms.js":[function(require,module,exports) {
+var btns = document.querySelectorAll('.rooms-counter__btn');
+var bedrooms = document.querySelector('#bedrooms');
+var beds = document.querySelector('#beds');
+var bathrooms = document.querySelector('#bathrooms');
 btns.forEach(function (btn) {
   btn.addEventListener('click', function () {
     /* the value between buttons */
@@ -141,107 +137,54 @@ btns.forEach(function (btn) {
     /*guests number variables*/
 
 
-    var sumGuests;
-    sumGuests = +adult.value + +children.value;
-    var sumInfants;
-    sumInfants = +infants.value;
-    /*buttons variables*/
-
-    var clearBtn = this.parentElement.parentElement.parentElement.parentElement.parentElement.querySelector('.guests__clear');
-    var submitBtn = this.parentElement.parentElement.parentElement.parentElement.parentElement.querySelector('.guests__submit');
+    var sumBedrooms;
+    sumBedrooms = +bedrooms.value;
+    var sumBeds;
+    sumBeds = +beds.value;
+    var sumBathrooms;
+    sumBathrooms = +bathrooms.value;
+    var allSum;
+    allSum = sumBedrooms + sumBeds + sumBathrooms;
     /*dropdown variable*/
 
-    var dropGuest = this.parentElement.parentElement.parentElement.parentElement.parentElement.querySelector('.guests__dropdown');
+    var dropDown = this.parentElement.parentElement.parentElement.parentElement.parentElement.querySelector('.room__dropdown');
     /*bar variables*/
 
-    var barGuest = this.parentElement.parentElement.parentElement.parentElement.parentElement.querySelector('.dropdown-form__input');
+    var barDropDown = this.parentElement.parentElement.parentElement.parentElement.querySelector('.dropdown-form__input');
     var openBtn = this.parentElement.parentElement.parentElement.parentElement.parentElement.querySelector('.dropdown-form__arrow');
-    var bar = document.querySelector('.guests__field');
+    var bar = document.querySelector('.room__field');
 
     openBtn.onclick = function () {
-      dropGuest.classList.remove('hidden');
+      dropDown.classList.remove('hidden');
       bar.classList.remove('border');
     };
+    /*placeholder vars*/
 
-    if (sumGuests > 0) {
-      clearBtn.classList.add('button-appearance');
 
-      clearBtn.onclick = function () {
-        sumGuests = 0;
-        adult.value = 0;
-        children.value = 0;
-        infants.value = 0;
-        clearBtn.classList.remove('button-appearance');
-        console.log(sumGuests);
-        barGuest.placeholder = "Сколько гостей";
-      };
+    var bathroomsPlace;
 
-      if (sumGuests < 10 || sumGuests > 20) {
-        if (sumGuests % 10 === 1 && sumGuests % 100 !== 11) {
-          barGuest.placeholder = +sumGuests + " гость";
-        } else {
-          if (sumGuests % 10 === 2 || sumGuests % 10 === 3 || sumGuests % 10 === 4) {
-            if (sumGuests % 100 !== 12 && sumGuests % 100 !== 13 && sumGuests % 100 !== 14) {
-              barGuest.placeholder = +sumGuests + " гостя";
-            } else {
-              barGuest.placeholder = +sumGuests + " гостей";
-            }
-
-            ;
-          } else {
-            barGuest.placeholder = +sumGuests + " гостей";
-          }
-
-          ;
-        }
-
-        ;
-      } else {
-        barGuest.placeholder = +sumGuests + " гостей";
-      }
-
-      ;
-
-      if (infants.value > 0) {
-        if (infants.value < 10 || infants.value > 20) {
-          if (infants.value % 10 === 1 && infants.value % 100 !== 11) {
-            barGuest.placeholder = barGuest.placeholder + ", " + infants.value + "  младенец";
-          } else {
-            if (infants.value % 10 === 2 || infants.value % 10 === 3 || infants.value % 10 === 4) {
-              if (infants.value % 100 !== 12 && infants.value % 100 !== 13 && infants.value % 100 !== 14) {
-                barGuest.placeholder = barGuest.placeholder + ", " + infants.value + "  младенца";
-              } else {
-                barGuest.placeholder = barGuest.placeholder + ", " + infants.value + "  младенцев";
-              }
-
-              ;
-            } else {
-              barGuest.placeholder = barGuest.placeholder + ", " + infants.value + "  младенцев";
-            }
-
-            ;
-          }
-
-          ;
-        } else {
-          barGuest.placeholder = barGuest.placeholder + ", " + infants.value + "  младенцев";
-        }
-
-        ;
-      }
-
-      submitBtn.onclick = function () {
-        dropGuest.classList.add('hidden');
-        bar.classList.add('border');
-        /*also the form should be sent*/
-      };
-    } else {
-      infants.value = 0;
-      barGuest.placeholder = "Сколько гостей";
-      clearBtn.classList.remove('button-appearance');
+    if (sumBedrooms === 0) {
+      sumBedrooms = 1;
+      bedrooms.value = 1;
     }
 
     ;
+
+    if (sumBeds === 0) {
+      sumBeds = 1;
+      beds.value = 1;
+    }
+
+    ;
+
+    if (sumBathrooms > 0) {
+      bathroomsPlace = ", " + sumBathrooms + " ванн ";
+    } else {
+      bathroomsPlace = '';
+    }
+
+    ;
+    barDropDown.placeholder = sumBedrooms + " спален, " + +sumBeds + " кроватей" + bathroomsPlace;
   });
 });
 },{}],"../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
@@ -448,5 +391,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/dropdown-guests-example.js"], null)
-//# sourceMappingURL=/dropdown-guests-example.6b363507.js.map
+},{}]},{},["../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/dropdown-rooms.js"], null)
+//# sourceMappingURL=/dropdown-rooms.b845175e.js.map
