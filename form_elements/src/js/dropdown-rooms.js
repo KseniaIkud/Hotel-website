@@ -33,30 +33,68 @@ btns.forEach(btn=> {
         const dropDown = this.parentElement.parentElement.parentElement.parentElement.parentElement.querySelector('.room__dropdown');
         
         /*bar variables*/
-        const barDropDown = this.parentElement.parentElement.parentElement.parentElement.querySelector('.dropdown-form__input');
-        const openBtn = this.parentElement.parentElement.parentElement.parentElement.parentElement.querySelector('.dropdown-form__arrow');
-        const bar = document.querySelector('.room__field');
-        
-        openBtn.onclick = function() {
-            dropDown.classList.remove('hidden');
-            bar.classList.remove('border');
-        };
+        const barDropDown = this.parentElement.parentElement.parentElement.parentElement.parentElement.querySelector('.dropdown-form__input');
 
         /*placeholder vars*/
+        let bedroomsPlace
+        let bedsPlace
         let bathroomsPlace
 
         if (sumBedrooms === 0) {
             sumBedrooms = 1;
             bedrooms.value = 1;
+            bedroomsPlace = 1 + " спальня";
+        } else {
+            if (sumBedrooms % 10 === 1 && sumBedrooms % 100 !== 11) {
+                bedroomsPlace = sumBedrooms + " спальня";
+            } else {
+                if (sumBedrooms % 10 === 2 || sumBedrooms % 10 === 3 || sumBedrooms % 10 === 4) {
+                    if (sumBedrooms % 100 !== 12 && sumBedrooms % 100 !== 13 &&sumBedrooms % 100 !== 14) {
+                        bedroomsPlace = sumBedrooms + " спальни";
+                    } else {
+                        bedroomsPlace = sumBedrooms + " спален";
+                    };
+                } else {
+                    bedroomsPlace = sumBedrooms + " спален";
+                };
+                
+            };
         };
         if (sumBeds === 0) {
             sumBeds = 1;
             beds.value = 1;
+            bedsPlace = 1 + " кровать";
+        } else {
+            if (sumBeds % 10 === 1 && sumBeds % 100 !== 11 ) {
+                bedsPlace = sumBeds + " кровать";
+            } else {
+                if (sumBeds % 10 === 2 || sumBeds % 10 === 3 || sumBeds % 10 === 4) {
+                    if (sumBeds % 100 !== 12 && sumBeds % 100 !== 13 && sumBeds % 100 !== 14) {
+                        bedsPlace = sumBeds + " кровати";
+                    }
+                    else {
+                        bedsPlace = sumBeds + " кроватей";
+                    }
+                } else {
+                    bedsPlace = sumBeds + " кроватей";
+                }
+            }
         };
         if (sumBathrooms > 0) {
-            bathroomsPlace  = ", " + sumBathrooms + " ванн "
-        } else {bathroomsPlace = ''};
-
-        barDropDown.placeholder = sumBedrooms + " спален, " + +sumBeds + " кроватей" + bathroomsPlace;
+            if (sumBathrooms % 10 === 1 && sumBathrooms % 100 != 11) {
+                bathroomsPlace = ", " + sumBathrooms + " ванная";
+            } else {
+                if (sumBathrooms % 10 === 2 || sumBathrooms % 10 === 3 || sumBathrooms % 10 === 4) {
+                    if (sumBathrooms % 100 !== 12 && sumBathrooms % 100 !== 13 && sumBathrooms % 100 !== 14) {
+                        bathroomsPlace  = ", " + sumBathrooms + " ванные";
+                    } else {
+                        bathroomsPlace = ", " + sumBathrooms + " ванных";
+                    };
+                } else {
+                    bathroomsPlace = ", " + sumBathrooms + " ванных";
+                };
+            };
+        } else {bathroomsPlace = '...'};
+        barDropDown.placeholder = bedroomsPlace + ", " + bedsPlace + bathroomsPlace;
     });    
 });

@@ -60,7 +60,7 @@
 
 // Only for UI kit, focus styles are already in default mixin
 @mixin focus-demonstration {
-    border: 1px solid $dark-shade-25-color;
+    border: 1px solid $dark-shade-50-color;
     background-color: #FFF;
     border-radius: 4px;
     max-width: 320px;

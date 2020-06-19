@@ -155,13 +155,7 @@ btns.forEach(function (btn) {
     /*bar variables*/
 
     var barGuest = this.parentElement.parentElement.parentElement.parentElement.parentElement.querySelector('.dropdown-form__input');
-    var openBtn = this.parentElement.parentElement.parentElement.parentElement.parentElement.querySelector('.dropdown-form__arrow');
-    var bar = document.querySelector('.guests__field');
-
-    openBtn.onclick = function () {
-      dropGuest.classList.remove('hidden');
-      bar.classList.remove('border');
-    };
+    var bar = this.parentElement.parentElement.parentElement.parentElement.parentElement.querySelector('.guests__field');
 
     if (sumGuests > 0) {
       clearBtn.classList.add('button-appearance');
@@ -272,7 +266,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "34433" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "41335" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

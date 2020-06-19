@@ -1,22 +1,29 @@
 include ../../../common/inputs-mixins
 include ../../../common/dropdown-mixins
 
-.text-field
-    .text-field__description
-        .text-field__description-main dropdown
-        .text-field__description-add default
-    .text-field__dropdown-default
-        +input-dropdown("2 спальни, 2 кровати...")
+.rooms-block
+    .text-field
+        .text-field__description
+            .text-field__description-main dropdown
+            .text-field__description-add default
+        .text-field__dropdown-default
+            +input-dropdown("2 спальни, 2 кровати...")
+        .text-field__common-dropdown.room__dropdown.common-dropdown.hidden
+            .common-dropdown__rows
+                +dropdown("Спальни", 2, "bedrooms", "rooms-counter__btn")
+                +dropdown("Кровати", 2, "beds", "rooms-counter__btn")
+                +dropdown("Ванные комнаты", 0, "bathrooms", "rooms-counter__btn")
 
-.room
-    .text-field__description
-        .text-field__description-main dropdown
-        .text-field__description-add expanded
-    .room__field
-        +input-dropdown("2 спальни, 2 кровати...")
-    .room__dropdown
-        +dropdown("Спальни", 2, "bedrooms", "rooms-counter__btn")
-        +dropdown("Кровати", 2, "beds", "rooms-counter__btn")
-        +dropdown("Ванные комнаты", 0, "bathrooms", "rooms-counter__btn")
+    .example
+        .room
+            .text-field__description
+                .text-field__description-main dropdown
+                .text-field__description-add expanded
+            .room__field
+                +input-dropdown("2 спальни, 2 кровати...")
+            .room__dropdown
+                +dropdown("Спальни", 2)
+                +dropdown("Кровати", 2)
+                +dropdown("Ванные комнаты", 0)
 
 script(src="./js/dropdown-rooms.js")

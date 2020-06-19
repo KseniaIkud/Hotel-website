@@ -39,13 +39,7 @@ btns.forEach(btn=> {
             
             /*bar variables*/
             const barGuest = this.parentElement.parentElement.parentElement.parentElement.parentElement.querySelector('.dropdown-form__input');
-            const openBtn = this.parentElement.parentElement.parentElement.parentElement.parentElement.querySelector('.dropdown-form__arrow');
-            const bar = document.querySelector('.guests__field');
-
-            openBtn.onclick = function() {
-                dropGuest.classList.remove('hidden');
-                bar.classList.remove('border');
-            };
+            const bar = this.parentElement.parentElement.parentElement.parentElement.parentElement.querySelector('.guests__field');
 
             if (sumGuests > 0) {
                 

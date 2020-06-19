@@ -6,11 +6,9 @@ include ../../../common/dropdown-mixins
         +input-dropdown("Сколько гостей")
     .guests__dropdown
         .guests__rows
-            +dropdown("Взрослые", 0, "adults", "guests-counter__btn")
-            +dropdown("Дети", 0, "children", "guests-counter__btn")
-            +dropdown("Младенцы", 0, "infants", "guests-counter__btn")
+            +dropdown("Взрослые", 0)
+            +dropdown("Дети", 0)
+            +dropdown("Младенцы", 0)
         .guests__buttons
             .guests__clear Очистить
             .guests__submit Применить
-
-script(src='./js/dropdown-guests-default.js')

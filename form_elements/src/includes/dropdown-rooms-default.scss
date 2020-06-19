@@ -1,5 +1,12 @@
+.rooms-block {
+    height: 278px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 266px;
+}
+
 .room {
-    width: 320px;
     background-color: #FFF;
     &__field {
         @include dropdown;
@@ -7,7 +14,7 @@
         border-radius: 4px 4px 0 0;
     }
     &__dropdown {
-        height: 130px;
+        height: 120px;
         margin-top: -1px;
         padding: 5px 5px 12px 15px;
         border: 1px solid $dark-shade-50-color;

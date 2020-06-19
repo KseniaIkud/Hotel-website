@@ -31,43 +31,49 @@ btns.forEach(btn=> {
             sumInfants = +infants.value;
             
             /*buttons variables*/
-            const clearBtn = this.parentElement.parentElement.parentElement.parentElement.parentElement.querySelector('.guests__clear');
-            const submitBtn = this.parentElement.parentElement.parentElement.parentElement.parentElement.querySelector('.guests__submit');
+            const clearBtn = this.parentElement.parentElement.parentElement.parentElement.parentElement.querySelector('.common-dropdown__clear');
+            const submitBtn = this.parentElement.parentElement.parentElement.parentElement.parentElement.querySelector('.common-dropdown__submit');
             
             /*dropdown variable*/
-            const dropGuest = this.parentElement.parentElement.parentElement.parentElement.parentElement.querySelector('.guests__dropdown');
+            const dropGuest = this.parentElement.parentElement.parentElement.parentElement.parentElement.querySelector('.common-dropdown');
             
             /*bar variables*/
             const barGuest = this.parentElement.parentElement.parentElement.parentElement.parentElement.querySelector('.dropdown-form__input');
-            const openBtn = this.parentElement.parentElement.parentElement.parentElement.parentElement.querySelector('.dropdown-form__arrow');
-            const bar = document.querySelector('.guests__field');
+            console.log(barGuest.placeholder);
+            const bar = this.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.querySelector('.text-field__dropdown-default');
+            console.log(bar);
 
-            openBtn.onclick = function() {
-                dropGuest.classList.remove('hidden');
-                bar.classList.remove('border');
-            };
+
+            
 
             if (sumGuests > 0) {
-                
-                clearBtn.classList.add('button-appearance');
+                clearBtn.classList.remove('button-hidden');
+                clearBtn.classList.add('button-pointer');
                 clearBtn.onclick = function() {
                     sumGuests = 0;
                     adult.value = 0;
                     children.value = 0;
                     infants.value = 0;
-                    clearBtn.classList.remove('button-appearance');
-                    console.log(sumGuests);
+                    clearBtn.classList.add('button-hidden');
+                    clearBtn.classList.remove('button-pointer');
+                    
                     barGuest.placeholder = "Сколько гостей"
                 };
                 if (sumGuests < 10 || sumGuests > 20) {
-                    if (sumGuests % 10 === 1) {
+                    if (sumGuests % 10 === 1 && sumGuests % 100 !== 11) {
                         barGuest.placeholder = +sumGuests + " гость";
                     } else {
-                        if (sumGuests % 10 === 2 || sumGuests % 10 === 3 || sumGuests % 10 === 4)
-                        barGuest.placeholder = +sumGuests + " гостя";
+                        if (sumGuests % 10 === 2 || sumGuests % 10 === 3 || sumGuests % 10 === 4) {
+                            if (sumGuests % 100 !== 12 && sumGuests % 100 !== 13 && sumGuests % 100 !== 14){
+                                barGuest.placeholder = +sumGuests + " гостя";
+                            }
+                            else {
+                                barGuest.placeholder = +sumGuests + " гостей";
+                            };
+                        }
                         else {
                             barGuest.placeholder = +sumGuests + " гостей";
-                        }
+                        };
                     };
                 } else { 
                     barGuest.placeholder = +sumGuests + " гостей"; 
@@ -75,23 +81,28 @@ btns.forEach(btn=> {
                 
                 if (infants.value > 0) {
                     if (infants.value < 10 || infants.value > 20) {
-                        if (infants.value % 10 === 1) {
+                        if (infants.value % 10 === 1 && infants.value % 100 !== 11) {
                             barGuest.placeholder = barGuest.placeholder + ", " + infants.value + "  младенец";
                         } else {
-                            if (infants.value % 10 === 2 || infants.value % 10 === 3 || infants.value % 10 === 4)
-                            barGuest.placeholder = barGuest.placeholder + ", " + infants.value + "  младенца";
+                            if (infants.value % 10 === 2 || infants.value % 10 === 3 || infants.value % 10 === 4) {
+                                if (infants.value % 100 !== 12 && infants.value % 100 !== 13 && infants.value % 100 !== 14) {
+                                    barGuest.placeholder = barGuest.placeholder + ", " + infants.value + "  младенца";
+                                }
+                                else {
+                                    barGuest.placeholder = barGuest.placeholder + ", " + infants.value + "  младенцев";
+                                };
+                            }
                             else {
                                 barGuest.placeholder = barGuest.placeholder + ", " + infants.value + "  младенцев";
-                            }
+                            };
                         };
                     } else { 
                         barGuest.placeholder = barGuest.placeholder + ", " + infants.value + "  младенцев";
                     };
-                    //barGuest.placeholder = barGuest.placeholder + ", " + infants.value + " младенцев";
                 }
                 submitBtn.onclick = function() {
                     dropGuest.classList.add('hidden');
-                    bar.classList.add('border');
+                    bar.classList.remove('border-focus');
                     /*also the form should be sent*/
                 };
 
@@ -100,7 +111,6 @@ btns.forEach(btn=> {
                 barGuest.placeholder = "Сколько гостей";
                 clearBtn.classList.remove('button-appearance');
             };
-            
             
     });
     
