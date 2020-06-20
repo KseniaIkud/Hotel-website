@@ -136,16 +136,14 @@ h1, h2, h3, h4, h5, h6 {
 .text-field__description {
   display: flex;
   justify-content: space-between;
-  max-width: 320px;
-  margin-bottom: 5px;
+}
+.text-field__description_add {
   font-family: Montserrat;
   font-weight: 700;
   font-size: 12px;
   color: #1F2041;
   line-height: 15px;
   text-transform: uppercase;
-}
-.text-field__description-add {
   color: rgba(31, 32, 65, 0.5);
   font-weight: normal;
 }
@@ -456,18 +454,15 @@ h1, h2, h3, h4, h5, h6 {
   margin: 140px;
 }
 
-.dropdown {
-  height: 350px;
-  border: 1px solid #000;
-}
-
-.inputs__checkbox {
-  display: flex;
-  flex-direction: column;
-}
-.inputs__radio {
-  margin-top: 15px;
-  display: flex;
+.description {
+  max-width: 320px;
+  margin-bottom: 5px;
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 12px;
+  color: #1F2041;
+  line-height: 15px;
+  text-transform: uppercase;
 }
 
 .button-hidden {

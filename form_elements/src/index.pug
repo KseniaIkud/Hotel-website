@@ -8,34 +8,8 @@ html(lang="ru")
     body
         .form-elements
             include includes/text-fields
-            .inputs
-                .inputs__checkbox
-                    div
-                        input(type="checkbox", name='smoking', id='smoking')
-                        label(for="smoking") Можно курить
-                    div 
-                        input(type="checkbox", name='pets', id='pets', checked)
-                        label(for="pets") Можно с питомцами
-                    div   
-                        input(type="checkbox", name='guests-allowed', id='guests', checked)
-                        label(for="guests-allowed") Можно пригласить гостей (до 10 человек)
-                .inputs__radio
-                    div
-                        input(type="radio", name='sex', id='male')
-                        label(for="male") Мужчина
-                    div
-                        input(type="radio", name='sex', id='female')
-                        label(for="female") Женщина
-            .buttons
-                .buttons__range-slider
-                    div Range slider
-                    input(type="range", name='price', id='price', min='0', max='20000')
-                .buttons__main
-                    div Buttons
-                    button click me
-                    button click me
-                    div 
-                        button перейти к оплате
+            include includes/small-buttons
+            include includes/main-buttons
             .dropdownj
                 include includes/dropdown-rooms-default
             .dropdownj

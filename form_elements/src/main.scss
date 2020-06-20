@@ -7,8 +7,14 @@
 
 //text-fields styles
 @import '../src/includes/text-fields.scss';
+
+//dropdowns styles
 @import '../src/includes/dropdown-guests-default.scss';
 @import '../src/includes/dropdown-rooms-default.scss';
+
+//buttons styles
+@import '../src/includes/small-buttons.scss';
+@import '../src/includes/main-buttons.scss';
 
 //fonts
 @font-face {
@@ -35,20 +41,11 @@
     grid-row-gap: 20px;
     margin: 140px;
 }
-.dropdown {
-    height: 350px;
-    border: 1px solid #000;
-}
 
-.inputs {
-    &__checkbox{
-        display: flex;
-        flex-direction: column;
-    }
-    &__radio{
-        margin-top: 15px;
-        display: flex;
-    }
+.description {
+    max-width: 320px;
+    margin-bottom: 5px;
+    @include h3-text;
 }
 
 
