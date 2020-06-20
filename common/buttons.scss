@@ -1,4 +1,4 @@
-//buttons
+// main buttons
 
 @mixin transparent-button {
     @include body-text;
@@ -50,4 +50,102 @@
 
 @mixin purple-button-hover {
     opacity: 0.5;
+}
+
+//small buttons
+
+@mixin radio-check {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    &+label{
+        display: inline-flex;
+    }
+    &+label::before {
+        content: "";
+        width: 20px;
+        height: 20px;
+        border: 1px solid $dark-shade-25-color;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+    &:checked+label::before {   
+        border-color: $purple-color;
+    }
+}
+
+@mixin radio {
+    &+label {
+        align-items: center;
+    }
+    &+label::before {
+        border-radius: 50%;
+    }
+    &:checked+label {
+        position: relative;
+    }
+    &:checked+label::after {
+        content: "";
+        position: absolute;
+        left: 4px;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    }
+}
+
+@mixin check {
+    &+label {
+        line-height: 18px;
+    }
+    &+label::before {
+        border-radius: 4px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 50% 50%;
+        flex-shrink: 0;
+        flex-grow: 0;
+    }
+    &:checked+label::before {
+        background-image: url(../src/img/arrow-check.svg);
+    }
+}
+
+@mixin toggle {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    vertical-align: top;
+    width: 40px;
+    height: 20px;
+    background: #FFF;
+    border: 1px solid $dark-shade-25-color;
+    border-radius: 10px;
+    
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin-right: 10px;
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 3px;
+        width: 12px;
+        height: 12px;
+        background-color: $dark-shade-25-color;
+        border-radius: 50%;
+        transition: 0.3s;
+    }
+    &:checked::after {
+        transform: translateX(calc(100% + 8px));
+        background-color: #fff;  
+        background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+        transition: 0.3s;
+    }
+    &:checked {
+        border-color: $purple-color;
+    }
 }

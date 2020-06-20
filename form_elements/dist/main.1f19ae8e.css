@@ -460,6 +460,10 @@ h1, h2, h3, h4, h5, h6 {
   height: 35px;
   align-self: flex-start;
 }
+.button-option__input {
+  display: flex;
+  align-items: center;
+}
 .button-option__example {
   display: flex;
   flex-direction: column;
@@ -478,24 +482,30 @@ h1, h2, h3, h4, h5, h6 {
 }
 .button-option__checkbox + label {
   display: inline-flex;
-  line-height: 18px;
 }
 .button-option__checkbox + label::before {
   content: "";
-  display: inline-block;
   width: 20px;
   height: 20px;
   border: 1px solid rgba(31, 32, 65, 0.25);
+  margin-right: 10px;
+  cursor: pointer;
+}
+.button-option__checkbox:checked + label::before {
+  border-color: #BC9CFF;
+}
+.button-option__checkbox + label {
+  line-height: 18px;
+}
+.button-option__checkbox + label::before {
   border-radius: 4px;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 50% 50%;
   flex-shrink: 0;
   flex-grow: 0;
-  margin-right: 10px;
 }
 .button-option__checkbox:checked + label::before {
-  border-color: #BC9CFF;
   background-image: url(/arrow-check.e273469c.svg);
 }
 .button-option__radio {
@@ -505,28 +515,26 @@ h1, h2, h3, h4, h5, h6 {
 }
 .button-option__radio + label {
   display: inline-flex;
-  align-items: center;
 }
 .button-option__radio + label::before {
   content: "";
-  display: inline-block;
   width: 20px;
   height: 20px;
   border: 1px solid rgba(31, 32, 65, 0.25);
-  border-radius: 50%;
-  background-repeat: no-repeat;
-  background-position: center center;
   margin-right: 10px;
-  flex-shrink: 0;
-  flex-grow: 0;
-  white-space: nowrap;
-}
-.button-option__radio:checked + label {
-  display: flex;
-  position: relative;
+  cursor: pointer;
 }
 .button-option__radio:checked + label::before {
   border-color: #BC9CFF;
+}
+.button-option__radio + label {
+  align-items: center;
+}
+.button-option__radio + label::before {
+  border-radius: 50%;
+}
+.button-option__radio:checked + label {
+  position: relative;
 }
 .button-option__radio:checked + label::after {
   content: "";
@@ -537,41 +545,40 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 50%;
   background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
 }
-
-.toggle-button {
+.button-option__toggle {
   position: relative;
+  display: inline-flex;
+  align-items: center;
+  vertical-align: top;
   width: 40px;
   height: 20px;
-  vertical-align: top;
-  background: #ffffff;
-  border: 1px solid #bbc1e1;
-  border-radius: 30px;
-  outline: none;
+  background: #FFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 10px;
   cursor: pointer;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  transition: 0.3s;
+  margin-right: 10px;
 }
-.toggle-button::after {
+.button-option__toggle::after {
   content: "";
-  display: inline-block;
   position: absolute;
   left: 3px;
-  top: 1.5px;
-  width: 13px;
-  height: 13px;
-  background-color: blue;
+  width: 12px;
+  height: 12px;
+  background-color: rgba(31, 32, 65, 0.25);
   border-radius: 50%;
-  transform: translateX(0);
   transition: 0.3s;
 }
-.toggle-button:checked::after {
-  transform: translateX(calc(100% + 5px));
+.button-option__toggle:checked::after {
+  transform: translateX(calc(100% + 8px));
   background-color: #fff;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  transition: 0.3s;
 }
-.toggle-button:checked {
-  background-color: blue;
+.button-option__toggle:checked {
+  border-color: #BC9CFF;
 }
 
 @font-face {
