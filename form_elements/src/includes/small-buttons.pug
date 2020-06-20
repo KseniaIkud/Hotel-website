@@ -1,19 +1,35 @@
-.small-button
-    .small-button__checkbox
-        
-        div
-            input(type="checkbox", name='smoking', id='smoking')
-            label(for="smoking") Можно курить
-        div 
-            input(type="checkbox", name='pets', id='pets', checked)
-            label(for="pets") Можно с питомцами
-        div   
-            input(type="checkbox", name='guests-allowed', id='guests', checked)
-            label(for="guests-allowed") Можно пригласить гостей (до 10 человек)
-    .small-button__radio
-        div
-            input(type="radio", name='sex', id='male', checked)
-            label(for="male") Мужчина
-        div
-            input(type="radio", name='sex', id='female')
-            label(for="female") Женщина
+.small-buttons
+    .small-buttons__checkbox.button-option
+        .button-option__description.description checkbox buttons
+        .button-option__example
+            .button-option__input
+                input(type="checkbox", name='smoking', id='smoking').button-option__checkbox
+                label(for="smoking") Можно курить
+            .button-option__input 
+                input(type="checkbox", name='pets', id='pets', checked).button-option__checkbox
+                label(for="pets") Можно с питомцами
+            .button-option__input   
+                input(type="checkbox", name='guests-allowed', id='guests-allowed', checked).button-option__checkbox
+                label(for="guests-allowed") Можно пригласить гостей (до 10 человек)
+    .small-buttons__radio.button-option
+        .button-option__description.description radio buttons
+        .button-option__example_horizontal
+            .button-option__input
+                input(type="radio", name='sex', id='male', checked).button-option__radio
+                label(for="male") Мужчина
+            .button-option__input
+                input(type="radio", name='sex', id='female').button-option__radio
+                label(for="female") Женщина
+    .small-buttins__toggle.button-option
+        .button-option__description.description toggle
+        .button-option__example
+            .button-option__input.container
+                input(type="checkbox", id="toggle-button").button-option__toggle.toggle-button
+                label(for="toggle-button") Получать спецпредложения
+
+    .button-option
+        .button-option__description.description toggle
+    .button-option
+        .button-option__description.description like button
+    .button-option
+        .button-option__description.description rate button

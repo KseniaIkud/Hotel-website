@@ -27,6 +27,7 @@
     &__description {
         display: flex;
         justify-content: space-between;
+        max-width: 320px;
         &_add {
             @include h3-text;
             color: $dark-shade-50-color;
