@@ -656,6 +656,26 @@ h1, h2, h3, h4, h5, h6 {
 .button-option__like .like-button__active input {
   color: #BC9CFF;
 }
+.button-option__rate {
+  display: flex;
+  justify-content: space-between;
+  max-width: 260px;
+}
+.button-option__rate .rate-button {
+  max-width: 120px;
+  display: flex;
+  justify-content: space-between;
+}
+.button-option__rate .rate-button__star {
+  width: 25px;
+  height: 25px;
+  background-image: url(/star_border.61cbccc8.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.button-option__rate .rate-button__checked {
+  background-image: url(/star.647382b2.svg);
+}
 
 @font-face {
   font-family: "Montserrat";

@@ -117,18 +117,8 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"js/dropdown.js":[function(require,module,exports) {
-//open and close dropdown
-var dropDowns = document.querySelectorAll('.dropdown-form__arrow');
-dropDowns.forEach(function (dropDown) {
-  dropDown.addEventListener('click', function () {
-    var field = this.parentElement.parentElement.parentElement.parentElement.querySelector('.common-dropdown');
-    var bar = this.parentElement.parentElement.parentElement.parentElement.querySelector('.text-field__dropdown-default');
-    field.classList.toggle('hidden');
-    bar.classList.toggle('border-focus');
-    console.log('hi');
-  });
-});
+})({"js/rate-button.js":[function(require,module,exports) {
+
 },{}],"../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -333,5 +323,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/dropdown.js"], null)
-//# sourceMappingURL=/dropdown.76635db9.js.map
+},{}]},{},["../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/rate-button.js"], null)
+//# sourceMappingURL=/rate-button.5649d8d3.js.map

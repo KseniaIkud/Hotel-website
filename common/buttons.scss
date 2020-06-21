@@ -192,3 +192,23 @@
         }
     }
 }
+
+@mixin rate-button{
+    .rate-button{
+        max-width: 120px;
+        display: flex;
+        justify-content: space-between;
+        
+        &__star{
+            width: 25px;
+            height: 25px;
+            
+            background-image: url(../src/img/star_border.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+        }   
+        &__checked {
+            background-image: url(../src/img/star.svg);
+        }
+    }
+}

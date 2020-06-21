@@ -40,5 +40,11 @@
         justify-content: space-between;
         max-width: 90px;
         @include like-button;
+    }
+    &__rate {
+        display: flex;
+        justify-content: space-between;
+        max-width: 260px;
+        @include rate-button;
     }   
 }
