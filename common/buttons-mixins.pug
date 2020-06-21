@@ -1,0 +1,9 @@
+mixin like-button(value, active, action)
+    if active=='active'
+        .like-button.like-button__active
+            .like-button__heart
+            input(type='text', value= value, action= action, readonly).like-button__counter
+    else
+        .like-button
+            .like-button__heart
+            input(type='text', value= value, action= action, readonly).like-button__counter

@@ -4,11 +4,17 @@
     justify-content: space-between;
     height: 100%;
     &_horizontal {
-        display: flex;
-        justify-content: space-between;
-
-        height: 85%;
-        max-width: 221px;
+        &_radio {
+            display: flex;
+            justify-content: space-between;
+            height: 85%;
+            max-width: 221px;
+        }
+        &_like {
+            display: flex;
+            justify-content: space-between;
+            max-width: 90px;
+        }
     }
     &__input {
         display: flex;
@@ -28,5 +34,11 @@
     }
     &__toggle {
         @include toggle;
+    }
+    &__like {
+        display: flex;
+        justify-content: space-between;
+        max-width: 90px;
+        @include like-button;
     }   
 }
