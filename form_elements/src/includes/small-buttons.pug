@@ -1,36 +1,18 @@
 .small-buttons
-    .small-buttons__checkbox.button-option
-        .button-option__description.description checkbox buttons
-        .button-option__example
-            .button-option__input
-                input(type="checkbox", name='smoking', id='smoking').button-option__checkbox
-                label(for="smoking") Можно курить
-            .button-option__input 
-                input(type="checkbox", name='pets', id='pets', checked).button-option__checkbox
-                label(for="pets") Можно с питомцами
-            .button-option__input   
-                input(type="checkbox", name='guests-allowed', id='guests-allowed', checked).button-option__checkbox
-                label(for="guests-allowed") Можно пригласить гостей (до 10 человек)
-    .small-buttons__radio.button-option
-        .button-option__description.description radio buttons
-        .button-option__example_horizontal
-            .button-option__input
-                input(type="radio", name='sex', id='male', checked).button-option__radio
-                label(for="male") Мужчина
-            .button-option__input
-                input(type="radio", name='sex', id='female').button-option__radio
-                label(for="female") Женщина
-    .small-buttons__toggle.button-option
-        .button-option__description.description toggle
-        .button-option__example
-            .button-option__input
-                input(type="checkbox", id="toggle-checked", checked).button-option__toggle
-                label(for="toggle-checked") Получать спецпредложения
-            .button-option__input
-                input(type="checkbox", id="toggle").button-option__toggle
-                label(for="toggle") Получать спецпредложения
-    .button-option
-        .button-option__description.description like button
-        .button-option__example
-    .button-option
-        .button-option__description.description rate button
+    .small-buttons__option
+        .small-buttons__description checkbox buttons
+        include small-buttons/checkbox
+    .small-buttons__option
+        .small-buttons__description radio buttons
+        include small-buttons/radio
+    .small-buttons__option
+        .small-buttons__description toggle
+        include small-buttons/toggle
+    .small-buttons__option
+        .small-buttons__description like button
+        include small-buttons/like
+    .small-buttons__option
+        .small-buttons__description rate button
+        include small-buttons/rate
+        
+

@@ -457,26 +457,9 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  font-family: Montserrat;
-  font-weight: normal;
-  font-size: 14px;
-  color: rgba(31, 32, 65, 0.75);
-  line-height: 24px;
-  color: rgba(31, 32, 65, 0.5);
+  border: 1px solid #000;
 }
-.small-buttons__checkbox {
-  max-width: 222px;
-}
-.small-buttons__radio {
-  max-width: 220px;
-}
-
-.button-option {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.button-option__description {
+.small-buttons__description {
   height: 35px;
   align-self: flex-start;
   max-width: 320px;
@@ -488,20 +471,33 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 15px;
   text-transform: uppercase;
 }
-.button-option__input {
+.small-buttons__option {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
 }
-.button-option__example {
+
+.button-option {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
 }
-.button-option__example_horizontal {
+.button-option_horizontal {
   display: flex;
   justify-content: space-between;
   height: 85%;
+  max-width: 221px;
+}
+.button-option__input {
+  display: flex;
+  align-items: center;
+  font-family: Montserrat;
+  font-weight: normal;
+  font-size: 14px;
+  color: rgba(31, 32, 65, 0.75);
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.5);
 }
 .button-option__checkbox {
   position: absolute;
