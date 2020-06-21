@@ -4,7 +4,7 @@ include ../../../common/dropdown-mixins
 .rooms-block
     .text-field
         .text-field__description
-            .text-field__description.description dropdown
+            .text-field__description_main dropdown
             .text-field__description_add default
         .text-field__dropdown-default
             +input-dropdown("2 спальни, 2 кровати...")
@@ -17,7 +17,7 @@ include ../../../common/dropdown-mixins
     .example
         .room
             .text-field__description
-                .text-field__description.description dropdown
+                .text-field__description_main dropdown
                 .text-field__description_add expanded
             .room__field
                 +input-dropdown("2 спальни, 2 кровати...")

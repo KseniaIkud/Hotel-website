@@ -28,6 +28,9 @@
         display: flex;
         justify-content: space-between;
         max-width: 320px;
+        &_main {
+            @include title;
+        }
         &_add {
             @include h3-text;
             color: $dark-shade-50-color;

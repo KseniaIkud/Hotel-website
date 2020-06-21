@@ -54,6 +54,11 @@ $green-color: #6fcf97;
     line-height: 24px;
 }
 
+@mixin title {
+    max-width: 320px;
+    margin-bottom: 5px;
+    @include h3-text;
+}
 //nulling styles
 * {
     margin: 0;

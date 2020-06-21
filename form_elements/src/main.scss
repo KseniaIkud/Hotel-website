@@ -43,11 +43,9 @@
     margin: 140px;
 }
 
-.description {
-    max-width: 320px;
-    margin-bottom: 5px;
-    @include h3-text;
-}
+//.description {
+//    @include title
+//}
 
 
 //classes for dropdowns js scripts

@@ -20,6 +20,7 @@
     &__description{
         height: 35px;
         align-self: flex-start;
+        @include title
     }
     &__input {
         display: flex;

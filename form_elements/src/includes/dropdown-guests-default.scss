@@ -1,6 +1,9 @@
 .guests {
     width: 320px;
     background-color: #FFF;
+    &__description {
+        @include title;
+    }
     &__field {
         @include dropdown;
         border-color: $dark-shade-50-color;
