@@ -1,3 +1,4 @@
+
 //nulling, common colors, etc
 @import '../../common/common-styles.scss';
 @import '../../common/buttons.scss';
@@ -23,6 +24,11 @@
 @import '../src/includes/small-buttons/toggle.scss';
 @import '../src/includes/small-buttons/like.scss';
 @import '../src/includes/small-buttons/rate.scss';
+
+//range slider
+@import "https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css";
+@import "../src/includes/main-buttons/range-slider.scss";
+
 
 //fonts
 @font-face {
