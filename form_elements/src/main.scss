@@ -15,8 +15,14 @@
 
 //buttons styles
 @import '../src/includes/small-buttons-ui-kit.scss';
-@import '../src/includes/small-buttons-common.scss';
 @import '../src/includes/main-buttons.scss';
+
+//small-buttons
+@import '../src/includes/small-buttons/checkbox.scss';
+@import '../src/includes/small-buttons/radio.scss';
+@import '../src/includes/small-buttons/toggle.scss';
+@import '../src/includes/small-buttons/like.scss';
+@import '../src/includes/small-buttons/rate.scss';
 
 //fonts
 @font-face {

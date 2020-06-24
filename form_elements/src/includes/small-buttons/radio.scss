@@ -1,0 +1,18 @@
+.radio-buttons {
+    display: flex;
+    justify-content: space-between;
+    max-width: 220px;
+    &__form {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__input {
+        @include radio-check;
+        @include radio;
+    }
+    &__label {
+        @include body-text;
+        color: $dark-shade-50-color;
+        
+    }
+}

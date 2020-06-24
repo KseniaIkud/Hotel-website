@@ -1,0 +1,6 @@
+.like-buttons {
+    display: flex;
+    justify-content: space-between;
+    max-width: 90px;
+    @include like-button;
+}
