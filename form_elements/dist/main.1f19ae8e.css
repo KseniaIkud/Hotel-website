@@ -167,12 +167,23 @@ h1, h2, h3, h4, h5, h6 {
   height: 44px;
   width: 320px;
 }
+.text-field__default:focus-within {
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
 .text-field__default .text-form {
   padding: 14px;
+  height: 44px;
   width: 100%;
+  display: flex;
+  text-align: center;
 }
 .text-field__default .text-form__input {
   width: 100%;
+  font-family: Montserrat;
+  font-weight: normal;
+  font-size: 14px;
+  color: rgba(31, 32, 65, 0.75);
+  line-height: 24px;
 }
 .text-field__default .text-form__input::placeholder {
   font-family: Montserrat;
@@ -199,14 +210,18 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 320px;
 }
 .text-field__focus .text-form {
-  height: 44px;
+  height: 41px;
   padding: 14px;
   width: 100%;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  text-align: center;
 }
 .text-field__focus .text-form__input {
+  font-family: Montserrat;
+  font-weight: normal;
+  font-size: 14px;
+  color: rgba(31, 32, 65, 0.75);
+  line-height: 24px;
   width: 100%;
 }
 .text-field__focus .text-form__input::placeholder {
@@ -288,6 +303,9 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 4px;
   max-width: 267px;
 }
+.text-field__email:focus-within {
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
 .text-field__email .email-form {
   width: 90%;
   margin: auto;
@@ -295,6 +313,13 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.text-field__email .email-form__text {
+  font-family: Montserrat;
+  font-weight: normal;
+  font-size: 14px;
+  color: rgba(31, 32, 65, 0.75);
+  line-height: 24px;
 }
 .text-field__email .email-form__text::placeholder {
   font-family: Montserrat;
@@ -314,7 +339,6 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 14px;
   color: rgba(31, 32, 65, 0.75);
   line-height: 24px;
-  margin-left: 10px;
 }
 .text-field__email .email-form__arrow {
   background: url("/arrow_subscription.4953c458.png") 100% 50% no-repeat;

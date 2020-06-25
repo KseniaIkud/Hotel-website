@@ -2,6 +2,9 @@
     border: 1px solid $dark-shade-25-color;
     background-color: #FFF;
     border-radius: 4px;
+    &:focus-within {
+        border: 1px solid $dark-shade-50-color;
+    }
     .email-form {
         //parent width - 260px or 267px
         width: 90%;
@@ -10,8 +13,8 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        
         &__text{
+            @include body-text;
            &::placeholder {
             @include body-text;
             color: $dark-shade-25-color;
@@ -22,7 +25,6 @@
         }
             &:focus {
                 @include body-text;
-                margin-left: 10px;
             }
         }
         &__arrow{
@@ -31,6 +33,8 @@
            cursor: pointer;
         }
     }
+    
+    
 }
 
 @mixin default {
@@ -39,21 +43,29 @@
     border-radius: 4px;
     max-width: 320px;
     height: 44px;
+    &:focus-within {
+        border: 1px solid $dark-shade-50-color;
+    }
     .text-form {
         padding: 14px;
+        height: 44px;
         width: 100%;
+        display: flex;
+        text-align: center;
         &__input {
             width: 100%;
+            @include body-text;
             &::placeholder {
                 @include body-text;
                 color: $dark-shade-25-color;
             }
             &:focus {
                 @include body-text;
+                &::placeholder {
+                    color: transparent;
+                }
             }
-            &:focus::placeholder {
-                color: transparent;
-        }
+            
         }
     }    
 }
@@ -65,13 +77,13 @@
     border-radius: 4px;
     max-width: 320px;
     .text-form {
-        height: 44px;
+        height: 41px;
         padding: 14px;
         width: 100%;
         display: flex;
-        align-items: center;
-        justify-content: space-between;
+        text-align: center;
         &__input {
+            @include body-text;
             width: 100%;
             &::placeholder {
                 @include body-text;

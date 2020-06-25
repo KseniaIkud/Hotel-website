@@ -40,6 +40,7 @@
     &__default {
         @include default;
         width: 320px;
+        
     }
     &__focus {
         @include focus-demonstration;
