@@ -114,6 +114,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  max-width: 320px;
 }
 .inputs__regular {
   height: 50%;
@@ -137,7 +138,6 @@ h1, h2, h3, h4, h5, h6 {
 .text-field__description {
   display: flex;
   justify-content: space-between;
-  max-width: 320px;
 }
 .text-field__description_main {
   max-width: 320px;
@@ -210,7 +210,7 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 320px;
 }
 .text-field__focus .text-form {
-  height: 41px;
+  height: 44px;
   padding: 14px;
   width: 100%;
   display: flex;
@@ -419,7 +419,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 .guests__clear {
   color: rgba(31, 32, 65, 0.5);
-  visibility: hidden;
 }
 .guests__submit {
   cursor: pointer;
