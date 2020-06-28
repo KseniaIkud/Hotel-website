@@ -544,6 +544,16 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: space-between;
 }
 
+.main-buttons {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.main-buttons__buttons {
+  margin-top: 3px;
+}
+
 .checkbox-buttons {
   height: 97px;
   display: flex;
@@ -987,6 +997,65 @@ div.ui-slider-range.ui-widget-header {
 }
 .button-element__payment {
   max-width: 320px;
+}
+
+.pagination {
+  max-width: 241px;
+}
+.pagination__title {
+  max-width: 320px;
+  margin-bottom: 5px;
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 12px;
+  color: #1F2041;
+  line-height: 15px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.pagination__buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+.pagination__option {
+  width: 40px;
+  height: 40px;
+  font-family: Montserrat;
+  font-size: 12px;
+  color: rgba(31, 32, 65, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pagination__option_selected {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 800;
+  color: #FFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pagination__option_forward {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-image: url(/arrow_forward.04b75f4b.svg), linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.pagination__description {
+  font-family: Montserrat;
+  font-weight: normal;
+  font-size: 14px;
+  color: rgba(31, 32, 65, 0.75);
+  line-height: 24px;
+  text-align: center;
 }
 
 @font-face {
