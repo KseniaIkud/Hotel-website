@@ -1,0 +1,14 @@
+.checkbox-list {
+    height: 174.5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &__input {
+        @include radio-check;
+        @include check;
+    }
+    &__label {
+        @include body-text;
+        color: $dark-shade-50-color;
+    }
+}

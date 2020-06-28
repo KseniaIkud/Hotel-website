@@ -35,6 +35,10 @@
 //pagination
 @import '../src/includes/main-buttons/pagination.scss';
 
+//expandable checkbox-list
+@import '../src/includes/expandable-list.scss';
+@import '../../common/expandable-checkbox-list.scss';
+
 //fonts
 @font-face {
 	font-family: 'Montserrat';
