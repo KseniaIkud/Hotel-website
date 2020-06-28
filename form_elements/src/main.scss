@@ -29,7 +29,8 @@
 @import "https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css";
 @import "../src/includes/main-buttons/range-slider.scss";
 
-
+//buttons common 
+@import '../src/includes/main-buttons/buttons.scss';
 //fonts
 @font-face {
 	font-family: 'Montserrat';
@@ -68,6 +69,7 @@
 .button-pointer {
     cursor: pointer;
 }
+
 .hidden {
     display: none;
 }
@@ -101,16 +103,15 @@
         margin-bottom: 6px;
         display: flex;
         justify-content: space-between;
-        font-family: Montserrat;
-        font-size: 12px;
-        color: $purple-color;
-        text-transform: uppercase;
-        font-weight: bold;
+        
     }
     &__clear {
+        @include h3-text;
         color: $dark-shade-50-color;
     }
     &__submit {
+        @include h3-text;
         cursor: pointer;
+        color: $purple-color;
     }
 }

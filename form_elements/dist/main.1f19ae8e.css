@@ -833,6 +833,162 @@ div.ui-slider-range.ui-widget-header {
   margin: -2px;
 }
 
+.button-element__example {
+  display: flex;
+  flex-direction: column;
+  height: 236px;
+  justify-content: space-between;
+}
+.button-element__title {
+  max-width: 320px;
+  margin-bottom: 5px;
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 12px;
+  color: #1F2041;
+  line-height: 15px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.button-element__option {
+  max-width: 218px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.button-element__option_small {
+  max-width: 142px;
+  display: flex;
+  justify-content: space-between;
+}
+.button-element__fill {
+  font-family: Montserrat;
+  font-weight: normal;
+  font-size: 14px;
+  color: rgba(31, 32, 65, 0.75);
+  line-height: 24px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  color: #FFF;
+  padding: 9px 20px;
+  border-radius: 22px;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  text-align: center;
+  display: block;
+}
+.button-element__fill:hover {
+  opacity: 0.5;
+}
+.button-element__fill_hovering {
+  font-family: Montserrat;
+  font-weight: normal;
+  font-size: 14px;
+  color: rgba(31, 32, 65, 0.75);
+  line-height: 24px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  color: #FFF;
+  padding: 9px 20px;
+  border-radius: 22px;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  text-align: center;
+  display: block;
+  opacity: 0.5;
+}
+.button-element__border {
+  font-family: Montserrat;
+  font-weight: normal;
+  font-size: 14px;
+  color: rgba(31, 32, 65, 0.75);
+  line-height: 24px;
+  white-space: nowrap;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  color: #BC9CFF;
+  text-transform: uppercase;
+  background-color: #FFF;
+  background-clip: padding-box;
+  border: 2px solid transparent;
+  border-radius: 22px;
+  padding: 12px 17.5px;
+  margin: auto;
+  position: relative;
+  z-index: 1;
+}
+.button-element__border::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: -2px;
+  z-index: -1;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-radius: 22px;
+}
+.button-element__border:hover {
+  border: 2px solid rgba(225, 225, 225, 0.5);
+}
+.button-element__border_hovering {
+  font-family: Montserrat;
+  font-weight: normal;
+  font-size: 14px;
+  color: rgba(31, 32, 65, 0.75);
+  line-height: 24px;
+  white-space: nowrap;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  color: #BC9CFF;
+  text-transform: uppercase;
+  background-color: #FFF;
+  background-clip: padding-box;
+  border: 2px solid transparent;
+  border-radius: 22px;
+  padding: 12px 17.5px;
+  margin: auto;
+  position: relative;
+  z-index: 1;
+  border: 2px solid rgba(225, 225, 225, 0.5);
+}
+.button-element__border_hovering::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: -2px;
+  z-index: -1;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-radius: 22px;
+}
+.button-element__plain-text {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 12px;
+  color: #1F2041;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #BC9CFF;
+}
+.button-element__plain-text_inactive {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 12px;
+  color: #1F2041;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: rgba(31, 32, 65, 0.5);
+}
+.button-element__payment {
+  max-width: 320px;
+}
+
 @font-face {
   font-family: "Montserrat";
   src: url("/Montserrat-Regular.21b801b8.eot");
@@ -900,17 +1056,25 @@ div.ui-slider-range.ui-widget-header {
   margin-bottom: 6px;
   display: flex;
   justify-content: space-between;
-  font-family: Montserrat;
-  font-size: 12px;
-  color: #BC9CFF;
-  text-transform: uppercase;
-  font-weight: bold;
 }
 .common-dropdown__clear {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 12px;
+  color: #1F2041;
+  line-height: 15px;
+  text-transform: uppercase;
   color: rgba(31, 32, 65, 0.5);
 }
 .common-dropdown__submit {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 12px;
+  color: #1F2041;
+  line-height: 15px;
+  text-transform: uppercase;
   cursor: pointer;
+  color: #BC9CFF;
 }
 
 /*# sourceMappingURL=/main.1f19ae8e.css.map */

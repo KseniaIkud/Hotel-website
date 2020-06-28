@@ -156,6 +156,9 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 4px;
   width: 260px;
 }
+.widget-footer__form:focus-within {
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
 .widget-footer__form .email-form {
   width: 90%;
   margin: auto;
@@ -163,6 +166,13 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.widget-footer__form .email-form__text {
+  font-family: Montserrat;
+  font-weight: normal;
+  font-size: 14px;
+  color: rgba(31, 32, 65, 0.75);
+  line-height: 24px;
 }
 .widget-footer__form .email-form__text::placeholder {
   font-family: Montserrat;
@@ -175,6 +185,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 .widget-footer__form .email-form__text:focus::placeholder {
   color: transparent;
+}
+.widget-footer__form .email-form__text:focus {
+  font-family: Montserrat;
+  font-weight: normal;
+  font-size: 14px;
+  color: rgba(31, 32, 65, 0.75);
+  line-height: 24px;
 }
 .widget-footer__form .email-form__arrow {
   background: url("/arrow_subscription.4953c458.png") 100% 50% no-repeat;
@@ -285,6 +302,7 @@ h1, h2, h3, h4, h5, h6 {
 .buttons {
   width: 250px;
   margin-left: 30px;
+  align-items: center;
   display: flex;
   justify-content: space-between;
 }
@@ -300,11 +318,11 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
   color: #BC9CFF;
   text-transform: uppercase;
-  background-color: #fff;
+  background-color: #FFF;
   background-clip: padding-box;
   border: 2px solid transparent;
-  border-radius: 20px;
-  padding: 8px 17.5px;
+  border-radius: 22px;
+  padding: 9px 20px;
   margin: auto;
   position: relative;
   z-index: 1;
@@ -319,7 +337,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: -2px;
   z-index: -1;
   background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-  border-radius: 20px;
+  border-radius: 22px;
 }
 .buttons__transparent:hover {
   border: 2px solid rgba(225, 225, 225, 0.5);
@@ -334,9 +352,11 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 12px;
   font-weight: bold;
   color: #FFF;
-  padding: 9.5px 20px;
+  padding: 9px 20px;
   border-radius: 22px;
   background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  text-align: center;
+  display: block;
 }
 .buttons__purple:hover {
   opacity: 0.5;
