@@ -2,8 +2,11 @@
     border: 1px solid $dark-shade-25-color;
     background-color: #FFF;
     border-radius: 4px;
-    &:focus-within {
+    &:focus-within, &:hover{
         border: 1px solid $dark-shade-50-color;
+    }
+    &:hover .email-form__text::placeholder{
+        color: $dark-shade-50-color;
     }
     .email-form {
         //parent width - 260px or 267px
@@ -43,8 +46,11 @@
     border-radius: 4px;
     max-width: 320px;
     height: 44px;
-    &:focus-within {
+    &:focus-within, &:hover {
         border: 1px solid $dark-shade-50-color;
+    }
+    &:hover .text-form__input::placeholder{
+        color: $dark-shade-50-color;
     }
     .text-form {
         padding: 14px;
@@ -64,10 +70,9 @@
                 &::placeholder {
                     color: transparent;
                 }
-            }
-            
+            }    
         }
-    }    
+    }
 }
 
 // Only for UI kit, focus styles are already in default mixin
@@ -97,6 +102,9 @@
     background-color: #FFF;
     border-radius: 4px;
     height: 44px;
+    &:hover {
+        border: 1px solid $dark-shade-50-color;
+    }
     .dropdown-form {
         width: 90%;
         margin: auto;

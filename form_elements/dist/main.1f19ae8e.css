@@ -167,8 +167,11 @@ h1, h2, h3, h4, h5, h6 {
   height: 44px;
   width: 320px;
 }
-.text-field__default:focus-within {
+.text-field__default:focus-within, .text-field__default:hover {
   border: 1px solid rgba(31, 32, 65, 0.5);
+}
+.text-field__default:hover .text-form__input::placeholder {
+  color: rgba(31, 32, 65, 0.5);
 }
 .text-field__default .text-form {
   padding: 14px;
@@ -238,6 +241,9 @@ h1, h2, h3, h4, h5, h6 {
   height: 44px;
   max-width: 320px;
 }
+.text-field__dropdown-default:hover {
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
 .text-field__dropdown-default .dropdown-form {
   width: 90%;
   margin: auto;
@@ -275,6 +281,9 @@ h1, h2, h3, h4, h5, h6 {
   height: 44px;
   max-width: 266px;
 }
+.text-field__filter:hover {
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
 .text-field__filter .dropdown-form {
   width: 90%;
   margin: auto;
@@ -303,8 +312,11 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 4px;
   max-width: 267px;
 }
-.text-field__email:focus-within {
+.text-field__email:focus-within, .text-field__email:hover {
   border: 1px solid rgba(31, 32, 65, 0.5);
+}
+.text-field__email:hover .email-form__text::placeholder {
+  color: rgba(31, 32, 65, 0.5);
 }
 .text-field__email .email-form {
   width: 90%;
@@ -367,6 +379,9 @@ h1, h2, h3, h4, h5, h6 {
   height: 44px;
   border-color: rgba(31, 32, 65, 0.5);
   border-radius: 4px 4px 0 0;
+}
+.guests__field:hover {
+  border: 1px solid rgba(31, 32, 65, 0.5);
 }
 .guests__field .dropdown-form {
   width: 90%;
@@ -442,6 +457,9 @@ h1, h2, h3, h4, h5, h6 {
   height: 44px;
   border-color: rgba(31, 32, 65, 0.5);
   border-radius: 4px 4px 0 0;
+}
+.room__field:hover {
+  border: 1px solid rgba(31, 32, 65, 0.5);
 }
 .room__field .dropdown-form {
   width: 90%;
