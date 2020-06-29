@@ -1310,6 +1310,42 @@ div.ui-slider-range.ui-widget-header {
   margin-left: -22.5px;
 }
 
+.benefits {
+  max-width: 280px;
+  height: 137px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.benefits__option {
+  display: flex;
+  align-items: center;
+}
+.benefits__split {
+  width: 280px;
+  height: 1px;
+  background-color: rgba(31, 32, 65, 0.1);
+  position: absolute;
+  margin-top: 45px;
+}
+.benefits__emoticon {
+  margin-right: 14px;
+  margin-left: 2px;
+}
+.benefits__location {
+  margin-right: 16px;
+  margin-left: 4px;
+}
+.benefits__text {
+  font-family: Montserrat;
+  font-weight: normal;
+  font-size: 14px;
+  color: rgba(31, 32, 65, 0.75);
+  line-height: 24px;
+}
+.benefits__title {
+  font-weight: bold;
+}
 @font-face {
   font-family: "Montserrat";
   src: url("/Montserrat-Regular.21b801b8.eot");

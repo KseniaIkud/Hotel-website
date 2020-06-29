@@ -1,0 +1,36 @@
+.benefits {
+    
+    max-width: 280px;
+    height: 137px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &__option {
+        display: flex;
+        align-items: center;
+    }
+    &__split {
+        width: 280px;
+        height: 1px;
+        background-color: rgba(31, 32, 65, 0.1);
+        position: absolute;
+        margin-top: 45px;
+        
+    }
+    &__emoticon {
+        margin-right: 14px;
+        margin-left: 2px;
+    }
+    &__location {
+        margin-right: 16px;
+        margin-left: 4px;
+    }
+    &__text {
+        @include body-text;
+    }
+    &__title {
+        font-weight: bold;
+    }
+    &__description {
+    }
+}
