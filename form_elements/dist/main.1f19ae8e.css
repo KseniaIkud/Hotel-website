@@ -1266,6 +1266,50 @@ div.ui-slider-range.ui-widget-header {
   max-width: 200px;
 }
 
+.bullet {
+  height: 143px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.bullet__title {
+  max-width: 320px;
+  margin-bottom: 5px;
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 12px;
+  color: #1F2041;
+  line-height: 15px;
+  text-transform: uppercase;
+  height: 10px;
+}
+.bullet__list {
+  max-width: 260px;
+  height: 115px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.bullet__item {
+  margin-left: 20px;
+  position: relative;
+  font-family: Montserrat;
+  font-weight: normal;
+  font-size: 14px;
+  color: rgba(31, 32, 65, 0.75);
+  line-height: 24px;
+}
+.bullet__item::before {
+  content: "•";
+  color: rgba(31, 32, 65, 0.25);
+  font-size: 43px;
+  display: inline-block;
+  font-weight: bold;
+  position: absolute;
+  margin-top: -3.5px;
+  margin-left: -22.5px;
+}
+
 @font-face {
   font-family: "Montserrat";
   src: url("/Montserrat-Regular.21b801b8.eot");
