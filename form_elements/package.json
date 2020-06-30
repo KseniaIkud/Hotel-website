@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "cssnano": "^4.1.10",
     "pug": "^3.0.0",
     "sass": "^1.26.8"
   }
