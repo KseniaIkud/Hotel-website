@@ -1,6 +1,6 @@
 .expansion{
-    height: 300px;
     max-width: 266px;
+    height: 315px;
     &__head {
         display: flex;
         max-width: 266px;
@@ -25,11 +25,11 @@
         position: relative;
     }
     &__cut {
-        margin-bottom: 20px;
+        margin-bottom: 48px;
     }
     &__dropdown {
         position: absolute;
-        top: 46.5px;
+        top: 33px;
         background-color: #FFF;
     }
 }

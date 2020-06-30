@@ -1,18 +1,19 @@
 
 .inputs {
-    height: 636px;
+    height: 634px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     max-width: 320px;
+    margin: 0 54.5px 48px 0;
     &__regular {
-        height: 50%;
+        height: 319px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
     }
     &__small {
-        height: 43%;
+        height: 275px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;

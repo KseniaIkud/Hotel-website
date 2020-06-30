@@ -110,20 +110,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .inputs {
-  height: 636px;
+  height: 634px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   max-width: 320px;
+  margin: 0 54.5px 48px 0;
 }
 .inputs__regular {
-  height: 50%;
+  height: 319px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 .inputs__small {
-  height: 43%;
+  height: 275px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -440,7 +441,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .rooms-block {
-  height: 278px;
+  height: 266px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -492,6 +493,71 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
   border-radius: 0 0 4px 4px;
   justify-content: space-between;
+}
+
+.button-hidden {
+  visibility: hidden;
+}
+
+.button-pointer {
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.border {
+  border-radius: 4px;
+  border-color: rgba(31, 32, 65, 0.25);
+}
+
+.border-focus {
+  border-radius: 4px 4px 0 0;
+  border-color: rgba(31, 32, 65, 0.5);
+}
+
+.common-dropdown {
+  position: absolute;
+  background-color: #FFF;
+  z-index: 1;
+  margin-top: -1px;
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  border-radius: 0 0 4px 4px;
+  padding: 7px;
+  padding-top: 5px;
+  padding-left: 15px;
+}
+.common-dropdown__rows {
+  height: 103px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.common-dropdown__buttons {
+  margin-top: 25px;
+  margin-bottom: 6px;
+  display: flex;
+  justify-content: space-between;
+}
+.common-dropdown__clear {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 12px;
+  color: #1F2041;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: rgba(31, 32, 65, 0.5);
+}
+.common-dropdown__submit {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 12px;
+  color: #1F2041;
+  line-height: 15px;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #BC9CFF;
 }
 
 .small-buttons {
@@ -1076,8 +1142,8 @@ div.ui-slider-range.ui-widget-header {
 }
 
 .expansion {
-  height: 300px;
   max-width: 266px;
+  height: 315px;
 }
 .expansion__head {
   display: flex;
@@ -1110,11 +1176,11 @@ div.ui-slider-range.ui-widget-header {
   position: relative;
 }
 .expansion__cut {
-  margin-bottom: 20px;
+  margin-bottom: 48px;
 }
 .expansion__dropdown {
   position: absolute;
-  top: 46.5px;
+  top: 33px;
   background-color: #FFF;
 }
 
@@ -1433,84 +1499,19 @@ div.ui-slider-range.ui-widget-header {
   src: url("/Montserrat-Bold.70d570c7.eot");
   src: local("☺"), url("/Montserrat-Bold.73e94c2c.woff") format("woff"), url("/Montserrat-Bold.f3410305.ttf") format("truetype"), url("/Montserrat-Bold.0fff2121.svg") format("svg");
   font-weight: 700;
-  font-style: bold;
+  font-style: normal;
 }
+.logo-bw {
+  margin: 30px 0 0 30px;
+}
+
 .form-elements {
   max-width: 1000px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 125px;
-  grid-row-gap: 100px;
-  margin: 140px;
-}
-
-.jhl {
-  border: 1px solid #000;
-}
-
-.button-hidden {
-  visibility: hidden;
-}
-
-.button-pointer {
-  cursor: pointer;
-}
-
-.hidden {
-  display: none;
-}
-
-.border {
-  border-radius: 4px;
-  border-color: rgba(31, 32, 65, 0.25);
-}
-
-.border-focus {
-  border-radius: 4px 4px 0 0;
-  border-color: rgba(31, 32, 65, 0.5);
-}
-
-.common-dropdown {
-  position: absolute;
-  background-color: #FFF;
-  z-index: 1;
-  margin-top: -1px;
-  border: 1px solid rgba(31, 32, 65, 0.5);
-  border-radius: 0 0 4px 4px;
-  padding: 7px;
-  padding-top: 5px;
-  padding-left: 15px;
-}
-.common-dropdown__rows {
-  height: 103px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.common-dropdown__buttons {
-  margin-top: 25px;
-  margin-bottom: 6px;
-  display: flex;
-  justify-content: space-between;
-}
-.common-dropdown__clear {
-  font-family: Montserrat;
-  font-weight: 700;
-  font-size: 12px;
-  color: #1F2041;
-  line-height: 15px;
-  text-transform: uppercase;
-  color: rgba(31, 32, 65, 0.5);
-}
-.common-dropdown__submit {
-  font-family: Montserrat;
-  font-weight: 700;
-  font-size: 12px;
-  color: #1F2041;
-  line-height: 15px;
-  text-transform: uppercase;
-  cursor: pointer;
-  color: #BC9CFF;
+  grid-column-gap: 72px;
+  grid-row-gap: 53px;
+  margin: 63px 141px;
 }
 
 /*# sourceMappingURL=/main.1f19ae8e.css.map */
