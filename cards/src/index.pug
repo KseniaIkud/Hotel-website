@@ -3,5 +3,16 @@ html(lang="en")
     head
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        title Document
+        title Cards
+        script(src="./main.js")
     body
+        .cards
+            .cards__column
+                include includes/search-form
+                include includes/registration
+            .cards__column
+                include includes/calc-price
+                include includes/sign-in
+            .cards__column
+                include includes/datepicker-calendar
+                include includes/rooms

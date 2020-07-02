@@ -1,0 +1,79 @@
+.datepicker {
+    &--day-name {
+        color: $purple-color;
+        font-family: Montserrat;
+        font-weight: bold;
+    }
+    &--cell.-range-from- {
+        border: none;
+        border-radius: 50%;
+        color: #FFF;
+        background: $purple-color;
+        font-weight: bold;
+        &::after {
+            content: '';
+            height: 100%;
+            width: 60%;
+            position: absolute;
+            left: 13.8px;
+            background: $purple-color;
+            opacity: 0.25;
+            z-index: -1;
+
+        }
+    }
+    &--cell.-range-to- {
+        border: none;
+        border-radius: 50%;
+        color: #FFF;
+        background: $purple-color;
+        font-weight: bold;
+        &::before {
+            content: '';
+            height: 100%;
+            width: 60%;
+            position: absolute;
+            right: 13.8px;
+            background-color: $purple-color;
+            opacity: 0.25;
+            z-index: -1;
+        }
+    }
+    &--cells {
+        font-family: Montserrat;
+        color: $dark-shade-50-color;
+    }
+    &--cell.-current- {
+        background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+        border-radius: 50%;
+        color: #FFF;
+        font-weight: bold;
+    }
+    &--cell.-selected- {
+        background: $purple-color;
+        &.-current- {
+            background: $purple-color;
+        }
+        &.-focus- {
+            background: $purple-color;
+            &::after, &::before {
+                background: none;
+            }
+        }
+    }
+    &--cell.-in-range- {
+        &::before {
+            content: '';
+            z-index: -1;
+            background: $purple-color;
+            opacity: 0.25;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+        }
+        background: none;
+        color: $dark-shade-50-color;
+        
+        
+    }
+}

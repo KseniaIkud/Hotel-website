@@ -1,0 +1,50 @@
+//nulling, common colors, etc
+@import '../../common/common-styles.scss';
+@import '../../common/buttons.scss';
+
+//primitives
+@import '../../common/inputs.scss';
+
+//search-form
+@import '../src/includes/search-form.scss';
+
+//registration
+@import '../src/includes/registration.scss';
+
+//price calculation
+@import '../src/includes/calc-price.scss';
+
+//sign in form
+@import '../src/includes/sign-in.scss';
+
+//datepicker
+@import '../src/includes/datepicker-calendar.scss';
+@import '../src/includes/datepicker-plugin/datepicker.css';
+
+//rooms
+@import '../src/includes/rooms.scss';
+
+
+//fonts
+@font-face {
+	font-family: 'Montserrat';
+	src: url('fonts/Montserrat-Regular.eot');
+	src: local('☺'), url('fonts/Montserrat-Regular.woff') format('woff'), url('fonts/Montserrat-Regular.ttf') format('truetype'), url('fonts/Montserrat-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('fonts/Montserrat-Bold.eot');
+	src: local('☺'), url('fonts/Montserrat-Bold.woff') format('woff'), url('fonts/Montserrat-Bold.ttf') format('truetype'), url('fonts/Montserrat-Bold.svg') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+
+.cards {
+    max-width: 1160px;
+    display: flex;
+    justify-content: space-between;
+
+}
