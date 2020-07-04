@@ -42,6 +42,38 @@
 	font-style: normal;
 }
 
+@font-face {
+	font-family: 'Quicksand';
+	src: url('fonts/Quicksand-Regular.eot');
+	src: local('☺'), url('fonts/Quicksand-Regular.woff') format('woff'), url('fonts/Quicksand-Regular.ttf') format('truetype'), url('fonts/Quicksand-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Quicksand';
+	src: url('fonts/Quicksand-Bold.eot');
+	src: local('☺'), url('fonts/Quicksand-Bold.woff') format('woff'), url('fonts/Quicksand-Bold.ttf') format('truetype'), url('fonts/Quicksand-Bold.svg') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'OpenSans';
+	src: url('fonts/OpenSans-Regular.eot');
+	src: local('☺'), url('fonts/OpenSans-Regular.woff') format('woff'), url('fonts/OpenSans-Regular.ttf') format('truetype'), url('fonts/OpenSans-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'OpenSans';
+	src: url('fonts/OpenSans-Bold.eot');
+	src: local('☺'), url('fonts/OpenSans-Bold.woff') format('woff'), url('fonts/OpenSans-Bold.ttf') format('truetype'), url('fonts/OpenSans-Bold.svg') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+
 .cards {
     max-width: 1160px;
     display: flex;

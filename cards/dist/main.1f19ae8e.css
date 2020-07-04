@@ -685,10 +685,66 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
 }
 
+.datepicker {
+  padding: 10px 15px;
+  width: 287px;
+}
+.datepicker--pointer {
+  display: none;
+}
+.datepicker-inline .datepicker {
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  border: 1px solid rgba(31, 32, 65, 0.05);
+  border-radius: 4px;
+  height: 369px;
+}
+.datepicker--nav {
+  margin-bottom: 24px;
+  border: none;
+}
+.datepicker--nav-title {
+  font-family: Quicksand, OpenSans;
+  font-weight: 700;
+  font-size: 19px;
+  color: #1F2041;
+  line-height: 24px;
+  opacity: 1;
+}
+.datepicker--nav-action svg {
+  width: 0;
+}
+.datepicker--nav-action:first-child {
+  background-image: url("/arrow_back.81d852c4.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  color: red !important;
+  margin-left: -4px;
+}
+.datepicker--nav-action:last-child {
+  background-image: url("/arrow_forward.04b75f4b.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  margin-right: -4px;
+}
 .datepicker--day-name {
   color: #BC9CFF;
   font-family: Montserrat;
   font-weight: bold;
+  text-transform: capitalize;
+}
+.datepicker--cells {
+  font-family: Montserrat;
+  color: rgba(31, 32, 65, 0.5);
+  font-size: 12px;
+  width: 280px;
+  margin-top: 15px;
+}
+.datepicker--cell {
+  height: 40px;
+  width: 40px;
+}
+.datepicker--cell-year- {
+  color: red !important;
 }
 .datepicker--cell.-range-from- {
   border: none;
@@ -702,7 +758,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 100%;
   width: 60%;
   position: absolute;
-  left: 13.8px;
+  left: 16px;
   background: #BC9CFF;
   opacity: 0.25;
   z-index: -1;
@@ -719,20 +775,22 @@ h1, h2, h3, h4, h5, h6 {
   height: 100%;
   width: 60%;
   position: absolute;
-  right: 13.8px;
+  right: 16px;
   background-color: #BC9CFF;
   opacity: 0.25;
   z-index: -1;
-}
-.datepicker--cells {
-  font-family: Montserrat;
-  color: rgba(31, 32, 65, 0.5);
 }
 .datepicker--cell.-current- {
   background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
   border-radius: 50%;
   color: #FFF;
   font-weight: bold;
+}
+.datepicker--cell:hover {
+  color: #fff;
+  font-weight: bold;
+  background-color: #BC9CFF;
+  border-radius: 50%;
 }
 .datepicker--cell.-selected- {
   background: #BC9CFF;
@@ -759,6 +817,18 @@ h1, h2, h3, h4, h5, h6 {
   height: 100%;
   position: absolute;
 }
+.datepicker--cell-day.-other-month-, .datepicker .datepicker--cell-year.-other-decade {
+  color: rgba(31, 32, 65, 0.25);
+}
+.datepicker--cell-day.-other-month-:hover, .datepicker .datepicker--cell-year.-other-decade:hover {
+  background: #BC9CFF;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 50%;
+}
+.datepicker--cell-day.-other-month-.-selected-, .datepicker .datepicker--cell-year.-other-decade.-selected- {
+  background-color: #BC9CFF;
+}
 
 @font-face {
   font-family: "Montserrat";
@@ -771,6 +841,34 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat";
   src: url("/Montserrat-Bold.70d570c7.eot");
   src: local("☺"), url("/Montserrat-Bold.73e94c2c.woff") format("woff"), url("/Montserrat-Bold.f3410305.ttf") format("truetype"), url("/Montserrat-Bold.0fff2121.svg") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Quicksand";
+  src: url("/Quicksand-Regular.0cfee767.eot");
+  src: local("☺"), url("/Quicksand-Regular.802b5f30.woff") format("woff"), url("/Quicksand-Regular.8a0a465b.ttf") format("truetype"), url("/Quicksand-Regular.d6fe3367.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Quicksand";
+  src: url("/Quicksand-Bold.a0ba9881.eot");
+  src: local("☺"), url("/Quicksand-Bold.9d6d9460.woff") format("woff"), url("/Quicksand-Bold.e8196955.ttf") format("truetype"), url("/Quicksand-Bold.e7597636.svg") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "OpenSans";
+  src: url("/OpenSans-Regular.d7b18aa2.eot");
+  src: local("☺"), url("/OpenSans-Regular.5d698a25.woff") format("woff"), url("/OpenSans-Regular.4f32e784.ttf") format("truetype"), url("/OpenSans-Regular.9956fce7.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "OpenSans";
+  src: url("/OpenSans-Bold.887202cf.eot");
+  src: local("☺"), url("/OpenSans-Bold.ef4dedc9.woff") format("woff"), url("/OpenSans-Bold.81f0cd2d.ttf") format("truetype"), url("/OpenSans-Bold.521f2c39.svg") format("svg");
   font-weight: 700;
   font-style: normal;
 }
