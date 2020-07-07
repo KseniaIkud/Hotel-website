@@ -1,0 +1,39 @@
+@import '../../../form_elements/src/includes/text-fields.scss';
+@import '../../../common/dropdown-mixins.scss';
+@import '../../../form_elements/src/includes/dropdown.scss';
+
+.search-form {
+    max-width: 380px;
+    padding: 40px 30px 30px 30px;
+
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+
+    
+    &__title {
+        @include h1-text;
+        width: 320px;
+        margin-bottom: 20px;
+    }
+    &__dates {
+        display: flex;
+        width: 320px;
+        justify-content: space-between;
+        margin-bottom: 21px;
+    }
+    &__guests {
+        width: 320px;
+        margin-bottom: 31px;
+    }
+    &__button {
+        width: 320px;
+    }
+    &__link {
+        @include purple-button;
+        &:hover {
+            @include purple-button-hover;
+        }
+        
+    }
+}

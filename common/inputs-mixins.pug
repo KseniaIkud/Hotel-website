@@ -17,3 +17,8 @@ mixin input-dropdown(placeholder, name, action)
     form(action= action method="post", id= id).dropdown-form
         input(type="text" placeholder= placeholder name= name readonly).dropdown-form__input
         input(type="button").dropdown-form__arrow
+
+mixin input-date(placeholder, name, action)
+    form(action= action method="post", id= id).dropdown-form
+        input(type="text" placeholder= placeholder name= name readonly).dropdown-form__input.datepicker-here
+        input(type="button").dropdown-form__arrow

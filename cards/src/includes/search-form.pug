@@ -1,0 +1,34 @@
+include ../../../common/inputs-mixins
+include ../../../common/dropdown-mixins
+
+.search-form
+    .search-form__title Найдём номера под ваши пожелания
+    .search-form__dates
+        .text-field__date-dropdown_single
+            .text-field__description
+                .text-field__description_main прибытие
+            .text-field__dropdown-default
+                +input-date("ДД.ММ.ГГГГ")
+        .text-field__date-dropdown_single
+            .text-field__description
+                .text-field__description_main выезд
+            .text-field__dropdown-default
+                +input-date("ДД.ММ.ГГГГ")
+    .search-form__guests.text-field
+        .text-field__description
+            .text-field__description_main Гости
+        .text-field__dropdown-default
+            +input-dropdown("Сколько гостей")
+        .text-field__common-dropdown.common-dropdown.hidden
+            .common-dropdown__rows
+                +dropdown("Взрослые", 0, "adults", "guests-counter__btn")
+                +dropdown("Дети", 0, "children", "guests-counter__btn")
+                +dropdown("Младенцы", 0, "infants", "guests-counter__btn")
+            .common-dropdown__buttons
+                .common-dropdown__clear.button-hidden Очистить
+                .common-dropdown__submit Применить
+        script(src="./js/dropdown-guests-default.js")
+        script(src="./js/dropdown.js")
+    .search-form__button
+        a(href="#").search-form__link подобрать номер
+        img(src="../src/img/arrow_forward_button.svg", alt="")
