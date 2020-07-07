@@ -44,9 +44,9 @@
             multipleDates: false, // Boolean or Number
             multipleDatesSeparator: ',',
             range: false,
-
+            clearButton: true,
             todayButton: false,
-            clearButton: false,
+            
 
             showEvent: 'focus',
             autoClose: false,
@@ -56,7 +56,7 @@
             prevHtml: '<svg><path d="M 17,12 l -5,5 l 5,5"></path></svg>',
             nextHtml: '<svg><path d="M 14,12 l 5,5 l -5,5"></path></svg>',
             navTitles: {
-                days: 'MM, <i>yyyy</i>',
+                days: 'MM <i>yyyy</i>',
                 months: 'yyyy',
                 years: 'yyyy1 - yyyy2'
             },

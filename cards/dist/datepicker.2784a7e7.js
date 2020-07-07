@@ -162,8 +162,8 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
       // Boolean or Number
       multipleDatesSeparator: ',',
       range: false,
+      clearButton: true,
       todayButton: false,
-      clearButton: false,
       showEvent: 'focus',
       autoClose: false,
       // navigation
@@ -171,7 +171,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
       prevHtml: '<svg><path d="M 17,12 l -5,5 l 5,5"></path></svg>',
       nextHtml: '<svg><path d="M 14,12 l 5,5 l -5,5"></path></svg>',
       navTitles: {
-        days: 'MM, <i>yyyy</i>',
+        days: 'MM <i>yyyy</i>',
         months: 'yyyy',
         years: 'yyyy1 - yyyy2'
       },
@@ -2321,7 +2321,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "40359" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "40047" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

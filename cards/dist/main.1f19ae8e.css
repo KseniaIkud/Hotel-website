@@ -708,7 +708,9 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 19px;
   color: #1F2041;
   line-height: 24px;
-  opacity: 1;
+}
+.datepicker--nav-title i {
+  color: #1F2041;
 }
 .datepicker--nav-action svg {
   width: 0;
@@ -828,6 +830,30 @@ h1, h2, h3, h4, h5, h6 {
 }
 .datepicker--cell-day.-other-month-.-selected-, .datepicker .datepicker--cell-year.-other-decade.-selected- {
   background-color: #BC9CFF;
+}
+.datepicker--button {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 12px;
+  color: #1F2041;
+  line-height: 15px;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  color: rgba(31, 32, 65, 0.5);
+  display: block;
+  width: 10px;
+  height: 20px;
+}
+.datepicker--button:hover {
+  color: #BC9CFF;
+  background: none;
+}
+.datepicker--buttons {
+  border: none;
+  display: flex;
+  margin-top: 14px;
+  justify-content: space-between;
 }
 
 @font-face {

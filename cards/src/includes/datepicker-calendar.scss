@@ -2,7 +2,7 @@
 .datepicker {
     padding: 10px 15px;
     width: 287px;
-        
+    
     &--pointer {
         display: none;
     }
@@ -18,7 +18,9 @@
         border: none;
         &-title {
             @include h2-text;
-            opacity: 1;
+            i {
+                color: $dark-shade-100-color;
+            }
         }
         &-action {
             
@@ -147,4 +149,28 @@
             background-color: $purple-color;
         }
     }
+
+    // clear button
+    &--button {
+        @include h3-text;
+        padding: 0;
+        margin: 0;
+        color: $dark-shade-50-color;
+        display: block;
+        width: 10px;
+        
+        height: 20px;
+        &:hover {
+            color: $purple-color;
+            background: none;
+        }
+        &s {
+            border: none;
+            display: flex;
+            margin-top: 14px;
+            justify-content: space-between;
+            
+        }
+    }
+    
 }
