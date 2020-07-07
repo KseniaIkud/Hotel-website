@@ -2,6 +2,15 @@
 @import '../../../common/dropdown-mixins.scss';
 @import '../../../form_elements/src/includes/dropdown.scss';
 
+
+.datepicker {
+    margin-left: -9px;
+    margin-top: 8px;
+    &-here {
+        @include body-text;
+    }
+}
+
 .search-form {
     max-width: 380px;
     padding: 40px 30px 30px 30px;
@@ -30,9 +39,27 @@
         width: 320px;
     }
     &__link {
+        position: relative;
         @include purple-button;
         &:hover {
             @include purple-button-hover;
+        }
+        &:visited {
+            color: #fff;
+        }
+        
+        &::after {
+            content: '';
+            background: url('../src/img/arrow_forward_button.svg');
+            background-repeat: no-repeat;
+            
+            width: 20px;
+            height: 20px;
+            
+            display: inline-block;
+            position: absolute;
+            left: 91%;
+            top: 29%;            
         }
         
     }

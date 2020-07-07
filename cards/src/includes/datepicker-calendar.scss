@@ -1,8 +1,10 @@
-
+.datepicker-calendar {
+    margin-top: -8px;
+    margin-left: 9px;
+}
 .datepicker {
     padding: 10px 15px;
     width: 287px;
-    
     &--pointer {
         display: none;
     }
@@ -31,7 +33,6 @@
                 background-image: url('./img/arrow_back.svg');
                 background-repeat: no-repeat;
                 background-position: 50% 50%;
-                color: red !important;
                 margin-left: -4px;
             }
             &:last-child {
@@ -59,13 +60,10 @@
     &--cell {
         height: 40px;
         width: 40px;
-        &-year- {
-            color: red !important;
-        }
+        border-radius: 50%;
         &.-range-from- {
             border: none;
             border-radius: 50%;
-            color: #FFF;
             background: $purple-color;
             font-weight: bold;
             &::after {
@@ -83,7 +81,6 @@
         &.-range-to- {
             border: none;
             border-radius: 50%;
-            color: #FFF;
             background: $purple-color;
             font-weight: bold;
             &::before {
@@ -104,18 +101,25 @@
             font-weight: bold;
         }
         &:hover {
-           color: #fff;
-        font-weight: bold;
-        background-color: $purple-color;
-        border-radius: 50%; 
+            color: #fff;
+            font-weight: bold;
+            background-color: $purple-color;
+            border-radius: 50%; 
         }
         &.-selected- {
+            color: #fff;
+            font-weight: bold;
             background: $purple-color;
             &.-current- {
                 background: $purple-color;
+                color: #fff;
+                &::after, &::before {
+                    background: none;
+                }
             }
             &.-focus- {
                 background: $purple-color;
+                color: #fff;
                 &::after, &::before {
                     background: none;
                 }

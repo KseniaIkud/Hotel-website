@@ -1,15 +1,12 @@
 //open and close dropdown
 
-const dropDowns = document.querySelectorAll('.dropdown-form__arrow');
-dropDowns.forEach(dropDown=> {
-    dropDown.addEventListener('click',
+const dropDownsFocus = document.querySelectorAll('.text-field__dropdown-default');
+dropDownsFocus.forEach(dropDownFocus=> {
+    dropDownFocus.addEventListener('click',
         function() {
-            const field = this.parentElement.parentElement.parentElement.parentElement.querySelector('.common-dropdown');
-            const bar = this.parentElement.parentElement.parentElement.parentElement.querySelector('.text-field__dropdown-default');
+            const field = this.parentElement.querySelector('.common-dropdown');
             field.classList.toggle('hidden');
-            bar.classList.toggle('border-focus');
-            console.log('hi');
+            this.classList.toggle('border-focus');
         }
     )
 });
-

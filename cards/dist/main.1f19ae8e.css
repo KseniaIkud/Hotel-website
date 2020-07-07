@@ -1046,6 +1046,18 @@ h1, h2, h3, h4, h5, h6 {
   color: #BC9CFF;
 }
 
+.datepicker {
+  margin-left: -9px;
+  margin-top: 8px;
+}
+.datepicker-here {
+  font-family: Montserrat;
+  font-weight: normal;
+  font-size: 14px;
+  color: rgba(31, 32, 65, 0.75);
+  line-height: 24px;
+}
+
 .search-form {
   max-width: 380px;
   padding: 40px 30px 30px 30px;
@@ -1076,6 +1088,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 320px;
 }
 .search-form__link {
+  position: relative;
   font-family: Montserrat;
   font-weight: normal;
   font-size: 14px;
@@ -1093,6 +1106,25 @@ h1, h2, h3, h4, h5, h6 {
 }
 .search-form__link:hover {
   opacity: 0.5;
+}
+.search-form__link:visited {
+  color: #fff;
+}
+.search-form__link::after {
+  content: "";
+  background: url("/arrow_forward_button.5b1a2477.svg");
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  position: absolute;
+  left: 91%;
+  top: 29%;
+}
+
+.datepicker-calendar {
+  margin-top: -8px;
+  margin-left: 9px;
 }
 
 .datepicker {
@@ -1129,7 +1161,6 @@ h1, h2, h3, h4, h5, h6 {
   background-image: url("/arrow_back.81d852c4.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  color: red !important;
   margin-left: -4px;
 }
 .datepicker--nav-action:last-child {
@@ -1154,14 +1185,11 @@ h1, h2, h3, h4, h5, h6 {
 .datepicker--cell {
   height: 40px;
   width: 40px;
-}
-.datepicker--cell-year- {
-  color: red !important;
+  border-radius: 50%;
 }
 .datepicker--cell.-range-from- {
   border: none;
   border-radius: 50%;
-  color: #FFF;
   background: #BC9CFF;
   font-weight: bold;
 }
@@ -1178,7 +1206,6 @@ h1, h2, h3, h4, h5, h6 {
 .datepicker--cell.-range-to- {
   border: none;
   border-radius: 50%;
-  color: #FFF;
   background: #BC9CFF;
   font-weight: bold;
 }
@@ -1205,13 +1232,20 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 50%;
 }
 .datepicker--cell.-selected- {
+  color: #fff;
+  font-weight: bold;
   background: #BC9CFF;
 }
 .datepicker--cell.-selected-.-current- {
   background: #BC9CFF;
+  color: #fff;
+}
+.datepicker--cell.-selected-.-current-::after, .datepicker--cell.-selected-.-current-::before {
+  background: none;
 }
 .datepicker--cell.-selected-.-focus- {
   background: #BC9CFF;
+  color: #fff;
 }
 .datepicker--cell.-selected-.-focus-::after, .datepicker--cell.-selected-.-focus-::before {
   background: none;
