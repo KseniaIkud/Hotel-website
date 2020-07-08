@@ -1104,9 +1104,6 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   display: block;
 }
-.search-form__link:hover {
-  opacity: 0.5;
-}
 .search-form__link:visited {
   color: #fff;
 }
@@ -1120,6 +1117,245 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   left: 91%;
   top: 29%;
+}
+.search-form__link:hover {
+  opacity: 0.5;
+}
+
+.radio-buttons {
+  display: flex;
+  justify-content: space-between;
+  max-width: 220px;
+}
+.radio-buttons__form {
+  display: flex;
+  justify-content: space-between;
+}
+.radio-buttons__input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.radio-buttons__input + label {
+  display: inline-flex;
+}
+.radio-buttons__input + label::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  margin-right: 10px;
+  cursor: pointer;
+}
+.radio-buttons__input:checked + label::before {
+  border-color: #BC9CFF;
+}
+.radio-buttons__input + label {
+  align-items: center;
+}
+.radio-buttons__input + label::before {
+  border-radius: 50%;
+}
+.radio-buttons__input:checked + label {
+  position: relative;
+}
+.radio-buttons__input:checked + label::after {
+  content: "";
+  position: absolute;
+  left: 4px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+}
+.radio-buttons__label {
+  font-family: Montserrat;
+  font-weight: normal;
+  font-size: 14px;
+  color: rgba(31, 32, 65, 0.75);
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.toggle-buttons {
+  height: 58px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.toggle-buttons__form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 259px;
+}
+.toggle-buttons__input {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  vertical-align: top;
+  width: 40px;
+  height: 20px;
+  background: #FFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin-right: 10px;
+}
+.toggle-buttons__input::after {
+  content: "";
+  position: absolute;
+  left: 3px;
+  width: 12px;
+  height: 12px;
+  background-color: rgba(31, 32, 65, 0.25);
+  border-radius: 50%;
+  transition: 0.3s;
+}
+.toggle-buttons__input:checked::after {
+  transform: translateX(calc(100% + 8px));
+  background-color: #fff;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  transition: 0.3s;
+}
+.toggle-buttons__input:checked {
+  border-color: #BC9CFF;
+}
+.toggle-buttons__label {
+  font-family: Montserrat;
+  font-weight: normal;
+  font-size: 14px;
+  color: rgba(31, 32, 65, 0.75);
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.registration-card {
+  max-width: 380px;
+  padding: 40px 30px 30px 30px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+.registration-card__title {
+  font-family: Quicksand, OpenSans;
+  font-weight: 700;
+  font-size: 24px;
+  color: #1F2041;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+.registration-card__name {
+  height: 98px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+.registration-card__gender {
+  margin-bottom: 23px;
+}
+.registration-card__birthday {
+  margin-bottom: 20px;
+}
+.registration-card__data .text-field__default {
+  margin-bottom: 10px;
+}
+.registration-card__specials {
+  margin-top: -2px;
+  margin-bottom: -12px;
+}
+.registration-card__payment {
+  position: relative;
+  font-family: Montserrat;
+  font-weight: normal;
+  font-size: 14px;
+  color: rgba(31, 32, 65, 0.75);
+  line-height: 24px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  color: #FFF;
+  padding: 9px 20px;
+  border-radius: 22px;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  text-align: center;
+  display: block;
+}
+.registration-card__payment:visited {
+  color: #fff;
+}
+.registration-card__payment::after {
+  content: "";
+  background: url("/arrow_forward_button.5b1a2477.svg");
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  position: absolute;
+  left: 91%;
+  top: 29%;
+}
+.registration-card__payment:hover {
+  opacity: 0.5;
+}
+.registration-card__redirection {
+  display: flex;
+  width: 320px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 42px;
+}
+.registration-card__question {
+  font-family: Montserrat;
+  font-weight: normal;
+  font-size: 14px;
+  color: rgba(31, 32, 65, 0.75);
+  line-height: 24px;
+  color: #000;
+}
+.registration-card__sign-in {
+  font-family: Montserrat;
+  font-weight: normal;
+  font-size: 14px;
+  color: rgba(31, 32, 65, 0.75);
+  line-height: 24px;
+  white-space: nowrap;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  color: #BC9CFF;
+  text-transform: uppercase;
+  background-color: #FFF;
+  background-clip: padding-box;
+  border: 2px solid transparent;
+  border-radius: 22px;
+  padding: 12px 17.5px;
+  margin: auto;
+  position: relative;
+  z-index: 1;
+  padding: 12px 25px;
+}
+.registration-card__sign-in::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: -2px;
+  z-index: -1;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-radius: 22px;
+}
+.registration-card__sign-in:visited {
+  color: #BC9CFF;
+}
+.registration-card__sign-in:hover {
+  border: 2px solid rgba(225, 225, 225, 0.5);
 }
 
 .calc-price {
@@ -1206,9 +1442,6 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   display: block;
 }
-.calc-price__link:hover {
-  opacity: 0.5;
-}
 .calc-price__link:visited {
   color: #fff;
 }
@@ -1222,6 +1455,9 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   left: 91%;
   top: 29%;
+}
+.calc-price__link:hover {
+  opacity: 0.5;
 }
 .calc-price__calculation {
   font-family: Montserrat;

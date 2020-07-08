@@ -1,4 +1,4 @@
-@import '../../../form_elements/src/includes/text-fields.scss';
+
 @import '../../../common/dropdown-mixins.scss';
 @import '../../../form_elements/src/includes/dropdown.scss';
 
@@ -41,26 +41,9 @@
     &__link {
         position: relative;
         @include purple-button;
+        @include purple-button-arrow;
         &:hover {
             @include purple-button-hover;
         }
-        &:visited {
-            color: #fff;
-        }
-        
-        &::after {
-            content: '';
-            background: url('../src/img/arrow_forward_button.svg');
-            background-repeat: no-repeat;
-            
-            width: 20px;
-            height: 20px;
-            
-            display: inline-block;
-            position: absolute;
-            left: 91%;
-            top: 29%;            
-        }
-        
     }
 }

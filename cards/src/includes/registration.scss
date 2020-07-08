@@ -1,0 +1,63 @@
+@import '../../../form_elements/src/includes/small-buttons/radio.scss';
+@import '../../../form_elements/src/includes/small-buttons/toggle.scss';
+
+.registration-card {
+    max-width: 380px;
+    padding: 40px 30px 30px 30px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    &__title {
+        @include h1-text;
+        margin-bottom: 20px;
+    }
+    &__name {
+        height: 98px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 8px;
+    }
+    &__gender {
+        margin-bottom: 23px;
+    }
+    &__birthday {
+        margin-bottom: 20px;
+    }
+    &__data {
+        .text-field__default {
+            margin-bottom: 10px;
+        }
+    }
+    &__specials {
+        margin-top: -2px;
+        margin-bottom: -12px;
+    }
+    &__payment {
+        position: relative;
+        @include purple-button;
+        @include purple-button-arrow;
+        &:hover {
+            @include purple-button-hover;
+        }
+    }
+    &__redirection {
+        display: flex;
+        width: 320px;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 42px;
+    }
+    &__question {
+        @include body-text;
+        color: #000;
+    }
+    &__sign-in {
+        @include transparent-button;
+        padding: 12px 25px;
+        &:hover {
+            @include transparent-button-hover;
+        }
+    }
+}
+

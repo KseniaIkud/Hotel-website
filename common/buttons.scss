@@ -28,7 +28,9 @@
         background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
         border-radius: 22px;
     }
-
+    &:visited {
+        color: $purple-color;
+    }
 }
 
 @mixin transparent-button-hover {
@@ -46,10 +48,29 @@
     background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
     text-align: center;
     display: block;
+    &:visited {
+        color: #fff;
+    }
 }
 
 @mixin purple-button-hover {
     opacity: 0.5;
+}
+
+@mixin purple-button-arrow {
+    &::after {
+        content: '';
+        background: url('../src/img/arrow_forward_button.svg');
+        background-repeat: no-repeat;
+        
+        width: 20px;
+        height: 20px;
+        
+        display: inline-block;
+        position: absolute;
+        left: 91%;
+        top: 29%;            
+    }
 }
 
 
