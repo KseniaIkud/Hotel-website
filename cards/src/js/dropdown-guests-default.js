@@ -39,7 +39,7 @@ btns.forEach(btn=> {
             /*bar variables*/
             const barGuest = this.parentElement.parentElement.parentElement.parentElement.parentElement.querySelector('.dropdown-form__input');
             console.log(barGuest.placeholder);
-            const bar = this.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.querySelector('.text-field__dropdown-default');
+            const bar = this.parentElement.parentElement.parentElement.parentElement.parentElement.querySelector('.text-field__dropdown-default');
             console.log(bar);
 
 

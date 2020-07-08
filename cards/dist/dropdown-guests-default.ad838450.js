@@ -156,7 +156,7 @@ btns.forEach(function (btn) {
 
     var barGuest = this.parentElement.parentElement.parentElement.parentElement.parentElement.querySelector('.dropdown-form__input');
     console.log(barGuest.placeholder);
-    var bar = this.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.querySelector('.text-field__dropdown-default');
+    var bar = this.parentElement.parentElement.parentElement.parentElement.parentElement.querySelector('.text-field__dropdown-default');
     console.log(bar);
 
     if (sumGuests > 0) {
@@ -269,7 +269,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "40003" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "42067" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

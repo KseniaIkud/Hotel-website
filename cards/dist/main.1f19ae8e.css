@@ -1122,6 +1122,199 @@ h1, h2, h3, h4, h5, h6 {
   top: 29%;
 }
 
+.calc-price {
+  max-width: 380px;
+  padding: 40px 30px 30px 30px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+.calc-price__header {
+  display: flex;
+  width: 319px;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+.calc-price__no {
+  font-family: Quicksand, OpenSans;
+  font-weight: 700;
+  font-size: 19px;
+  color: #1F2041;
+  line-height: 24px;
+  font-size: 24px;
+}
+.calc-price__no:first-letter {
+  font-size: 14px;
+  margin-right: -3px;
+}
+.calc-price__category {
+  display: inline-block;
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 12px;
+  color: #1F2041;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #BC9CFF;
+  margin-left: 5px;
+}
+.calc-price__day-price {
+  display: flex;
+  width: 99px;
+  justify-content: space-between;
+  font-family: Quicksand, OpenSans;
+  font-weight: 700;
+  font-size: 24px;
+  color: #1F2041;
+  line-height: 30px;
+  font-size: 14px;
+  color: rgba(31, 32, 65, 0.5);
+  font-family: Montserrat;
+}
+.calc-price__text {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 34px;
+}
+.calc-price__dates {
+  display: flex;
+  width: 320px;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.calc-price__guests {
+  width: 320px;
+  margin-bottom: 18px;
+}
+.calc-price__guests .common-dropdown {
+  width: inherit;
+}
+.calc-price__link {
+  position: relative;
+  font-family: Montserrat;
+  font-weight: normal;
+  font-size: 14px;
+  color: rgba(31, 32, 65, 0.75);
+  line-height: 24px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  color: #FFF;
+  padding: 9px 20px;
+  border-radius: 22px;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  text-align: center;
+  display: block;
+}
+.calc-price__link:hover {
+  opacity: 0.5;
+}
+.calc-price__link:visited {
+  color: #fff;
+}
+.calc-price__link::after {
+  content: "";
+  background: url("/arrow_forward_button.5b1a2477.svg");
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  position: absolute;
+  left: 91%;
+  top: 29%;
+}
+.calc-price__calculation {
+  font-family: Montserrat;
+  font-weight: normal;
+  font-size: 14px;
+  color: rgba(31, 32, 65, 0.75);
+  line-height: 24px;
+}
+
+.calculation {
+  width: 319px;
+}
+.calculation__main-price, .calculation__discount, .calculation__addition-price, .calculation__total {
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+  margin-bottom: 10px;
+}
+.calculation__explanation {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  text-align: center;
+  font-weight: bold;
+  color: rgba(31, 32, 65, 0.25);
+  line-height: 20px;
+  position: relative;
+}
+.calculation__discount .calculation__explanation {
+  margin-left: 5px;
+}
+.calculation__discount .calculation__explanation:hover .calculation__discount_hidden {
+  display: block;
+}
+.calculation__discount_hidden {
+  font-weight: normal;
+  color: rgba(31, 32, 65, 0.5);
+  position: absolute;
+  width: 100px;
+  border: 1px solid rgba(31, 32, 65, 0.05);
+  border-radius: 4px;
+  top: -85px;
+  left: -40px;
+  background-color: #fff;
+  display: none;
+}
+.calculation__addition-price {
+  margin-top: 12px;
+}
+.calculation__addition-price_hidden {
+  font-weight: normal;
+  color: rgba(31, 32, 65, 0.5);
+  position: absolute;
+  width: 140px;
+  border: 1px solid rgba(31, 32, 65, 0.05);
+  border-radius: 4px;
+  top: -105px;
+  left: -60px;
+  background-color: #fff;
+  display: none;
+}
+.calculation__addition-price .calculation__explanation {
+  margin-left: -25px;
+}
+.calculation__addition-price .calculation__explanation:hover .calculation__addition-price_hidden {
+  display: block;
+}
+.calculation__addition-price .calculation__count {
+  width: 200px;
+  line-height: 18px;
+}
+.calculation__total {
+  font-family: Quicksand, OpenSans;
+  font-weight: 700;
+  font-size: 19px;
+  color: #1F2041;
+  line-height: 24px;
+  margin: 30px 0 21.5px;
+}
+.calculation__name {
+  display: flex;
+  align-items: center;
+}
+.calculation__name::after {
+  content: "";
+  display: block;
+  height: 20px;
+  width: 192.5px;
+  border-bottom: 1px dotted rgba(0, 0, 0, 0.12);
+}
+
 .datepicker-calendar {
   margin-top: -8px;
   margin-left: 9px;

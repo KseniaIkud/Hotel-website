@@ -1,0 +1,50 @@
+.calc-price
+    .calc-price__header
+        .calc-price__no № 888
+            .calc-price__category люкс
+        .calc-price__day-price 9 990₽ 
+            .calc-price__text в сутки
+    .calc-price__dates
+        .text-field__date-dropdown_single
+            .text-field__description
+                .text-field__description_main прибытие
+            .text-field__dropdown-default
+                +input-date("19.08.2019")
+        .text-field__date-dropdown_single
+            .text-field__description
+                .text-field__description_main выезд
+            .text-field__dropdown-default
+                +input-date("23.08.2019")
+    .calc-price__guests
+        .text-field__description
+            .text-field__description_main Гости
+        .text-field__dropdown-default
+            +input-dropdown("3 гостя")
+        .text-field__common-dropdown.common-dropdown.hidden
+            .common-dropdown__rows
+                +dropdown("Взрослые", 3)
+                +dropdown("Дети", 0)
+                +dropdown("Младенцы", 0)
+            .common-dropdown__buttons
+                .common-dropdown__clear.button-hidden Очистить
+                .common-dropdown__submit Применить
+        
+    .calc-price__calculation.calculation
+        .calculation__main-price
+            .calculation__count 9 990₽ x 4 суток
+            .calculation__digits 39 960₽
+        .calculation__discount
+            .calculation__count Сбор за услуги: скидка 2 179₽
+                .calculation__explanation i
+                    .calculation__discount_hidden Скидка действует при оплате онлайн
+            .calculation__digits 0₽
+        .calculation__addition-price
+            .calculation__count Сбор за дополнительные услуги
+            .calculation__explanation i
+                    .calculation__addition-price_hidden В дополнительные услуги входит уборка и чистые полотенца
+            .calculation__digits 300₽
+        .calculation__total
+            .calculation__name Итого
+            .calculation__total-price 38 081₽
+    .calc-price__button
+        a(href="#").calc-price__link забронировать
