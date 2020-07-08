@@ -1,0 +1,44 @@
+.sign-in {
+    max-width: 380px;
+    padding: 40px 30px 41px 30px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    &__title {
+        @include h1-text;
+        margin-bottom: 20px;
+    }
+    &__data {
+        height: 98px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 22px;
+    }
+    &__entrance {
+        @include purple-button;
+        @include purple-button-arrow;
+        width: 320px;
+        margin-bottom: 40px;
+        &:hover {   
+            @include purple-button-hover;
+        }
+    }
+    &__redirection {
+        display: flex;
+        align-items: center;
+        width: 320px;
+        justify-content: space-between;
+        
+    }
+    &__question {
+        @include body-text;
+        color: #000;
+    }
+    &__creation {
+        @include transparent-button;
+        &:hover {
+            @include transparent-button-hover;
+        }
+    }
+}

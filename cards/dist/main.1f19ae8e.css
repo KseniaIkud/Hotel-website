@@ -1551,6 +1551,117 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom: 1px dotted rgba(0, 0, 0, 0.12);
 }
 
+.sign-in {
+  max-width: 380px;
+  padding: 40px 30px 41px 30px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+.sign-in__title {
+  font-family: Quicksand, OpenSans;
+  font-weight: 700;
+  font-size: 24px;
+  color: #1F2041;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+.sign-in__data {
+  height: 98px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 22px;
+}
+.sign-in__entrance {
+  font-family: Montserrat;
+  font-weight: normal;
+  font-size: 14px;
+  color: rgba(31, 32, 65, 0.75);
+  line-height: 24px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  color: #FFF;
+  padding: 9px 20px;
+  border-radius: 22px;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  text-align: center;
+  display: block;
+  width: 320px;
+  margin-bottom: 40px;
+}
+.sign-in__entrance:visited {
+  color: #fff;
+}
+.sign-in__entrance::after {
+  content: "";
+  background: url("/arrow_forward_button.5b1a2477.svg");
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  position: absolute;
+  left: 91%;
+  top: 29%;
+}
+.sign-in__entrance:hover {
+  opacity: 0.5;
+}
+.sign-in__redirection {
+  display: flex;
+  align-items: center;
+  width: 320px;
+  justify-content: space-between;
+}
+.sign-in__question {
+  font-family: Montserrat;
+  font-weight: normal;
+  font-size: 14px;
+  color: rgba(31, 32, 65, 0.75);
+  line-height: 24px;
+  color: #000;
+}
+.sign-in__creation {
+  font-family: Montserrat;
+  font-weight: normal;
+  font-size: 14px;
+  color: rgba(31, 32, 65, 0.75);
+  line-height: 24px;
+  white-space: nowrap;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  color: #BC9CFF;
+  text-transform: uppercase;
+  background-color: #FFF;
+  background-clip: padding-box;
+  border: 2px solid transparent;
+  border-radius: 22px;
+  padding: 12px 17.5px;
+  margin: auto;
+  position: relative;
+  z-index: 1;
+}
+.sign-in__creation::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: -2px;
+  z-index: -1;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-radius: 22px;
+}
+.sign-in__creation:visited {
+  color: #BC9CFF;
+}
+.sign-in__creation:hover {
+  border: 2px solid rgba(225, 225, 225, 0.5);
+}
+
 .datepicker-calendar {
   margin-top: -8px;
   margin-left: 9px;
