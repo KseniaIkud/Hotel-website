@@ -79,5 +79,25 @@
     max-width: 1160px;
     display: flex;
     justify-content: space-between;
-
+	margin: 150px 140px 140px 140px;
+	&__logo {
+		position: absolute;
+		left: 30px;
+		top: 30px;
+	}
+	&__column {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		&:nth-child(2) {
+			height: 1060px;
+		}
+		&:nth-child(3) {
+			height: 909px;
+		}
+		&:nth-child(4) {
+			height: 980px;
+		}
+	}
+	
 }

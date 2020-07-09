@@ -1853,8 +1853,7 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: space-between;
   top: 21%;
 }
-.room-card__arrows::before {
-  content: "";
+.room-card__before a {
   background: url("/expand_more.18b6c6e6.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -1863,8 +1862,7 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   cursor: pointer;
 }
-.room-card__arrows::after {
-  content: "";
+.room-card__after a {
   background: url("/expand_more.18b6c6e6.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -2056,6 +2054,26 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 1160px;
   display: flex;
   justify-content: space-between;
+  margin: 150px 140px 140px 140px;
+}
+.cards__logo {
+  position: absolute;
+  left: 30px;
+  top: 30px;
+}
+.cards__column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.cards__column:nth-child(2) {
+  height: 1060px;
+}
+.cards__column:nth-child(3) {
+  height: 909px;
+}
+.cards__column:nth-child(4) {
+  height: 980px;
 }
 
 /*# sourceMappingURL=/main.1f19ae8e.css.map */
