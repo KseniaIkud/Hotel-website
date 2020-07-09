@@ -1840,6 +1840,176 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: space-between;
 }
 
+.room-card {
+  max-width: 270px;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  border-radius: 4px;
+  position: relative;
+}
+.room-card__arrows {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  top: 21%;
+}
+.room-card__arrows::before {
+  content: "";
+  background: url("/expand_more.18b6c6e6.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 44px;
+  height: 44px;
+  display: block;
+  cursor: pointer;
+}
+.room-card__arrows::after {
+  content: "";
+  background: url("/expand_more.18b6c6e6.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 44px;
+  height: 44px;
+  display: block;
+  transform: rotate(180deg);
+  cursor: pointer;
+}
+.room-card__img {
+  margin-top: 0.8px;
+  margin-left: 0.8px;
+  border-radius: 4px 4px 0 0;
+  margin-bottom: 15px;
+}
+.room-card__slider {
+  position: absolute;
+  right: 15px;
+  top: 128px;
+  width: 41.25px;
+  display: flex;
+  justify-content: space-between;
+}
+.room-card__slide {
+  width: 7.5px;
+  height: 7.5px;
+  border-radius: 50%;
+  border: 1px solid #FFF;
+}
+.room-card__slide_chosen {
+  width: 7.5px;
+  height: 7.5px;
+  border-radius: 50%;
+  border: 1px solid #FFF;
+  background: #FFF;
+}
+.room-card__description, .room-card__feedback {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 232px;
+  margin: 0 17px 0 20px;
+}
+.room-card__feedback {
+  width: 230px;
+  padding-bottom: 20px;
+}
+.room-card__category {
+  font-family: Montserrat;
+  font-weight: normal;
+  font-size: 14px;
+  color: rgba(31, 32, 65, 0.75);
+  line-height: 24px;
+  font-size: 12px;
+  color: #BC9CFF;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-right: 28px;
+}
+.room-card__separation {
+  width: 230px;
+  height: 1px;
+  margin: 4px 17px 8px 20px;
+  background: rgba(31, 32, 65, 0.1);
+}
+.room-card__rate .rate-button {
+  max-width: 120px;
+  display: flex;
+  justify-content: space-between;
+}
+.room-card__rate .rate-button__star {
+  width: 25px;
+  height: 25px;
+  background-image: url(/star_border.61cbccc8.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.room-card__rate .rate-button__checked {
+  background-image: url(/star.647382b2.svg);
+}
+
+.number {
+  display: flex;
+  width: 55px;
+  justify-content: space-between;
+  font-family: Quicksand, OpenSans;
+  font-weight: 700;
+  font-size: 19px;
+  color: #1F2041;
+  line-height: 24px;
+}
+.number__text {
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.price {
+  display: flex;
+  font-family: Montserrat;
+  font-weight: normal;
+  font-size: 14px;
+  color: rgba(31, 32, 65, 0.75);
+  line-height: 24px;
+}
+.price__digits {
+  font-weight: bold;
+  line-height: 32px;
+}
+.price__text {
+  font-size: 12px;
+}
+.price__text::first-letter {
+  font-weight: bold;
+  margin-right: 1px;
+  line-height: 32px;
+  font-size: 14px;
+}
+
+.review {
+  display: flex;
+  font-family: Montserrat;
+  font-weight: normal;
+  font-size: 14px;
+  color: rgba(31, 32, 65, 0.75);
+  line-height: 24px;
+}
+.review__digits {
+  font-weight: bold;
+  margin-right: 4px;
+}
+.review__text {
+  line-height: 25px;
+}
+
+.hidden {
+  display: none;
+}
+
+.rooms-cards {
+  height: 554px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 @font-face {
   font-family: "Montserrat";
   src: url("/Montserrat-Regular.21b801b8.eot");

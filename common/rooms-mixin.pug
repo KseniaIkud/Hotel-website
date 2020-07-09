@@ -1,0 +1,25 @@
+include ./buttons-mixins
+mixin room(img, number, price, rate, reviews, hidden, category)
+    .room-card
+        .room-card__arrows(class= hidden)
+        .room-card__slider
+            .room-card__slide_chosen
+            .room-card__slide
+            .room-card__slide
+            .room-card__slide
+        img(src= img, alt= number).room-card__img
+        .room-card__description
+            .room-card__number.number
+                .number__text №
+                .number__digits= number
+            .room-card__category= category
+            .room-card__price.price
+                .price__digits= price
+                .price__text ₽ в сутки
+        .room-card__separation
+        .room-card__feedback
+            .room-card__rate
+                +rate-button(rate)
+            .room-card__review.review
+                .review__digits= reviews 
+                .review__text Отзывов

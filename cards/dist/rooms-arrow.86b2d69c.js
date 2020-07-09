@@ -117,14 +117,12 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"js/dropdown.js":[function(require,module,exports) {
-//open and close dropdown
-var dropDownsFocus = document.querySelectorAll('.text-field__dropdown-default');
-dropDownsFocus.forEach(function (dropDownFocus) {
-  dropDownFocus.addEventListener('click', function () {
-    var field = this.parentElement.querySelector('.common-dropdown');
-    field.classList.toggle('hidden');
-    this.classList.toggle('border-focus');
+})({"js/rooms-arrow.js":[function(require,module,exports) {
+var rooms = document.querySelectorAll('.room-card');
+rooms.forEach(function (room) {
+  room.addEventListener('click', function () {
+    var arrows = this.querySelector('.room-card__arrows');
+    arrows.classList.toggle('hidden');
   });
 });
 },{}],"../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
@@ -331,5 +329,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/dropdown.js"], null)
-//# sourceMappingURL=/dropdown.76635db9.js.map
+},{}]},{},["../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/rooms-arrow.js"], null)
+//# sourceMappingURL=/rooms-arrow.86b2d69c.js.map
