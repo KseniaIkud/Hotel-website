@@ -2,7 +2,6 @@
     display: flex;
     justify-content: space-between;
     @include body-text;
-    
     &__information {
         width: 260px;
         .logo {
@@ -12,8 +11,8 @@
     &__navigation {
         display: flex;
         justify-content: space-between;
-        width: 513px;
-        margin-right: 4%;
+        width: 550px;
+        margin-left: -10px;        
     }
     &__title{
         @include h3-text;
@@ -25,8 +24,14 @@
         
     }
     &__list {
+        li::first-letter {
+            text-transform: uppercase;
+        }
         color: $dark-shade-50-color;
         line-height: 17px;
+        &_shifted {
+            margin-left: -35px;
+        }
     }
     &__text {
         margin-bottom: 22px;

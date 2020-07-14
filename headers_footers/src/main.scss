@@ -73,23 +73,25 @@
 	align-items: center;
 	justify-content: space-between;
 	&__navigation{
-		width: 530px;
+		width: 445px;
 	}
 }
 .buttons {
-	width: 250px;
-	margin-left: 30px;
+	width: 424px;
+	margin-left: 20px;
 	align-items: center;
 	display: flex;
 	justify-content: space-between;
 	&__transparent{
 		@include transparent-button;
+		padding: 8px 18px;
 		&:hover{
 			@include transparent-button-hover;
 		}
 	}
 	&__purple {
 		@include purple-button;
+		padding: 5px 19.5px;
 		&:hover{
 			@include purple-button-hover;
 		}
@@ -100,18 +102,18 @@
 	height: 372px;
 	margin: auto;
 
-
 	background: #FFFFFF;
 	box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
 	border: 1px solid transparent;
 	&__content {    
-        max-width: 1160px;
+		max-width: 1165px;
+		width: 100%;
         margin: 7% auto;
     }
 }
 
 .footer-creative{
-	max-width: 1440px;
+	max-width: 768px;
 	height: 367px;
 	margin: auto;
 
@@ -121,6 +123,6 @@
 	&__content {
 		max-width: 560px;
 		margin: auto;
-		margin-top: 100px;
+		margin-top: 117px;
 	}
 }
