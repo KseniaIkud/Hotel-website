@@ -1,3 +1,4 @@
+
 ;(function (window, $, undefined) { ;(function () {
     var VERSION = '2.2.3',
         pluginName = 'datepicker',
@@ -37,7 +38,7 @@
             selectOtherYears: true,
             moveToOtherYearsOnSelect: true,
 
-            minDate: '',
+            minDate: new Date(),
             maxDate: '',
             disableNavWhenOutOfRange: true,
 
