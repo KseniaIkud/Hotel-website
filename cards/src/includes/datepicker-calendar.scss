@@ -1,8 +1,20 @@
 .datepicker-calendar {
     margin-top: -8px;
     margin-left: 9px;
+    position: relative;
+    &__submit {
+        position: absolute;
+        right: 20px; bottom: 20px;
+        @include h3-text;
+        color: $purple-color;
+        cursor: pointer;
+        &:hover {
+            color: $dark-shade-50-color;
+        }
+    }
 }
 .datepicker {
+    
     padding: 10px 15px;
     width: 287px;
     &--pointer {
@@ -13,7 +25,7 @@
         border: 1px solid rgba(31, 32, 65, 0.05);
         border-radius: 4px;
             
-        height: 369px;
+        
     }
     &--nav {
         margin-bottom: 24px;
@@ -161,8 +173,7 @@
         margin: 0;
         color: $dark-shade-50-color;
         display: block;
-        width: 10px;
-        
+        max-width: 75px;
         height: 20px;
         &:hover {
             color: $purple-color;
@@ -176,5 +187,4 @@
             
         }
     }
-    
 }

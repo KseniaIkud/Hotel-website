@@ -155,7 +155,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
       showOtherYears: true,
       selectOtherYears: true,
       moveToOtherYearsOnSelect: true,
-      minDate: '',
+      minDate: new Date(),
       maxDate: '',
       disableNavWhenOutOfRange: true,
       multipleDates: false,
@@ -2321,7 +2321,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "43843" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "33681" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
