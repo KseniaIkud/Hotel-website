@@ -25,5 +25,15 @@ html(lang="en")
                 .header__item
                     a(href="#").header__registration зарегистрироваться
         
-    body
+    body.landing-page
+        .landing-page__content
+            .landing-page__datepicker
+                include ../../../cards/src/includes/search-form
+                script(src="./js/dropdown.js")
+            .landing-page__description Лучшие номера для вашей работы, отдыха и просто вдохновения
+    footer.footer
+        .footer__widget
+            include ../../../headers_footers/src/includes/footers/widget
+        .footer__copybar
+            include ../../../headers_footers/src/includes/footers/copybar
         
