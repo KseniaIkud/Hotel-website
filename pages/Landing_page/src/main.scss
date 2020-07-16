@@ -1,0 +1,79 @@
+//nulling, common colors, etc
+@import '../../../common/common-styles.scss';
+
+//primitives
+@import '../../../common/buttons.scss';
+@import '../../../common/inputs.scss';
+
+//header
+@import '../../../headers_footers/src/includes/headers/navigation.scss';
+
+//fonts
+@font-face {
+	font-family: 'Montserrat';
+	src: url('fonts/Montserrat-Regular.eot');
+	src: local('☺'), url('fonts/Montserrat-Regular.woff') format('woff'), url('fonts/Montserrat-Regular.ttf') format('truetype'), url('fonts/Montserrat-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('fonts/Montserrat-Bold.eot');
+	src: local('☺'), url('fonts/Montserrat-Bold.woff') format('woff'), url('fonts/Montserrat-Bold.ttf') format('truetype'), url('fonts/Montserrat-Bold.svg') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+
+.header {
+    max-width: 1440px;
+	height: 70px;
+	margin: auto;
+	background: #FFFFFF;
+	margin-bottom: 40px;
+	box-shadow: 0px 10px 20px $dark-shade-05-color;	
+	&__content	{
+		max-width: 1163px;
+		height: 100%;
+		width: 100%;
+		
+		margin: auto;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+    }
+    
+    &__menu {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__navigation{
+        width: 114%;
+    }
+    
+    &__buttons {
+        max-width: 302px;
+        width: 100%;
+	    margin-left: 20px;
+	    align-items: center;
+	    display: flex;
+	    justify-content: space-between;
+    }
+    &__sign-in {
+        @include transparent-button;
+		padding: 8px 18px;
+		&:hover{
+			@include transparent-button-hover;
+		}
+    }
+    &__registration {
+        @include purple-button;
+		padding: 5px 19.5px;
+		&:hover{
+			@include purple-button-hover;
+		}
+    }
+}

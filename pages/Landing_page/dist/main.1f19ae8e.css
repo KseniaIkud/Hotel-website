@@ -1,0 +1,211 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  list-style: none;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: normal;
+}
+
+.navigation__list {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-family: Montserrat;
+  font-weight: normal;
+  font-size: 14px;
+  color: rgba(31, 32, 65, 0.75);
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.5);
+  white-space: nowrap;
+}
+.navigation__link::first-letter {
+  text-transform: uppercase;
+}
+.navigation__link_main {
+  font-weight: bold;
+  color: rgba(31, 32, 65, 0.75);
+  margin-right: 2px;
+}
+.navigation__link_main::first-letter {
+  text-transform: uppercase;
+}
+.navigation__link_sub {
+  margin-left: -2px;
+  margin-right: 4px;
+}
+.navigation__link_sub img {
+  margin-left: 6.5px;
+}
+.navigation__link_sub::first-letter {
+  text-transform: uppercase;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/Montserrat-Regular.21b801b8.eot");
+  src: local("☺"), url("/Montserrat-Regular.1b35f2ae.woff") format("woff"), url("/Montserrat-Regular.44e710c1.ttf") format("truetype"), url("/Montserrat-Regular.6f6bdac5.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("/Montserrat-Bold.70d570c7.eot");
+  src: local("☺"), url("/Montserrat-Bold.73e94c2c.woff") format("woff"), url("/Montserrat-Bold.f3410305.ttf") format("truetype"), url("/Montserrat-Bold.0fff2121.svg") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+.header {
+  max-width: 1440px;
+  height: 70px;
+  margin: auto;
+  background: #FFFFFF;
+  margin-bottom: 40px;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+}
+.header__content {
+  max-width: 1163px;
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__menu {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__navigation {
+  width: 114%;
+}
+.header__buttons {
+  max-width: 302px;
+  width: 100%;
+  margin-left: 20px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.header__sign-in {
+  font-family: Montserrat;
+  font-weight: normal;
+  font-size: 14px;
+  color: rgba(31, 32, 65, 0.75);
+  line-height: 24px;
+  white-space: nowrap;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  color: #BC9CFF;
+  text-transform: uppercase;
+  background-color: #FFF;
+  background-clip: padding-box;
+  border: 2px solid transparent;
+  border-radius: 22px;
+  padding: 12px 17.5px;
+  margin: auto;
+  position: relative;
+  z-index: 1;
+  padding: 8px 18px;
+}
+.header__sign-in::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: -2px;
+  z-index: -1;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-radius: 22px;
+}
+.header__sign-in:visited {
+  color: #BC9CFF;
+}
+.header__sign-in:hover {
+  border: 2px solid rgba(225, 225, 225, 0.5);
+}
+.header__registration {
+  font-family: Montserrat;
+  font-weight: normal;
+  font-size: 14px;
+  color: rgba(31, 32, 65, 0.75);
+  line-height: 24px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  color: #FFF;
+  padding: 9px 20px;
+  border-radius: 22px;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  text-align: center;
+  display: block;
+  padding: 5px 19.5px;
+}
+.header__registration:visited {
+  color: #fff;
+}
+.header__registration:hover {
+  opacity: 0.5;
+}
+
+/*# sourceMappingURL=/main.1f19ae8e.css.map */

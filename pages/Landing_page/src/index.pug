@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Landing page
+        script(src="./main.js")
+    header.header
+        include ../../../common/header-navigation-mixins
+        .header__content
+            .header__menu
+                .header__logo
+                    img(src='img/logo.svg', alt='logo').logo
+            .header__navigation
+                nav.navigation
+                    ul.navigation__list
+                        +navigation-menu('о нас', '#')
+                        +navigation-menu-sub('услуги', '#')
+                        +navigation-menu('вакансии', '#')
+                        +navigation-menu('новости', '#')
+                        +navigation-menu-sub('соглашения', '#')
+            .header__buttons
+                .header__item
+                    a(href="#").header__sign-in войти
+                .header__item
+                    a(href="#").header__registration зарегистрироваться
+        
+    body
+        
