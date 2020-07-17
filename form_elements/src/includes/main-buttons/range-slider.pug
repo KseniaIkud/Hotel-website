@@ -2,8 +2,11 @@ script(src="https://code.jquery.com/jquery-1.12.4.js")
 script(src="https://code.jquery.com/ui/1.12.1/jquery-ui.js")
 script(src="./js/range-slider.js")
 
-.range-slider
-    .range-slider__header
-        label(for="amount").range-slider__label range slider
-        input(type="text" id='amount' readonly).range-slider__numbers
-    .range-slider__plugin#slider-range
+mixin range-slider(description)
+    .range-slider
+        .range-slider__header
+            label(for="amount").range-slider__label= description
+            input(type="text" id='amount' readonly).range-slider__numbers
+        .range-slider__plugin#slider-range
+
+

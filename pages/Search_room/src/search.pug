@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Search room
+
+        script(src="./main.js")
+        script(src="https://code.jquery.com/jquery-1.12.4.js")
+        script(src="https://code.jquery.com/ui/1.12.1/jquery-ui.js")
+        script(src="https://code.jquery.com/ui/1.12.1/jquery-ui.js")
+        script(src="./js/datepicker.js")
+        script(src="./js/range-slider.js")
+        
+        include ../../../common/header-navigation-mixins
+        include ../../../common/inputs-mixins
+        include ../../../common/dropdown-mixins
+        
+        
+    header.header
+        .header__content
+            .header__menu
+                .header__logo
+                    img(src='img/logo.svg', alt='logo').logo
+            .header__navigation
+                nav.navigation
+                    ul.navigation__list
+                        +navigation-menu('о нас', '#')
+                        +navigation-menu-sub('услуги', '#')
+                        +navigation-menu('вакансии', '#')
+                        +navigation-menu('новости', '#')
+                        +navigation-menu-sub('соглашения', '#')
+            .header__buttons
+                .header__item
+                    a(href="#").header__sign-in войти
+                .header__item
+                    a(href="#").header__registration зарегистрироваться
+
+    body
+    .search-page
+        .search-page__filter.filter
+            .filter__item
+                .filter__title Даты пребывания в отеле
+                .filter__form.text-field__dropdown-default
+                    +input-date-range('19 авг - 23 авг')
+            .filter__item
+                .filter__title Гости
+                .filter__form.text-field__dropdown-default
+                    +input-dropdown("Сколько гостей")
+                .text-field__common-dropdown.common-dropdown.hidden
+                    .common-dropdown__rows
+                        +dropdown("Взрослые", 0, "adults", "guests-counter__btn")
+                        +dropdown("Дети", 0, "children", "guests-counter__btn")
+                        +dropdown("Младенцы", 0, "infants", "guests-counter__btn")
+                    .common-dropdown__buttons
+                        .common-dropdown__clear.button-hidden Очистить
+                        .common-dropdown__submit Применить
+                script(src="./js/dropdown-guests-default.js")
+                script(src="./js/dropdown.js")
+            .filter__range-slider
+                include ../../../form_elements/src/includes/main-buttons/range-slider
+                +range-slider('Диапазон цены')
+                .filter__range Стоимость за сутки пребывания в номере
+            .filter__checkbox
+                include ../../../form_elements/src/includes/small-buttons/checkbox
+            .filter__rich-checkbox
+                include ../../../form_elements/src/includes/rich-checkbox-buttons
+                +rich-checkbox('доступность')
+        .search-page__rooms
+        
+
+    footer.footer
+        .footer__widget
+            include ../../../headers_footers/src/includes/footers/widget
+        .footer__copybar
+            include ../../../headers_footers/src/includes/footers/copybar

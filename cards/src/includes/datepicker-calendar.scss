@@ -14,9 +14,11 @@
     }
 }
 .datepicker {
-    
     padding: 10px 15px;
     width: 287px;
+    &-here {
+        @include body-text;
+    }
     &--pointer {
         display: none;
     }

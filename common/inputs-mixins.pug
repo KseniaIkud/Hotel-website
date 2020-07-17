@@ -24,3 +24,8 @@ mixin input-date(placeholder, name, action)
     form(action= action method="get").dropdown-form
         input(type="text" placeholder= placeholder name= name readonly).dropdown-form__input.datepicker-here
         input(type="button").dropdown-form__arrow
+
+mixin input-date-range(placeholder, name, action)
+    form(action= action method="get").dropdown-form
+        input(type="text" placeholder= placeholder name= name readonly).dropdown-form__input.datepicker-here
+        input(type="button").dropdown-form__arrow
