@@ -346,6 +346,10 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
 }
 
+header {
+  height: 70px;
+}
+
 .header {
   max-width: 1440px;
   height: 70px;
@@ -1836,15 +1840,16 @@ h1, h2, h3, h4, h5, h6 {
 .widget-footer {
   max-width: 1440px;
   height: 372px;
-  margin: auto;
+  margin: 1px auto;
   background: #FFFFFF;
   box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
   border: 1px solid transparent;
+  border-top: 1px solid rgba(31, 32, 65, 0.25);
 }
 .widget-footer__content {
   max-width: 1165px;
   width: 100%;
-  margin: 7% auto;
+  margin: 8.2% auto;
 }
 
 .copybar {
