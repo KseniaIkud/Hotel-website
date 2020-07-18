@@ -44,6 +44,9 @@
     &__plain-text {
         @include h3-text;
         color: $purple-color;
+        &:visited {
+            color: $purple-color;
+        }
         &_inactive {
             @include h3-text;
             color: $dark-shade-50-color;

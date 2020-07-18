@@ -1,8 +1,8 @@
 //open and close dropdown
 
-const dropDownsFocus = document.querySelectorAll('.text-field__dropdown-default');
-dropDownsFocus.forEach(dropDownFocus=> {
-    dropDownFocus.addEventListener('click',
+const focusDropDowns = document.querySelectorAll('.text-field__dropdown-default');
+focusDropDowns.forEach(focusDropDown=> {
+    focusDropDown   .addEventListener('click',
         function() {
             const field = this.parentElement.querySelector('.common-dropdown');
             field.classList.toggle('hidden');

@@ -1081,6 +1081,9 @@ div.ui-slider-range.ui-widget-header {
   text-transform: uppercase;
   color: #BC9CFF;
 }
+.button-element__plain-text:visited {
+  color: #BC9CFF;
+}
 .button-element__plain-text_inactive {
   font-family: Montserrat;
   font-weight: 700;
@@ -1136,11 +1139,14 @@ div.ui-slider-range.ui-widget-header {
   justify-content: center;
   align-items: center;
 }
+.pagination__option_selected:visited {
+  color: #FFF;
+}
 .pagination__option_forward {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-image: url(/arrow_forward.04b75f4b.svg), linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+  background-image: url(/arrow_forward_button.5b1a2477.svg), linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
@@ -1156,6 +1162,7 @@ div.ui-slider-range.ui-widget-header {
 .expansion {
   max-width: 266px;
   height: 315px;
+  position: relative;
 }
 .expansion__head {
   display: flex;

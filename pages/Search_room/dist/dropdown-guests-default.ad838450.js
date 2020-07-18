@@ -126,6 +126,16 @@ var infants = document.querySelector('#infants');
 the page and I didn't want to define id everytime the block is needed. 
 It's only for UI kit */
 
+var clearBttn = document.querySelector('.common-dropdown__clear');
+clearBttn.addEventListener('click', function () {
+  var fieldGuest = this.parentElement.parentElement.parentElement.querySelector('.dropdown-form__input');
+  fieldGuest.placeholder = "Сколько гостей";
+  adult.value = 0;
+  children.value = 0;
+  infants.value = 0;
+  this.classList.add('button-hidden');
+  this.classList.remove('button-pointer');
+});
 btns.forEach(function (btn) {
   btn.addEventListener('click', function () {
     /* the value between buttons */
@@ -269,7 +279,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "39323" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "46003" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -8,6 +8,20 @@ const infants = document.querySelector('#infants');
 the page and I didn't want to define id everytime the block is needed. 
 It's only for UI kit */
 
+const clearBttn = document.querySelector('.common-dropdown__clear');
+clearBttn.addEventListener('click',
+    function () {
+        const fieldGuest = this.parentElement.parentElement.parentElement.querySelector('.dropdown-form__input');
+        fieldGuest.placeholder = "Сколько гостей";
+        adult.value = 0;
+        children.value = 0;
+        infants.value = 0;
+        this.classList.add('button-hidden');
+        this.classList.remove('button-pointer');
+        
+})
+
+
 btns.forEach(btn=> {
     btn.addEventListener('click',
         function() {

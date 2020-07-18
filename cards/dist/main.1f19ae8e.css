@@ -2128,7 +2128,7 @@ h1, h2, h3, h4, h5, h6 {
   top: 21%;
 }
 .room-card__before a {
-  background: url("/expand_more.18b6c6e6.svg");
+  background: url("/side_arrow.80bbc3df.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   width: 44px;
@@ -2137,7 +2137,7 @@ h1, h2, h3, h4, h5, h6 {
   cursor: pointer;
 }
 .room-card__after a {
-  background: url("/expand_more.18b6c6e6.svg");
+  background: url("/side_arrow.80bbc3df.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   width: 44px;

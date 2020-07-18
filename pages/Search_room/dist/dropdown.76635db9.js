@@ -119,9 +119,9 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   return newRequire;
 })({"js/dropdown.js":[function(require,module,exports) {
 //open and close dropdown
-var dropDownsFocus = document.querySelectorAll('.text-field__dropdown-default');
-dropDownsFocus.forEach(function (dropDownFocus) {
-  dropDownFocus.addEventListener('click', function () {
+var focusDropDowns = document.querySelectorAll('.text-field__dropdown-default');
+focusDropDowns.forEach(function (focusDropDown) {
+  focusDropDown.addEventListener('click', function () {
     var field = this.parentElement.querySelector('.common-dropdown');
     field.classList.toggle('hidden');
     this.classList.toggle('border-focus');
@@ -155,7 +155,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "39323" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "46003" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

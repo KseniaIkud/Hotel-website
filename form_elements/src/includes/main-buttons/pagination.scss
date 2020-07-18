@@ -30,12 +30,15 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            &:visited {
+                color: #FFF;
+            }
         }
         &_forward {
             width: 40px;
             height: 40px;
             border-radius: 50%;
-            background-image: url(./img/arrow_forward.svg), linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+            background-image: url(./img/arrow_forward_button.svg), linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
             background-repeat: no-repeat;
             background-position: 50% 50%;
         }
