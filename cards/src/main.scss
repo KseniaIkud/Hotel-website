@@ -19,8 +19,9 @@
 @import '../src/includes/sign-in.scss';
 
 //datepicker
+@import '../src/includes/datepicker-plugin/datepicker.scss';
 @import '../src/includes/datepicker-calendar.scss';
-@import '../src/includes/datepicker-plugin/datepicker.css';
+
 
 //rooms
 @import '../src/includes/rooms.scss';
