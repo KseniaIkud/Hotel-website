@@ -7,16 +7,15 @@
 @import '../../../form_elements/src/includes/text-fields.scss';
 
 //header
-@import '../../../headers_footers/src/includes/headers/navigation.scss';
+@import '../../../common/header.scss';
 
 //datepicker (search form)
 @import '../../../cards/src/includes/search-form.scss';
 @import '../../../cards/src/includes/datepicker-calendar.scss';
-@import '../../../cards/src/includes/datepicker-plugin/datepicker.css';
+@import '../../../cards/src/includes/datepicker-plugin/datepicker.scss';
 
 //footer
-@import '../../../headers_footers/src/includes/footers/widget.scss';
-@import '../../../headers_footers/src/includes/footers/copybar.scss';
+@import '../../../common/footer.scss';
 
 //fonts
 @font-face {
@@ -67,58 +66,6 @@
 	font-style: normal;
 }
 
-.header {
-    max-width: 1440px;
-	height: 70px;
-	margin: auto;
-	background: #FFFFFF;
-	margin-bottom: 40px;
-	box-shadow: 0px 10px 20px $dark-shade-05-color;	
-	&__content	{
-		max-width: 1163px;
-		height: 100%;
-		width: 100%;
-		
-		margin: auto;
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-    }
-    
-    &__menu {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    &__navigation{
-        width: 114%;
-    }
-    
-    &__buttons {
-        max-width: 302px;
-        width: 100%;
-	    margin-left: 20px;
-	    align-items: center;
-	    display: flex;
-	    justify-content: space-between;
-    }
-    &__sign-in {
-        @include transparent-button;
-		padding: 8px 18px;
-		&:hover{
-			@include transparent-button-hover;
-		}
-    }
-    &__registration {
-        @include purple-button;
-		padding: 5px 19.5px;
-		&:hover{
-			@include purple-button-hover;
-		}
-    }
-}
 .landing-page {
 	max-width: 1440px;
 	height: 891px;
