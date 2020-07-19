@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+        script(src="./details.js")
+        script(src="https://code.jquery.com/jquery-1.12.4.js")
+        script(src="./js/datepicker.js")
+        
+    header
+        include ../../../common/header
+        
+    body
+        .room-details
+            .room-details__photo.photo
+                .photo__column
+                    img(src="./img/main-photo.png", alt="room photo 1").photo_main
+                .photo__column
+                    img(src="./img/photo-add-1.png", alt="room photo 2").photo_add
+                    img(src="./img/photo-add-2.png", alt="room photo 3").photo_add_shifted
+            .room-details__information
+                .room-details__text
+                    .room-details__info
+                        .room-details__benefits
+                        .room-details__feedback
+                    .room-details__comments
+                    .room-details__rules
+                .room-details__calculator
+                    include ../../../cards/src/includes/calc-price
+                script(src="./js/dropdown-guests-default.js")
+                script(src="./js/dropdown.js")
+                    
+    footer  
+        include ../../../common/footer
