@@ -23,6 +23,10 @@ html(lang="en")
                 .room-details__text
                     .room-details__info
                         .room-details__benefits
+                            include ../../../common/benefits-mixins
+                            +benefit("./img/insert_emoticon.svg", "comfort", "Комфорт", "Шумопоглощающие стены", "yes")
+                            +benefit("./img/location_city.svg", "location", "Удобство", "Окно в каждой из спален", "yes")
+                            +benefit("./img/fireplace.svg", "cosy", "Уют", "Номер оснащён камином")
                         .room-details__feedback
                     .room-details__comments
                     .room-details__rules

@@ -493,6 +493,33 @@ header {
   opacity: 0.5;
 }
 
+.benefit__content {
+  height: 87px;
+  max-width: 280px;
+  display: flex;
+  align-items: center;
+}
+.benefit__img {
+  width: 40px;
+  height: auto;
+  margin-right: 14px;
+}
+.benefit__text {
+  font-family: Montserrat;
+  font-weight: normal;
+  font-size: 14px;
+  color: rgba(31, 32, 65, 0.75);
+  line-height: 24px;
+}
+.benefit__title {
+  font-weight: bold;
+}
+.benefit__split {
+  max-width: 280px;
+  height: 1px;
+  background-color: rgba(31, 32, 65, 0.1);
+}
+
 .button-hidden {
   visibility: hidden;
 }

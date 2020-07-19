@@ -1,9 +1,10 @@
 mixin benefit(img, alt, title, description, split)
     .benefit
-        img(src= img, alt= alt).benefit__img
-        .benefit__text
-            .benefit__title= title
-            .benefit__description= description
-    - if (split === "yes") {
-        .benefit__split
-    - }
+        .benefit__content
+            img(src= img, alt= alt).benefit__img
+            .benefit__text
+                .benefit__title= title
+                .benefit__description= description
+        - if (split === "yes") {
+            .benefit__split
+        - }

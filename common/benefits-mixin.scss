@@ -1,8 +1,10 @@
 .benefit {
-    height: 30px;
-    max-width: 280px;
-    display: flex;
-    align-items: center;
+    &__content {
+        height: 87px;
+        max-width: 280px;
+        display: flex;
+        align-items: center;
+    }
     &__img {
         width: 40px;
         height: auto;
