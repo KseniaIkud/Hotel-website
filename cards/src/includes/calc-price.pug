@@ -1,3 +1,5 @@
+include ../../../common/inputs-mixins
+include ../../../common/dropdown-mixins
 .calc-price
     .calc-price__header
         .calc-price__no № 888
@@ -22,11 +24,11 @@
             +input-dropdown("3 гостя")
         .text-field__common-dropdown.common-dropdown.hidden
             .common-dropdown__rows
-                +dropdown("Взрослые", 3)
-                +dropdown("Дети", 0)
-                +dropdown("Младенцы", 0)
+                +dropdown("Взрослые", 2, "adult", "counter__btn")
+                +dropdown("Дети", 1, "child", "counter__btn")
+                +dropdown("Младенцы", 0, "infant", "counter__btn")
             .common-dropdown__buttons
-                .common-dropdown__clear.button-hidden Очистить
+                .common-dropdown__clear.button-pointer Очистить
                 .common-dropdown__submit Применить
         
     .calc-price__calculation.calculation
