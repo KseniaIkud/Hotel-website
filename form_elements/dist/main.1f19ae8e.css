@@ -1395,42 +1395,40 @@ div.ui-slider-range.ui-widget-header {
   margin-left: -22.5px;
 }
 
-.benefits {
+.benefit {
+  height: 30px;
   max-width: 280px;
-  height: 137px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.benefits__option {
   display: flex;
   align-items: center;
 }
-.benefits__split {
-  width: 280px;
-  height: 1px;
-  background-color: rgba(31, 32, 65, 0.1);
-  position: absolute;
-  margin-top: 45px;
-}
-.benefits__emoticon {
+.benefit__img {
+  width: 40px;
+  height: auto;
   margin-right: 14px;
-  margin-left: 2px;
 }
-.benefits__location {
-  margin-right: 16px;
-  margin-left: 4px;
-}
-.benefits__text {
+.benefit__text {
   font-family: Montserrat;
   font-weight: normal;
   font-size: 14px;
   color: rgba(31, 32, 65, 0.75);
   line-height: 24px;
 }
-.benefits__title {
+.benefit__title {
   font-weight: bold;
 }
+.benefit__split {
+  max-width: 280px;
+  height: 1px;
+  background-color: rgba(31, 32, 65, 0.1);
+}
+
+.benefits {
+  height: 149px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .comment {
   grid-column: 2/4;
   max-width: 653px;
