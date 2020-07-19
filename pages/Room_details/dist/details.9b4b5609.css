@@ -520,6 +520,81 @@ header {
   background-color: rgba(31, 32, 65, 0.1);
 }
 
+.comment {
+  grid-column: 2/4;
+  max-width: 653px;
+}
+.comment__head {
+  display: flex;
+  align-items: center;
+}
+.comment__photo {
+  margin-bottom: -20px;
+  margin-right: -11px;
+  margin-left: -19px;
+}
+.comment__text {
+  font-family: Montserrat;
+  font-weight: normal;
+  font-size: 14px;
+  color: rgba(31, 32, 65, 0.75);
+  line-height: 24px;
+}
+.comment__name {
+  font-weight: bold;
+}
+.comment__main {
+  display: flex;
+}
+.comment__like {
+  margin-right: 15px;
+  margin-left: 4px;
+  margin-top: 1.5px;
+}
+.comment__like .like-button {
+  display: flex;
+  width: 40px;
+  height: 20px;
+  border-radius: 10px;
+  display: flex;
+  padding-left: 3px;
+  padding-right: 5px;
+  cursor: pointer;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+}
+.comment__like .like-button__heart {
+  background-image: url(/heart.8b87f66a.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 20px;
+  height: 20px;
+}
+.comment__like .like-button__counter {
+  margin-top: 1px;
+  width: 100%;
+  height: 15px;
+  border-radius: 50%;
+  text-align: center;
+  font-family: Montserrat;
+  font-weight: normal;
+  font-size: 14px;
+  color: rgba(31, 32, 65, 0.75);
+  line-height: 24px;
+  line-height: 0;
+  font-size: 10px;
+  color: rgba(31, 32, 65, 0.25);
+  cursor: pointer;
+}
+.comment__like .like-button__active {
+  border: 1px solid #BC9CFF;
+}
+.comment__like .like-button__active div {
+  background-image: url(/favorite.4d127cd3.svg);
+}
+.comment__like .like-button__active input {
+  color: #BC9CFF;
+}
+
 .button-hidden {
   visibility: hidden;
 }

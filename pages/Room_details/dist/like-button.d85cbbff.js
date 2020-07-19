@@ -117,83 +117,34 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
-var bundleURL = null;
+})({"js/like-button.js":[function(require,module,exports) {
+function _createForOfIteratorHelper(o) { if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) { if (Array.isArray(o) || (o = _unsupportedIterableToArray(o))) { var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var it, normalCompletion = true, didErr = false, err; return { s: function s() { it = o[Symbol.iterator](); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it.return != null) it.return(); } finally { if (didErr) throw err; } } }; }
 
-function getBundleURLCached() {
-  if (!bundleURL) {
-    bundleURL = getBundleURL();
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+var likes = document.querySelectorAll('.like-button');
+
+var _iterator = _createForOfIteratorHelper(likes),
+    _step;
+
+try {
+  for (_iterator.s(); !(_step = _iterator.n()).done;) {
+    var like = _step.value;
+
+    like.onclick = function () {
+      var count = this.querySelector('.like-button__counter');
+      this.classList.toggle('like-button__active');
+      this.classList.contains("like-button__active") ? count.value++ : count.value--;
+    };
   }
-
-  return bundleURL;
+} catch (err) {
+  _iterator.e(err);
+} finally {
+  _iterator.f();
 }
-
-function getBundleURL() {
-  // Attempt to find the URL of the current script and use that as the base URL
-  try {
-    throw new Error();
-  } catch (err) {
-    var matches = ('' + err.stack).match(/(https?|file|ftp|chrome-extension|moz-extension):\/\/[^)\n]+/g);
-
-    if (matches) {
-      return getBaseURL(matches[0]);
-    }
-  }
-
-  return '/';
-}
-
-function getBaseURL(url) {
-  return ('' + url).replace(/^((?:https?|file|ftp|chrome-extension|moz-extension):\/\/.+)\/[^/]+$/, '$1') + '/';
-}
-
-exports.getBundleURL = getBundleURLCached;
-exports.getBaseURL = getBaseURL;
-},{}],"../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
-var bundle = require('./bundle-url');
-
-function updateLink(link) {
-  var newLink = link.cloneNode();
-
-  newLink.onload = function () {
-    link.remove();
-  };
-
-  newLink.href = link.href.split('?')[0] + '?' + Date.now();
-  link.parentNode.insertBefore(newLink, link.nextSibling);
-}
-
-var cssTimeout = null;
-
-function reloadCSS() {
-  if (cssTimeout) {
-    return;
-  }
-
-  cssTimeout = setTimeout(function () {
-    var links = document.querySelectorAll('link[rel="stylesheet"]');
-
-    for (var i = 0; i < links.length; i++) {
-      if (bundle.getBaseURL(links[i].href) === bundle.getBundleURL()) {
-        updateLink(links[i]);
-      }
-    }
-
-    cssTimeout = null;
-  }, 50);
-}
-
-module.exports = reloadCSS;
-},{"./bundle-url":"../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"details.scss":[function(require,module,exports) {
-var reloadCSS = require('_css_loader');
-
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
-},{"./img/expand_more.png":[["expand_more.60ec3e73.png","img/expand_more.png"],"img/expand_more.png"],"./img/arrow_subscription.png":[["arrow_subscription.4953c458.png","img/arrow_subscription.png"],"img/arrow_subscription.png"],"./img/heart.svg":[["heart.8b87f66a.svg","img/heart.svg"],"img/heart.svg"],"./img/favorite.svg":[["favorite.4d127cd3.svg","img/favorite.svg"],"img/favorite.svg"],"./img/arrow_forward_button.svg":[["arrow_forward_button.5b1a2477.svg","img/arrow_forward_button.svg"],"img/arrow_forward_button.svg"],"./img/arrow_back.svg":[["arrow_back.81d852c4.svg","img/arrow_back.svg"],"img/arrow_back.svg"],"./img/arrow_forward.svg":[["arrow_forward.04b75f4b.svg","img/arrow_forward.svg"],"img/arrow_forward.svg"],"./fonts/Montserrat-Regular.eot":[["Montserrat-Regular.21b801b8.eot","fonts/Montserrat-Regular.eot"],"fonts/Montserrat-Regular.eot"],"./fonts/Montserrat-Regular.woff":[["Montserrat-Regular.1b35f2ae.woff","fonts/Montserrat-Regular.woff"],"fonts/Montserrat-Regular.woff"],"./fonts/Montserrat-Regular.ttf":[["Montserrat-Regular.44e710c1.ttf","fonts/Montserrat-Regular.ttf"],"fonts/Montserrat-Regular.ttf"],"./fonts/Montserrat-Regular.svg":[["Montserrat-Regular.6f6bdac5.svg","fonts/Montserrat-Regular.svg"],"fonts/Montserrat-Regular.svg"],"./fonts/Montserrat-Bold.eot":[["Montserrat-Bold.70d570c7.eot","fonts/Montserrat-Bold.eot"],"fonts/Montserrat-Bold.eot"],"./fonts/Montserrat-Bold.woff":[["Montserrat-Bold.73e94c2c.woff","fonts/Montserrat-Bold.woff"],"fonts/Montserrat-Bold.woff"],"./fonts/Montserrat-Bold.ttf":[["Montserrat-Bold.f3410305.ttf","fonts/Montserrat-Bold.ttf"],"fonts/Montserrat-Bold.ttf"],"./fonts/Montserrat-Bold.svg":[["Montserrat-Bold.0fff2121.svg","fonts/Montserrat-Bold.svg"],"fonts/Montserrat-Bold.svg"],"./fonts/Quicksand-Regular.eot":[["Quicksand-Regular.0cfee767.eot","fonts/Quicksand-Regular.eot"],"fonts/Quicksand-Regular.eot"],"./fonts/Quicksand-Regular.woff":[["Quicksand-Regular.802b5f30.woff","fonts/Quicksand-Regular.woff"],"fonts/Quicksand-Regular.woff"],"./fonts/Quicksand-Regular.ttf":[["Quicksand-Regular.8a0a465b.ttf","fonts/Quicksand-Regular.ttf"],"fonts/Quicksand-Regular.ttf"],"./fonts/Quicksand-Regular.svg":[["Quicksand-Regular.d6fe3367.svg","fonts/Quicksand-Regular.svg"],"fonts/Quicksand-Regular.svg"],"./fonts/Quicksand-Bold.eot":[["Quicksand-Bold.a0ba9881.eot","fonts/Quicksand-Bold.eot"],"fonts/Quicksand-Bold.eot"],"./fonts/Quicksand-Bold.woff":[["Quicksand-Bold.9d6d9460.woff","fonts/Quicksand-Bold.woff"],"fonts/Quicksand-Bold.woff"],"./fonts/Quicksand-Bold.ttf":[["Quicksand-Bold.e8196955.ttf","fonts/Quicksand-Bold.ttf"],"fonts/Quicksand-Bold.ttf"],"./fonts/Quicksand-Bold.svg":[["Quicksand-Bold.e7597636.svg","fonts/Quicksand-Bold.svg"],"fonts/Quicksand-Bold.svg"],"./fonts/OpenSans-Regular.eot":[["OpenSans-Regular.d7b18aa2.eot","fonts/OpenSans-Regular.eot"],"fonts/OpenSans-Regular.eot"],"./fonts/OpenSans-Regular.woff":[["OpenSans-Regular.5d698a25.woff","fonts/OpenSans-Regular.woff"],"fonts/OpenSans-Regular.woff"],"./fonts/OpenSans-Regular.ttf":[["OpenSans-Regular.4f32e784.ttf","fonts/OpenSans-Regular.ttf"],"fonts/OpenSans-Regular.ttf"],"./fonts/OpenSans-Regular.svg":[["OpenSans-Regular.9956fce7.svg","fonts/OpenSans-Regular.svg"],"fonts/OpenSans-Regular.svg"],"./fonts/OpenSans-Bold.eot":[["OpenSans-Bold.887202cf.eot","fonts/OpenSans-Bold.eot"],"fonts/OpenSans-Bold.eot"],"./fonts/OpenSans-Bold.woff":[["OpenSans-Bold.ef4dedc9.woff","fonts/OpenSans-Bold.woff"],"fonts/OpenSans-Bold.woff"],"./fonts/OpenSans-Bold.ttf":[["OpenSans-Bold.81f0cd2d.ttf","fonts/OpenSans-Bold.ttf"],"fonts/OpenSans-Bold.ttf"],"./fonts/OpenSans-Bold.svg":[["OpenSans-Bold.521f2c39.svg","fonts/OpenSans-Bold.svg"],"fonts/OpenSans-Bold.svg"],"_css_loader":"../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"details.js":[function(require,module,exports) {
-"use strict";
-
-require("./details.scss");
-},{"./details.scss":"details.scss"}],"../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{}],"../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -397,5 +348,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","details.js"], null)
-//# sourceMappingURL=/details.9b4b5609.js.map
+},{}]},{},["../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/like-button.js"], null)
+//# sourceMappingURL=/like-button.d85cbbff.js.map
