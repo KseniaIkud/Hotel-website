@@ -1,17 +1,12 @@
 include ./buttons-mixins
-mixin room(img, number, price, rate, reviews, hidden, category)
+mixin room(img, number, price, rate, reviews, hidden, category, link)
     .room-card
-        nav.room-card__arrows(class= hidden)
-            li.room-card__before
-                a(href="#")
-            li.room-card__after
-                a(href="#")
-        .room-card__slider
-            .room-card__slide_chosen
-            .room-card__slide
-            .room-card__slide
-            .room-card__slide
-        img(src= img, alt= number).room-card__img
+        .room-card__before(class= hidden)
+            a(href="#")
+        .room-card__after(class= hidden)
+            a(href="#")
+        a(href= link).room-card__link
+            img(src= img, alt= number).room-card__img    
         .room-card__description
             .room-card__number.number
                 .number__text №
