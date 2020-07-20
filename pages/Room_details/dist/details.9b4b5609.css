@@ -520,9 +520,104 @@ header {
   background-color: rgba(31, 32, 65, 0.1);
 }
 
+.diagram {
+  display: flex;
+  align-items: center;
+  height: 163px;
+  width: 320px;
+}
+.diagram__chart {
+  position: relative;
+  margin-left: -30px;
+}
+.diagram__description {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 39%;
+  left: 32%;
+}
+.diagram__number {
+  font-family: Quicksand, OpenSans;
+  font-weight: 700;
+  font-size: 24px;
+  color: #1F2041;
+  line-height: 30px;
+  color: #BC9CFF;
+  line-height: 20px;
+}
+.diagram__votes {
+  font-family: Montserrat;
+  font-weight: normal;
+  font-size: 14px;
+  color: rgba(31, 32, 65, 0.75);
+  line-height: 24px;
+  color: #BC9CFF;
+  font-weight: bold;
+  font-size: 15px;
+}
+.diagram__legend {
+  margin-top: 30px;
+}
+
+.chart {
+  fill: none;
+  stroke-width: 1;
+}
+.chart__excellent {
+  stroke: #FFBA9C;
+  stroke-dasharray: 49.4 100;
+  stroke-dashoffset: -25;
+}
+.chart__good {
+  stroke: #8BA4F9;
+  stroke-dasharray: 24 100;
+  stroke-dashoffset: 49;
+}
+.chart__fine {
+  stroke: #66D2EA;
+  stroke-dasharray: 24.4 100;
+}
+
+.legend {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 96px;
+}
+.legend__item {
+  display: flex;
+  align-items: center;
+}
+.legend__color {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.legend__color_excellent {
+  background: linear-gradient(180deg, #FFE39C 0%, #FFBA9C 100%);
+}
+.legend__color_good {
+  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+}
+.legend__color_fine {
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+}
+.legend__color_disappoint {
+  background: linear-gradient(180deg, #919191 0%, #3D4975 100%);
+}
+.legend__description {
+  font-family: Montserrat;
+  font-weight: normal;
+  font-size: 14px;
+  color: rgba(31, 32, 65, 0.75);
+  line-height: 24px;
+}
+
 .comment {
   grid-column: 2/4;
-  max-width: 653px;
 }
 .comment__head {
   display: flex;
@@ -593,6 +688,50 @@ header {
 }
 .comment__like .like-button__active input {
   color: #BC9CFF;
+}
+
+.bullet {
+  height: 143px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.bullet__title {
+  max-width: 320px;
+  margin-bottom: 5px;
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 12px;
+  color: #1F2041;
+  line-height: 15px;
+  text-transform: uppercase;
+  height: 10px;
+}
+.bullet__list {
+  max-width: 260px;
+  height: 115px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.bullet__item {
+  margin-left: 20px;
+  position: relative;
+  font-family: Montserrat;
+  font-weight: normal;
+  font-size: 14px;
+  color: rgba(31, 32, 65, 0.75);
+  line-height: 24px;
+}
+.bullet__item::before {
+  content: "•";
+  color: rgba(31, 32, 65, 0.25);
+  font-size: 43px;
+  display: inline-block;
+  font-weight: bold;
+  position: absolute;
+  margin-top: -3.5px;
+  margin-left: -22.5px;
 }
 
 .button-hidden {
@@ -2136,13 +2275,88 @@ header {
 }
 .room-details__photo {
   max-width: 1440px;
+  height: 484px;
+  overflow: hidden;
   display: flex;
   margin: 0 auto;
 }
-
-.photo {
-  overflow: hidden;
+.room-details__information {
+  max-width: 1160px;
+  margin: 70px auto;
+  display: flex;
+  justify-content: space-between;
 }
+.room-details__text {
+  flex-grow: 2;
+  max-width: 710px;
+}
+.room-details__info {
+  width: 96%;
+  display: flex;
+  justify-content: space-between;
+}
+.room-details__title {
+  font-family: Quicksand, OpenSans;
+  font-weight: 700;
+  font-size: 19px;
+  color: #1F2041;
+  line-height: 24px;
+  position: relative;
+}
+.room-details__title_shifted {
+  margin-left: 20px;
+}
+.room-details__description {
+  font-family: Montserrat;
+  font-weight: normal;
+  font-size: 14px;
+  color: rgba(31, 32, 65, 0.75);
+  line-height: 24px;
+  max-width: 341px;
+}
+.room-details__benefits {
+  margin-bottom: 12px;
+}
+.room-details__benefits .benefit {
+  margin-left: 4px;
+  margin-top: 2px;
+}
+.room-details__comments {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 304px;
+  margin-bottom: 33px;
+}
+.room-details__number {
+  position: absolute;
+  right: -3px;
+  top: 2px;
+  font-family: Montserrat;
+  font-weight: normal;
+  font-size: 14px;
+  color: rgba(31, 32, 65, 0.75);
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.5);
+}
+.room-details__rules {
+  display: flex;
+  justify-content: space-between;
+  width: 99.2%;
+}
+.room-details__bullet-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 186px;
+}
+.room-details__cancelation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 138px;
+}
+
 .photo_main {
   width: 985px;
   height: auto;

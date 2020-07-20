@@ -1430,7 +1430,6 @@ div.ui-slider-range.ui-widget-header {
 
 .comment {
   grid-column: 2/4;
-  max-width: 653px;
 }
 .comment__head {
   display: flex;

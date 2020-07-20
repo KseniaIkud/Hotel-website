@@ -13,8 +13,14 @@
 //benefits
 @import '../../../common/benefits-mixin.scss';
 
+//diagram
+@import './includes/diagram.scss';
+
 //comments
 @import '../../../form_elements/src/includes/comment.scss';
+
+//bullet list
+@import '../../../form_elements/src/includes/bullet-list.scss';
 
 //calculator
 @import '../../../cards/src/includes/calc-price.scss';
@@ -79,13 +85,78 @@
     max-width: 1440px;
     margin: 0 auto;
     &__photo {
-        max-width: 1440px;
+		max-width: 1440px;
+		height: 484px;
+		overflow: hidden;
         display: flex;
         margin: 0 auto;
-    }
+	}
+	&__information {
+		max-width: 1160px;
+		margin: 70px auto;
+		display: flex;
+		justify-content: space-between;
+	}
+	&__text {
+		flex-grow: 2;
+		max-width: 710px;
+	}
+	&__info{
+		width: 96%;
+		display: flex;
+		justify-content: space-between;
+	}
+	&__title {
+		@include h2-text;
+		position: relative;
+		&_shifted {
+			margin-left: 20px;
+		}
+	}
+	&__description {
+		@include body-text;
+		max-width: 341px;
+	}
+	&__benefits {
+		margin-bottom: 12px;
+		.benefit {
+			margin-left: 4px;
+			margin-top: 2px;
+		}
+	}
+	&__comments {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		height: 304px;
+		margin-bottom: 33px;
+	}
+	&__number {
+		position: absolute;
+		right: -3px;
+		top: 2px;
+		@include body-text;
+		color: $dark-shade-50-color;
+	}
+	&__rules {
+		display: flex;
+		justify-content: space-between;
+		width: 99.2%;
+	}
+	&__bullet-list {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		height: 186px;
+	}
+	&__cancelation {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		height: 138px;
+	}
 }
 .photo {
-    overflow: hidden;
     &_main {
         width: 985px;
         height: auto;
