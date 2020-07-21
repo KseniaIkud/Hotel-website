@@ -5,5 +5,11 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title Sign in
         script(src="./sign-in.js")
+    header
+        include ../../../common/header
     body
-        .test test
+        .sign-in-page
+            .sign-in-page__card
+                include ../../../cards/src/includes/sign-in
+    footer  
+        include ../../../common/footer
