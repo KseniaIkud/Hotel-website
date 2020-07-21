@@ -611,6 +611,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .registration-card {
+  background-color: #FFF;
   max-width: 380px;
   padding: 40px 30px 30px 30px;
   border: 1px solid rgba(0, 0, 0, 0.12);
@@ -999,6 +1000,7 @@ h1, h2, h3, h4, h5, h6 {
   border: 1px solid rgba(0, 0, 0, 0.12);
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  background-color: #FFF;
 }
 .sign-in__title {
   font-family: Quicksand, OpenSans;
@@ -2185,12 +2187,19 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 4px;
   position: relative;
 }
-.room-card__arrows {
+.room-card__before {
   position: absolute;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
+  width: 40px;
   top: 21%;
+}
+.room-card__after {
+  position: absolute;
+  width: 40px;
+  top: 21%;
+  right: 1%;
+}
+.room-card__link:hover .room-card__img {
+  box-shadow: 0px 0px 20px rgba(31, 32, 65, 0.5);
 }
 .room-card__before a {
   background: url("/side_arrow.80bbc3df.svg");

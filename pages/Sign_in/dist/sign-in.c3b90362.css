@@ -470,6 +470,9 @@ header {
   justify-content: space-between;
   margin-bottom: 22px;
 }
+.sign-in__button {
+  position: relative;
+}
 .sign-in__entrance {
   font-family: Montserrat;
   font-weight: normal;
