@@ -65,7 +65,7 @@ h1, h2, h3, h4, h5, h6 {
 .navigation__list {
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: 445px;
   font-family: Montserrat;
   font-weight: normal;
   font-size: 14px;

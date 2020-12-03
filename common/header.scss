@@ -5,14 +5,14 @@ header {
 .header {
     max-width: 1440px;
 	height: 70px;
-	margin: auto;
 	background: #FFFFFF;
-	margin-bottom: 40px;
-	box-shadow: 0px 10px 20px $dark-shade-05-color;	
+	margin: 0 auto 40px;
+	box-shadow: 0 10px 20px $dark-shade-05-color;
+	width: 100vw;
+
 	&__content	{
 		max-width: 1163px;
 		height: 100%;
-		
 		margin: auto;
 		display: flex;
 		align-items: center;
@@ -20,27 +20,62 @@ header {
     }
     
     &__menu {
-        width: 100%;
-        display: flex;
+        display: grid;
         align-items: center;
-        justify-content: space-between;
+        grid-template-columns: 1fr 3fr 2fr;
+		@media (max-width: 960px) {
+			display: flex;
+		}
     }
-
-    &__navigation{
-        width: 114%;
-    }
-    
+	&__burger-menu {
+		@media (max-width: 960px) {
+			display: block;
+			min-width: 40px;
+			height: 40px;
+			border: 2px solid #8BA4F9;
+			border-radius: 4px;
+			position: relative;
+			& span,
+			&:before,
+			&:after {
+				content: '';
+				position: absolute;
+				display: block;
+				height: 2px;
+				width: 20px;
+				background-color: $purple-color;
+				left: 8px;
+			}
+			&:before {
+				top: 10px
+			}
+			& span {
+				top: 17px;
+			}
+			&:after {
+				bottom: 10px;
+			}
+		}
+	}
+	&__navigation {
+		@media (max-width: 960px) {
+			display: none;
+		}
+	}
     &__buttons {
         max-width: 302px;
-        width: 100%;
 	    margin-left: 20px;
 	    align-items: center;
 	    display: flex;
 	    justify-content: space-between;
+		@media (max-width: 540px) {
+			display: none;
+		}
     }
     &__sign-in {
         @include transparent-button;
 		padding: 8px 18px;
+		margin-right: 20px;
 		&:hover{
 			@include transparent-button-hover;
 		}

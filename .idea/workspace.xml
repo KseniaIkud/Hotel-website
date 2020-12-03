@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fc2b2192-7f58-443d-bcf0-3ed347a6725c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/cards/src/includes/search-form.pug" beforeDir="false" afterPath="$PROJECT_DIR$/cards/src/includes/search-form.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cards/src/includes/search-form.scss" beforeDir="false" afterPath="$PROJECT_DIR$/cards/src/includes/search-form.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/footer.pug" beforeDir="false" afterPath="$PROJECT_DIR$/common/footer.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/common/footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/header.pug" beforeDir="false" afterPath="$PROJECT_DIR$/common/header.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/common/header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/headers_footers/.cache/0c/8059e707600f2513f168f993f1d5f0.json" beforeDir="false" afterPath="$PROJECT_DIR$/headers_footers/.cache/0c/8059e707600f2513f168f993f1d5f0.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/headers_footers/.cache/63/395cf3050b3c31a111ab9df635c0b8.json" beforeDir="false" afterPath="$PROJECT_DIR$/headers_footers/.cache/63/395cf3050b3c31a111ab9df635c0b8.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/headers_footers/.cache/8c/064a5d1c1db798ff60afebc53ac0c6.json" beforeDir="false" afterPath="$PROJECT_DIR$/headers_footers/.cache/8c/064a5d1c1db798ff60afebc53ac0c6.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/headers_footers/.cache/fb/3f0188985d0e6bf6e3acac87bd6652.json" beforeDir="false" afterPath="$PROJECT_DIR$/headers_footers/.cache/fb/3f0188985d0e6bf6e3acac87bd6652.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/headers_footers/dist/main.1f19ae8e.css" beforeDir="false" afterPath="$PROJECT_DIR$/headers_footers/dist/main.1f19ae8e.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/headers_footers/dist/main.1f19ae8e.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/headers_footers/dist/main.1f19ae8e.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/headers_footers/dist/main.1f19ae8e.js" beforeDir="false" afterPath="$PROJECT_DIR$/headers_footers/dist/main.1f19ae8e.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/headers_footers/src/includes/footers/creative.scss" beforeDir="false" afterPath="$PROJECT_DIR$/headers_footers/src/includes/footers/creative.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/headers_footers/src/includes/headers/navigation.scss" beforeDir="false" afterPath="$PROJECT_DIR$/headers_footers/src/includes/headers/navigation.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/headers_footers/src/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/headers_footers/src/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/Landing_page/.cache/0c/8059e707600f2513f168f993f1d5f0.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Landing_page/.cache/0c/8059e707600f2513f168f993f1d5f0.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/Landing_page/.cache/59/2a04cecc4b09b3d3359b3c838093d8.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Landing_page/.cache/59/2a04cecc4b09b3d3359b3c838093d8.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/Landing_page/.cache/5c/8eb5004492f884552c1350f3ad1a0b.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Landing_page/.cache/5c/8eb5004492f884552c1350f3ad1a0b.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/Landing_page/.cache/8c/064a5d1c1db798ff60afebc53ac0c6.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Landing_page/.cache/8c/064a5d1c1db798ff60afebc53ac0c6.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/Landing_page/.cache/fb/3f0188985d0e6bf6e3acac87bd6652.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Landing_page/.cache/fb/3f0188985d0e6bf6e3acac87bd6652.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/Landing_page/dist/datepicker.2784a7e7.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Landing_page/dist/datepicker.2784a7e7.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/Landing_page/dist/datepicker.2784a7e7.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Landing_page/dist/datepicker.2784a7e7.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/Landing_page/dist/dropdown-guests-default.ad838450.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Landing_page/dist/dropdown-guests-default.ad838450.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/Landing_page/dist/dropdown-guests-default.ad838450.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Landing_page/dist/dropdown-guests-default.ad838450.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/Landing_page/dist/dropdown.76635db9.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Landing_page/dist/dropdown.76635db9.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/Landing_page/dist/dropdown.76635db9.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Landing_page/dist/dropdown.76635db9.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/Landing_page/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Landing_page/dist/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/Landing_page/dist/main.1f19ae8e.css" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Landing_page/dist/main.1f19ae8e.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/Landing_page/dist/main.1f19ae8e.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Landing_page/dist/main.1f19ae8e.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/Landing_page/dist/main.1f19ae8e.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Landing_page/dist/main.1f19ae8e.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/Landing_page/src/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Landing_page/src/main.scss" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1l90quLF82dLUomquf3bt1FuxpL" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fc2b2192-7f58-443d-bcf0-3ed347a6725c" name="Default Changelist" comment="" />
+      <created>1606994193919</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1606994193919</updated>
+      <workItem from="1606994195247" duration="7196000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
