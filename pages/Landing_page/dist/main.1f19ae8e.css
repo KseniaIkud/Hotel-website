@@ -683,6 +683,10 @@ header {
   opacity: 0.5;
 }
 
+.someNewClass {
+  border: 1px solid black;
+}
+
 .datepicker--cell-day.-other-month-, .datepicker--cell-year.-other-decade- {
   color: #dedede;
 }

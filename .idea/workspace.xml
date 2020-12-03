@@ -2,38 +2,64 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fc2b2192-7f58-443d-bcf0-3ed347a6725c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/cards/src/includes/search-form.pug" beforeDir="false" afterPath="$PROJECT_DIR$/cards/src/includes/search-form.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cards/src/includes/search-form.scss" beforeDir="false" afterPath="$PROJECT_DIR$/cards/src/includes/search-form.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/footer.pug" beforeDir="false" afterPath="$PROJECT_DIR$/common/footer.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/common/footer.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/header.pug" beforeDir="false" afterPath="$PROJECT_DIR$/common/header.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/common/header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/headers_footers/.cache/0c/8059e707600f2513f168f993f1d5f0.json" beforeDir="false" afterPath="$PROJECT_DIR$/headers_footers/.cache/0c/8059e707600f2513f168f993f1d5f0.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/headers_footers/.cache/63/395cf3050b3c31a111ab9df635c0b8.json" beforeDir="false" afterPath="$PROJECT_DIR$/headers_footers/.cache/63/395cf3050b3c31a111ab9df635c0b8.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/headers_footers/.cache/8c/064a5d1c1db798ff60afebc53ac0c6.json" beforeDir="false" afterPath="$PROJECT_DIR$/headers_footers/.cache/8c/064a5d1c1db798ff60afebc53ac0c6.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/headers_footers/.cache/fb/3f0188985d0e6bf6e3acac87bd6652.json" beforeDir="false" afterPath="$PROJECT_DIR$/headers_footers/.cache/fb/3f0188985d0e6bf6e3acac87bd6652.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/headers_footers/dist/main.1f19ae8e.css" beforeDir="false" afterPath="$PROJECT_DIR$/headers_footers/dist/main.1f19ae8e.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/headers_footers/dist/main.1f19ae8e.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/headers_footers/dist/main.1f19ae8e.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/headers_footers/dist/main.1f19ae8e.js" beforeDir="false" afterPath="$PROJECT_DIR$/headers_footers/dist/main.1f19ae8e.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/headers_footers/src/includes/footers/creative.scss" beforeDir="false" afterPath="$PROJECT_DIR$/headers_footers/src/includes/footers/creative.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/headers_footers/src/includes/headers/navigation.scss" beforeDir="false" afterPath="$PROJECT_DIR$/headers_footers/src/includes/headers/navigation.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/headers_footers/src/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/headers_footers/src/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/Landing_page/.cache/01/05d96f8bad63c8e4c8088434fcd3b6.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Landing_page/.cache/01/05d96f8bad63c8e4c8088434fcd3b6.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/Landing_page/.cache/01/b4a590344a2f72c787c2af198b878d.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Landing_page/.cache/01/b4a590344a2f72c787c2af198b878d.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/Landing_page/.cache/03/1110e524e80aca9a998db0f844e24a.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Landing_page/.cache/03/1110e524e80aca9a998db0f844e24a.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/Landing_page/.cache/06/9bee78aa4fea70fb91b72b0c5f0850.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Landing_page/.cache/06/9bee78aa4fea70fb91b72b0c5f0850.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/Landing_page/.cache/08/09d63795bf3629b2dfe457a28db6fa.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Landing_page/.cache/08/09d63795bf3629b2dfe457a28db6fa.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/Landing_page/.cache/08/4180cd936ecf27f5ee9179b70c2958.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Landing_page/.cache/08/4180cd936ecf27f5ee9179b70c2958.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/Landing_page/.cache/0c/8059e707600f2513f168f993f1d5f0.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Landing_page/.cache/0c/8059e707600f2513f168f993f1d5f0.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/Landing_page/.cache/0c/b0bf7966c0c3d2a17783839f4136b6.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Landing_page/.cache/0c/b0bf7966c0c3d2a17783839f4136b6.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/Landing_page/.cache/1e/ac6f32948d9d89865c9e4c368b14fd.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Landing_page/.cache/1e/ac6f32948d9d89865c9e4c368b14fd.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/Landing_page/.cache/25/74470d5e034640019cd3f20cfa37b4.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Landing_page/.cache/25/74470d5e034640019cd3f20cfa37b4.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/Landing_page/.cache/31/c624254d82c5d02207cc788b8e177a.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Landing_page/.cache/31/c624254d82c5d02207cc788b8e177a.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/Landing_page/.cache/37/28bab95cd357ab3f8d251d82488baa.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Landing_page/.cache/37/28bab95cd357ab3f8d251d82488baa.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/Landing_page/.cache/37/eba2f10fc18c9c465de0f7fdd4995b.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Landing_page/.cache/37/eba2f10fc18c9c465de0f7fdd4995b.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/Landing_page/.cache/45/da6ee9f308446ea66b9f2a96f92868.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Landing_page/.cache/45/da6ee9f308446ea66b9f2a96f92868.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/Landing_page/.cache/52/6c27c864c4e8ea4f82e99a16089bb4.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Landing_page/.cache/52/6c27c864c4e8ea4f82e99a16089bb4.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/Landing_page/.cache/55/99de98001b655d611e1ab8c22819d5.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Landing_page/.cache/55/99de98001b655d611e1ab8c22819d5.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/Landing_page/.cache/55/9e9205a8370273525f9194667ca707.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Landing_page/.cache/55/9e9205a8370273525f9194667ca707.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/Landing_page/.cache/59/2a04cecc4b09b3d3359b3c838093d8.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Landing_page/.cache/59/2a04cecc4b09b3d3359b3c838093d8.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/Landing_page/.cache/5c/8eb5004492f884552c1350f3ad1a0b.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Landing_page/.cache/5c/8eb5004492f884552c1350f3ad1a0b.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/Landing_page/.cache/5d/7492661337b0caa30e4d09bdce9a2b.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Landing_page/.cache/5d/7492661337b0caa30e4d09bdce9a2b.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/Landing_page/.cache/5e/3bf9bb7228d31c70967aa84d6f82d8.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Landing_page/.cache/5e/3bf9bb7228d31c70967aa84d6f82d8.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/Landing_page/.cache/60/6c66d2a68741fc750e3ca1f96b6bca.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Landing_page/.cache/60/6c66d2a68741fc750e3ca1f96b6bca.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/Landing_page/.cache/73/aa33f8a31668ba6239d3a32d2fbc05.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Landing_page/.cache/73/aa33f8a31668ba6239d3a32d2fbc05.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/Landing_page/.cache/7c/249588511aa8ac1e9c353e1c28e294.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Landing_page/.cache/7c/249588511aa8ac1e9c353e1c28e294.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/Landing_page/.cache/7d/cd91613239b328f49c9fe5d35edbc5.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Landing_page/.cache/7d/cd91613239b328f49c9fe5d35edbc5.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/Landing_page/.cache/82/a449f7c4c231238d5457491779d7db.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Landing_page/.cache/82/a449f7c4c231238d5457491779d7db.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/Landing_page/.cache/83/850ff665ec0212aa1bf073df17944e.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Landing_page/.cache/83/850ff665ec0212aa1bf073df17944e.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/Landing_page/.cache/89/653019ca6c4a61be2df5b8c6419bf9.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Landing_page/.cache/89/653019ca6c4a61be2df5b8c6419bf9.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/Landing_page/.cache/8c/064a5d1c1db798ff60afebc53ac0c6.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Landing_page/.cache/8c/064a5d1c1db798ff60afebc53ac0c6.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/Landing_page/.cache/8d/de11b5cadf4dc1c124f9679f857e1f.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Landing_page/.cache/8d/de11b5cadf4dc1c124f9679f857e1f.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/Landing_page/.cache/9d/699319606ca967073ba21e1b4ba8c3.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Landing_page/.cache/9d/699319606ca967073ba21e1b4ba8c3.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/Landing_page/.cache/a5/ef0dacffca0e8d260261fd3f662671.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Landing_page/.cache/a5/ef0dacffca0e8d260261fd3f662671.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/Landing_page/.cache/c5/9552b9b235627999bef2b07cb10606.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Landing_page/.cache/c5/9552b9b235627999bef2b07cb10606.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/Landing_page/.cache/c7/3764e886827db85ee9d5e5370b4d38.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Landing_page/.cache/c7/3764e886827db85ee9d5e5370b4d38.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/Landing_page/.cache/d8/f72d294222197d01c14b51ac4404c8.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Landing_page/.cache/d8/f72d294222197d01c14b51ac4404c8.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/Landing_page/.cache/dd/2c537d9d1e5296ae9c348a4176d931.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Landing_page/.cache/dd/2c537d9d1e5296ae9c348a4176d931.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/Landing_page/.cache/dd/ac4f98385ab2856cc1ab2cb8fe3c6c.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Landing_page/.cache/dd/ac4f98385ab2856cc1ab2cb8fe3c6c.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/Landing_page/.cache/e4/5411c2c1e80c228c210adb7f14cd5d.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Landing_page/.cache/e4/5411c2c1e80c228c210adb7f14cd5d.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/Landing_page/.cache/ea/e8b0e9131dddf617dc3d7f21e8008c.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Landing_page/.cache/ea/e8b0e9131dddf617dc3d7f21e8008c.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/Landing_page/.cache/f4/96db170e7ee614ffa8763ecabd7db9.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Landing_page/.cache/f4/96db170e7ee614ffa8763ecabd7db9.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/Landing_page/.cache/f5/771994ef05b47afddb1c8b9d19da4f.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Landing_page/.cache/f5/771994ef05b47afddb1c8b9d19da4f.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/Landing_page/.cache/f8/71c5cca0615bc7c0d9aea4585e5be1.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Landing_page/.cache/f8/71c5cca0615bc7c0d9aea4585e5be1.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/Landing_page/.cache/f9/1fb9a37601ec385abae92f55609ae6.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Landing_page/.cache/f9/1fb9a37601ec385abae92f55609ae6.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/Landing_page/.cache/fb/3f0188985d0e6bf6e3acac87bd6652.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Landing_page/.cache/fb/3f0188985d0e6bf6e3acac87bd6652.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/Landing_page/.cache/fe/db73902482a009c57b6f496589d36e.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Landing_page/.cache/fe/db73902482a009c57b6f496589d36e.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/Landing_page/dist/datepicker.2784a7e7.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Landing_page/dist/datepicker.2784a7e7.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/Landing_page/dist/datepicker.2784a7e7.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Landing_page/dist/datepicker.2784a7e7.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/Landing_page/dist/dropdown-guests-default.ad838450.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Landing_page/dist/dropdown-guests-default.ad838450.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/Landing_page/dist/dropdown-guests-default.ad838450.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Landing_page/dist/dropdown-guests-default.ad838450.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/Landing_page/dist/dropdown.76635db9.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Landing_page/dist/dropdown.76635db9.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/Landing_page/dist/dropdown.76635db9.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Landing_page/dist/dropdown.76635db9.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/Landing_page/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Landing_page/dist/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/Landing_page/dist/main.1f19ae8e.css" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Landing_page/dist/main.1f19ae8e.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/Landing_page/dist/main.1f19ae8e.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Landing_page/dist/main.1f19ae8e.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/Landing_page/dist/main.1f19ae8e.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Landing_page/dist/main.1f19ae8e.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/Landing_page/src/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Landing_page/src/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/Landing_page/dist/main.1f19ae8e.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Landing_page/dist/main.1f19ae8e.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/Landing_page/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Landing_page/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/Landing_page/src/js/dropdown-guests-default.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Landing_page/src/js/dropdown-guests-default.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/Landing_page/src/js/dropdown.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Landing_page/src/js/dropdown.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,11 +95,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1606994193919</updated>
-      <workItem from="1606994195247" duration="7196000" />
+      <workItem from="1606994195247" duration="17291000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="346" y="249" width="672" height="678" key="search.everywhere.popup" timestamp="1607004296496">
+      <screen x="0" y="187" width="1366" height="741" />
+    </state>
+    <state x="346" y="249" width="672" height="678" key="search.everywhere.popup/0.187.1366.741/1366.0.1920.1080@0.187.1366.741" timestamp="1607004296496" />
   </component>
 </project>
