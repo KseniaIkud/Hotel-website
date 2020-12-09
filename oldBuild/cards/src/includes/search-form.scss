@@ -1,0 +1,56 @@
+
+@import '../../../common/dropdown-mixins.scss';
+@import '../../../form_elements/src/includes/dropdown.scss';
+
+
+.datepicker {
+    margin-left: -9px;
+    margin-top: 8px;
+    &-here {
+        @include body-text;
+    }
+}
+
+.search-form {
+    width: 380px;
+    padding: 40px 0 30px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+    @media (max-width: 380px) {
+        width: 300px;
+    }
+    &__content {
+        border-radius: 4px;
+        width: 320px;
+        margin: 0 auto;
+        @media (max-width: 380px) {
+            width: 280px;
+        }
+    }
+    
+    &__title {
+        @include h1-text;
+        width: 320px;
+        margin-bottom: 20px;
+    }
+    &__dates {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 21px;
+    }
+    &__guests {
+        margin-bottom: 31px;
+    }
+    &__link {
+        position: relative;
+        @include purple-button;
+        @include purple-button-arrow;
+        &:hover {
+            @include purple-button-hover;
+        }
+    }
+}
+.someNewClass {
+    border: 1px solid black;
+}

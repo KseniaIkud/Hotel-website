@@ -1,0 +1,233 @@
+// main buttons
+@import "colors";
+@import "text-templates";
+@mixin transparent-button {
+    @include body-text;
+    white-space: nowrap;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+
+    color: $purple-color;
+    background-color: #FFF;
+    background-clip: padding-box;
+    border: 2px solid transparent;
+    border-radius: 22px;
+
+    padding: 12px 17.5px;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+    
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0; left: 0; bottom: 0; right:0;
+        margin: -2px;
+        z-index: -1;
+        background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+        border-radius: 22px;
+    }
+    &:visited {
+        color: $purple-color;
+    }
+}
+
+@mixin transparent-button-hover {
+    border: 2px solid rgba(225, 225, 225, 0.5);
+}
+
+@mixin purple-button {
+    @include body-text;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    color: #FFF;
+    padding: 9px 20px;
+    border-radius: 22px;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    text-align: center;
+    display: block;
+    &:visited {
+        color: #fff;
+    }
+}
+
+@mixin purple-button-hover {
+    opacity: 0.5;
+}
+
+@mixin purple-button-arrow {
+    &::after {
+        content: '';
+        background: url('../src/img/arrow_forward_button.svg') no-repeat;
+        
+        width: 20px;
+        height: 20px;
+        
+        display: inline-block;
+        position: absolute;
+        left: 91%;
+        top: 29%;            
+    }
+}
+
+
+//small buttons
+
+@mixin radio-check {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    &+label{
+        display: inline-flex;
+    }
+    &+label::before {
+        content: "";
+        width: 20px;
+        height: 20px;
+        border: 1px solid $dark-shade-25-color;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+    &:checked+label::before {   
+        border-color: $purple-color;
+    }
+}
+
+@mixin radio {
+    &+label {
+        align-items: center;
+    }
+    &+label::before {
+        border-radius: 50%;
+    }
+    &:checked+label {
+        position: relative;
+    }
+    &:checked+label::after {
+        content: "";
+        position: absolute;
+        left: 4px;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    }
+}
+
+@mixin check {
+    &+label {
+        line-height: 18px;
+    }
+    &+label::before {
+        border-radius: 4px;
+        background-repeat: no-repeat;
+        background-position: 50% 59%;
+        flex-shrink: 0;
+        flex-grow: 0;
+    }
+    &:checked+label::before {
+        background-image: url(../src/img/arrow-check.svg);
+    }
+}
+
+@mixin toggle {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    vertical-align: top;
+    width: 40px;
+    height: 20px;
+    background: #FFF;
+    border: 1px solid $dark-shade-25-color;
+    border-radius: 10px;
+    
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin-right: 10px;
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 3px;
+        width: 12px;
+        height: 12px;
+        background-color: $dark-shade-25-color;
+        border-radius: 50%;
+        transition: 0.3s;
+    }
+    &:checked::after {
+        transform: translateX(calc(100% + 8px));
+        //background-color: #fff;
+        background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+        transition: 0.3s;
+    }
+    &:checked {
+        border-color: $purple-color;
+    }
+}
+
+@mixin like-button {
+    .like-button {
+        display: flex;
+        width: 40px;
+        height: 20px;
+        border-radius: 10px;
+        padding-left: 3px;
+        padding-right: 5px;
+        cursor: pointer;
+        border: 1px solid $dark-shade-25-color;
+        &__heart {
+            background-image: url(../src/img/heart.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 20px;
+            height: 20px;
+        }
+        &__counter {
+            margin-top: 1px;
+            width: 100%;
+            height: 15px;
+            border-radius: 50%;
+            text-align: center;
+            @include body-text;
+            line-height: 0;
+            font-size: 10px;
+            color: $dark-shade-25-color;
+            cursor: pointer;
+            
+        } 
+        &__active {
+            border: 1px solid $purple-color;
+            div{
+                background-image: url(../src/img/favorite.svg);
+            }
+            input {
+                color: $purple-color;
+            }
+        }
+    }
+}
+
+@mixin rate-button{
+    .rate-button{
+        max-width: 120px;
+        display: flex;
+        justify-content: space-between;
+        
+        &__star{
+            width: 25px;
+            height: 25px;
+            
+            background-image: url(../src/img/star_border.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+        }   
+        &__checked {
+            background-image: url(../src/img/star.svg);
+        }
+    }
+}

@@ -1,0 +1,51 @@
+@import "../../../../common/colors";
+@import "../../../../common/text-templates";
+@import "../../../../common/inputs";
+
+.widget-footer {
+    max-width: 1440px;
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        @include body-text;
+    }
+    &__information {
+        width: 260px;
+        .logo {
+            margin: -4px 0 10px;
+        }
+    }
+    &__navigation {
+        display: flex;
+        justify-content: space-between;
+        width: 550px;
+        margin-left: -10px;        
+    }
+    &__title{
+        @include h3-text;
+        margin-bottom: 21px;
+        &_last{
+            @include h3-text;
+            margin-bottom: 18px;
+        }
+        
+    }
+    &__list {
+        li::first-letter {
+            text-transform: uppercase;
+        }
+        color: $dark-shade-50-color;
+        line-height: 17px;
+        &_shifted {
+            margin-left: -35px;
+        }
+    }
+    &__text {
+        margin-bottom: 22px;
+        
+    }
+    &__form {
+        @include subscription;
+        width: 260px;
+    }
+}

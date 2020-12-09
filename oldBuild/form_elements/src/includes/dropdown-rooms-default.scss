@@ -1,0 +1,26 @@
+.rooms-block {
+    height: 266px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 266px;
+}
+
+.room {
+    background-color: #FFF;
+    &__field {
+        @include dropdown;
+        border-color: $dark-shade-50-color;
+        border-radius: 4px 4px 0 0;
+    }
+    &__dropdown {
+        height: 120px;
+        margin-top: -1px;
+        padding: 5px 5px 12px 15px;
+        border: 1px solid $dark-shade-50-color;
+        display: flex;
+        flex-direction: column;
+        border-radius: 0 0 4px 4px;
+        justify-content: space-between;
+    }
+}

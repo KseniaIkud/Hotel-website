@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Headers & footers
+        script(src='./main.js')
+    body
+        .headers-footers
+            img(src="img/logo-bw.png", alt="").bw-logo
+            .bar
+                .bar__content
+                    .main-menu
+                        .main-menu__logo
+                            img(src='img/logo.svg', alt='logo').logo
+                        .main-menu__navigation
+                            include includes/headers/navigation
+                    .buttons
+                        .button
+                            a(href="#").buttons__transparent войти
+                        .button
+                            a(href="#").buttons__purple зарегистрироваться
+            .bar
+                .bar__content
+                    .main-menu
+                        .main-menu__logo
+                                img(src='img/logo.svg', alt='logo').logo
+                        .main-menu__navigation
+                            include includes/headers/navigation
+                    .designer
+                        include includes/headers/designer
+            .footer-standard
+                .widget
+                    .widget__content
+                        include includes/footers/widget
+                .bar
+                    .bar__content
+                        include includes/footers/copybar
+            .footer-creative
+                .footer-creative__content
+                    include includes/footers/creative

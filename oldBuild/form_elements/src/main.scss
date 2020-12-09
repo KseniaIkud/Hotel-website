@@ -1,0 +1,83 @@
+
+//nulling, common colors, etc
+@import '../../common/common-styles.scss';
+@import '../../common/buttons.scss';
+
+//primitives
+@import '../../common/inputs.scss';
+@import '../../common/dropdown-mixins.scss';
+
+//text-fields styles
+@import '../src/includes/text-fields.scss';
+
+//dropdowns styles
+@import '../src/includes/dropdown-guests-default.scss';
+@import '../src/includes/dropdown-rooms-default.scss';
+@import '../src/includes/dropdown.scss';
+
+//buttons styles
+@import '../src/includes/small-buttons-ui-kit.scss';
+@import '../src/includes/main-buttons.scss';
+
+//small-buttons
+@import '../src/includes/small-buttons/checkbox.scss';
+@import '../src/includes/small-buttons/radio.scss';
+@import '../src/includes/small-buttons/toggle.scss';
+@import '../src/includes/small-buttons/like.scss';
+@import '../src/includes/small-buttons/rate.scss';
+
+//range slider
+@import "https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css";
+@import "../src/includes/main-buttons/range-slider.scss";
+
+//buttons common 
+@import '../src/includes/main-buttons/buttons.scss';
+
+//pagination
+@import '../src/includes/main-buttons/pagination.scss';
+
+//expandable checkbox-list
+@import '../src/includes/expandable-list.scss';
+@import '../../common/expandable-checkbox-list.scss';
+
+//rich checkbox buttons
+@import '../src/includes/rich-checkbox-buttons.scss';
+
+//bullet list
+@import '../src/includes/bullet-list.scss';
+
+//benefits
+@import '../src/includes/benefits.scss';
+
+//comment
+@import '../src/includes/comment.scss';
+
+//fonts
+@font-face {
+	font-family: 'Montserrat';
+	src: url('fonts/Montserrat-Regular.eot');
+	src: local('☺'), url('fonts/Montserrat-Regular.woff') format('woff'), url('fonts/Montserrat-Regular.ttf') format('truetype'), url('fonts/Montserrat-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('fonts/Montserrat-Bold.eot');
+	src: local('☺'), url('fonts/Montserrat-Bold.woff') format('woff'), url('fonts/Montserrat-Bold.ttf') format('truetype'), url('fonts/Montserrat-Bold.svg') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+.logo-bw {
+    margin: 30px 0 0 30px;
+}
+.form-elements {
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 72px;
+    grid-row-gap: 53px;
+    margin: 63px 141px;
+}
+
+

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Cards
+        script(src="./main.js")
+        script(src="https://code.jquery.com/jquery-1.12.4.js")
+        script(src="./js/datepicker.js")
+    body
+        .cards
+            img(src="./img/logo.svg", alt="").cards__logo
+            .cards__column
+                include includes/search-form
+                include includes/registration
+            .cards__column
+                include includes/calc-price
+                include includes/sign-in
+            .cards__column
+                include includes/datepicker-calendar
+                include includes/rooms
+        script(src="./js/dropdown.js")
+        

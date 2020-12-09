@@ -1,0 +1,6 @@
+@import '../../../common/benefits-mixin.scss';
+.benefits {    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

@@ -1,0 +1,123 @@
+
+//variables
+//colors
+$dark-shade-100-color: #1F2041;
+$dark-shade-75-color: rgba(31, 32, 65, 0.75);
+$dark-shade-50-color: rgba(31, 32, 65, 0.50);
+$dark-shade-25-color: rgba(31, 32, 65, 0.25);
+$dark-shade-05-color: rgba(31, 32, 65, 0.05);
+$purple-color: #BC9CFF;
+$green-color: #6fcf97;
+
+
+
+//mixins
+
+@mixin h1-text {
+    font: {
+        family: Quicksand, OpenSans;
+        weight: 700;
+        size: 24px;
+    }
+    color: $dark-shade-100-color;
+    line-height: 30px;
+}
+
+@mixin h2-text {
+    font: {
+        family: Quicksand, OpenSans;
+        weight: 700;
+        size: 19px;
+    }
+    color: $dark-shade-100-color;
+    line-height: 24px;
+}
+
+@mixin h3-text {
+    font: {
+        family: Montserrat;
+        weight: 700;
+        size: 12px;
+    }
+    color: $dark-shade-100-color;
+    line-height: 15px;
+    text-transform: uppercase;
+}
+
+@mixin body-text {
+    font: {
+        family: Montserrat;
+        weight: normal;
+        size: 14px;
+    }
+    color: $dark-shade-75-color;
+    line-height: 24px;
+}
+
+@mixin title {
+    max-width: 320px;
+    margin-bottom: 5px;
+    @include h3-text;
+}
+//nulling styles
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    list-style: none;
+}
+
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{
+    outline: none;
+}
+
+a:focus,a:active{
+    outline: none;
+}
+
+nav,footer,header,aside{
+    display: block;
+}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{
+    font-family:inherit;
+}
+
+input::-ms-clear{
+    display: none;
+}
+
+button{
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding:0;border:0;
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: normal;
+}
+
+

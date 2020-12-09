@@ -1,0 +1,14 @@
+include ../../../common/inputs-mixins
+.sign-in
+    .sign-in__title Войти
+    .sign-in__data.text-field
+        .text-field__default
+            +input-text("Email", "email")
+        .text-field__default
+            +input-password("Пароль", "password")
+    .sign-in__button
+        a(href="#").sign-in__entrance Войти
+    .sign-in__redirection
+        .sign-in__question Нет аккаунта на Toxin?
+        .sign-in__button
+            a(href="#").sign-in__creation Создать

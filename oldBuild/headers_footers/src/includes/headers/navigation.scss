@@ -1,0 +1,39 @@
+@import "../../../../common/colors";
+@import "../../../../common/text-templates";
+.navigation {
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        width: 445px;
+        @include body-text;
+        color: $dark-shade-50-color;
+        white-space: nowrap;
+        &_folded {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+    &__link {
+        &::first-letter{
+            text-transform: uppercase;
+        }
+        &_main {
+            font-weight: bold;
+            color: $dark-shade-75-color;
+            margin-right: 2px;
+            &::first-letter{
+                text-transform: uppercase;
+            }
+        }
+        &_sub{
+            margin-left: -2px;
+            margin-right: 4px;
+            img {
+                margin-left: 6.5px;
+            }
+            &::first-letter{
+                text-transform: uppercase;
+            }
+        }
+    }
+}

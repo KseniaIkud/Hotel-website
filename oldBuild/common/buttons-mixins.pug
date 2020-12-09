@@ -1,0 +1,18 @@
+mixin like-button(value, active, action)
+    if active=='active'
+        .like-button.like-button__active
+            .like-button__heart
+            input(type='text', value= value, action= action, readonly).like-button__counter
+    else
+        .like-button
+            .like-button__heart
+            input(type='text', value= value, action= action, readonly).like-button__counter
+
+mixin rate-button(value)
+    .rate-button    
+      - for (var i=0; i<value; i++) {     
+            .rate-button__star.rate-button__checked
+      - }
+      -  for (var i=0; i<5-value; i++) {
+            .rate-button__star
+      -  }

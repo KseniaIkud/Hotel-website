@@ -1,0 +1,24 @@
+.benefit {
+    &__content {
+        height: 87px;
+        max-width: 280px;
+        display: flex;
+        align-items: center;
+    }
+    &__img {
+        width: 40px;
+        height: auto;
+        margin-right: 14px;
+    }
+    &__text {
+        @include body-text;
+    }
+    &__title {
+        font-weight: bold;
+    }
+    &__split {
+        max-width: 280px;
+        height: 1px;
+        background-color: rgba(31, 32, 65, 0.1);
+    }
+}

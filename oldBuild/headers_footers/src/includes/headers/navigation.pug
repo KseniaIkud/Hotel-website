@@ -1,0 +1,20 @@
+include ../../../../common/header-navigation-mixins
+
+mixin navigation-list(isHighlighted)
+    if isHighlighted
+        +navigation-menu-main('о нас', '#')
+    else
+        +navigation-menu('о нас', '#')
+    +navigation-menu-sub('услуги', '#')
+    +navigation-menu('вакансии', '#')
+    +navigation-menu('новости', '#')
+    +navigation-menu-sub('соглашения', '#')
+
+mixin navigation(isHighlighted, isFolded)
+    nav.navigation
+        if isFolded
+            ul.navigation__list
+                +navigation-list(isHighlighted)
+        else
+            ul.navigation__list.navigation__list_folded
+                +navigation-list(isHighlighted)

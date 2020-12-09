@@ -1,0 +1,33 @@
+.bullet {
+    height: 143px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &__title {
+        @include title;
+        height: 10px;
+    }
+    &__list {
+        
+        max-width: 260px;
+        height: 115px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__item {
+        margin-left: 20px;
+        position: relative;
+        @include body-text;
+        &::before {
+            content: "\2022";
+            color: $dark-shade-25-color;
+            font-size: 43px;
+            display: inline-block;
+            font-weight: bold;
+            position: absolute;
+            margin-top: -3.5px;
+            margin-left: -22.5px;
+        }
+    }
+}

@@ -1,0 +1,34 @@
+.small-buttons {
+    height: 537px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &__checkbox{
+        height: 27px;
+        @include title
+    }
+    &__radio{
+        height: 24px;
+        @include title;
+    }
+    &__toggle {
+        height: 24px;
+        @include title;
+    }
+    &__like {
+        margin-top: 3px;
+        height: 26px;
+        @include title;
+    }
+    &__rate {
+        height: 25px;
+        @include title;
+    }
+    &__option {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+

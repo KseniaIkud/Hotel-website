@@ -1,0 +1,145 @@
+
+.room-card {
+    max-width: 270px;
+    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+    border-radius: 4px;
+    position: relative;
+    &__before {
+        position: absolute;
+        width: 40px;
+        top: 21%;
+    }
+    &__after {
+        position: absolute;
+        width: 40px;
+        top: 21%;
+        right: 1%;
+    }
+    &__link {
+        &:hover .room-card__img{
+            box-shadow: 0px 0px 20px rgba(31, 32, 65, 0.5);
+        }
+    }
+    &__before a {
+        background: url('../src/img/side_arrow.svg');
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        width: 44px;
+        height: 44px;
+        display: block;
+        cursor: pointer;
+        
+    }
+    &__after a {
+        background: url('../src/img/side_arrow.svg');
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        width: 44px;
+        height: 44px;
+        display: block;
+        transform: rotate(180deg);
+        cursor: pointer;
+    
+    }
+    
+    &__img {
+        margin-top: 0.8px;
+        margin-left: 0.8px;
+        border-radius: 4px 4px 0 0;
+        margin-bottom: 15px;
+    }
+    &__slider {
+        position: absolute;
+        right: 15px;
+        top: 128px;
+
+        width: 41.25px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__slide {
+        width: 7.5px;
+        height: 7.5px;
+        border-radius: 50%;
+        border: 1px solid #FFF;
+        &_chosen {
+            width: 7.5px;
+            height: 7.5px;
+            border-radius: 50%;
+            border: 1px solid #FFF;
+            background: #FFF;
+        }
+    }
+    &__description, &__feedback {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 232px;
+        margin: 0 17px 0 20px;
+    }
+    &__feedback {
+        width: 230px;
+        padding-bottom: 20px;
+    }
+    &__category {
+        @include body-text;
+        font-size: 12px;
+        color: $purple-color;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-right: 28px;
+    }
+    &__separation {
+        width: 230px;
+        height: 1px;
+        margin: 4px 17px 8px 20px;
+        background: rgba(31, 32, 65, 0.1);
+    }
+    &__rate {
+        @include rate-button;
+    }
+}
+
+.number {
+    display: flex;
+    width: 55px;
+    justify-content: space-between;
+    @include h2-text;
+    &__text {
+        font-size: 14px;
+        line-height: 30px;
+    }
+}
+
+.price {
+    display: flex;
+    @include body-text;
+    &__digits {
+        font-weight: bold;
+        line-height: 32px;
+    }
+    &__text {
+        font-size: 12px;
+        &::first-letter {
+            font-weight: bold;
+            margin-right: 1px;
+            line-height: 32px;
+            font-size: 14px;
+        }
+    }
+}
+.review {
+    display: flex;
+    @include body-text;
+    &__digits {
+        font-weight: bold;
+        margin-right: 4px;
+    }
+    &__text {
+        line-height: 25px;
+    }
+}
+
+.hidden {
+    display: none;
+}

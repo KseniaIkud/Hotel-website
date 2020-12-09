@@ -1,0 +1,90 @@
+@import '../headers_footers/src/includes/headers/navigation.scss';
+header {
+	height: 70px;
+}
+.header {
+    max-width: 1440px;
+	height: 70px;
+	background: #FFFFFF;
+	margin: 0 auto 40px;
+	box-shadow: 0 10px 20px $dark-shade-05-color;
+	width: 100vw;
+
+	&__content	{
+		max-width: 1163px;
+		height: 100%;
+		margin: auto;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+    }
+    
+    &__menu {
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr 3fr 2fr;
+		@media (max-width: 960px) {
+			display: flex;
+		}
+    }
+	&__burger-menu {
+		@media (max-width: 960px) {
+			display: block;
+			min-width: 40px;
+			height: 40px;
+			border: 2px solid #8BA4F9;
+			border-radius: 4px;
+			position: relative;
+			& span,
+			&:before,
+			&:after {
+				content: '';
+				position: absolute;
+				display: block;
+				height: 2px;
+				width: 20px;
+				background-color: $purple-color;
+				left: 8px;
+			}
+			&:before {
+				top: 10px
+			}
+			& span {
+				top: 17px;
+			}
+			&:after {
+				bottom: 10px;
+			}
+		}
+	}
+	&__navigation {
+		@media (max-width: 960px) {
+			display: none;
+		}
+	}
+    &__buttons {
+        max-width: 302px;
+	    margin-left: 20px;
+	    align-items: center;
+	    display: flex;
+	    justify-content: space-between;
+		@media (max-width: 540px) {
+			display: none;
+		}
+    }
+    &__sign-in {
+        @include transparent-button;
+		padding: 8px 18px;
+		margin-right: 20px;
+		&:hover{
+			@include transparent-button-hover;
+		}
+    }
+    &__registration {
+        @include purple-button;
+		padding: 5px 19.5px;
+		&:hover{
+			@include purple-button-hover;
+		}
+    }
+}

@@ -1,0 +1,20 @@
+.checkbox-buttons {
+    height: 97px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &__form {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 222px;
+    }
+    &__input {
+        @include radio-check;
+        @include check;
+    }
+    &__label {
+        @include body-text;
+        color: $dark-shade-50-color;
+    }
+}

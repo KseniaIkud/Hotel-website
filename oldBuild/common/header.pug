@@ -1,0 +1,21 @@
+include ./header-navigation-mixins
+.header
+    .header__content
+        .header__menu
+            a(href="#").header__logo
+                img(src='img/logo.svg', alt='logo').logo
+        .header__navigation
+            nav.navigation
+                ul.navigation__list
+                    +navigation-menu('о нас', '#')
+                    +navigation-menu-sub('услуги', '#')
+                    +navigation-menu('вакансии', '#')
+                    +navigation-menu('новости', '#')
+                    +navigation-menu-sub('соглашения', '#')
+        .header__buttons
+            .header__item
+                a(href="#").header__sign-in войти
+            .header__item
+                a(href="#").header__registration зарегистрироваться
+        .header__burger-menu
+            span

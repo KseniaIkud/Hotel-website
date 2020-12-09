@@ -1,0 +1,83 @@
+.diagram {
+    display: flex;
+    align-items: center;
+    height: 163px;
+    width: 320px;
+    &__chart {
+        position: relative;
+        margin-left: -30px;
+    }
+    &__description {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        top: 39%;
+        left: 32%;
+    }
+    &__number {
+        @include h1-text;
+        color: $purple-color;
+        line-height: 20px;
+    }
+    &__votes {
+        @include body-text;
+        color: $purple-color;
+        font-weight: bold;
+        font-size: 15px;
+    }
+    &__legend {
+        margin-top: 30px;
+    }
+}
+
+.chart {
+    fill: none;
+    stroke-width: 1;
+    &__excellent {
+        stroke: #FFBA9C;
+        stroke-dasharray: 49.4 100;
+        stroke-dashoffset: -25;
+    }
+    &__good {
+        stroke: #8BA4F9;
+        stroke-dasharray: 24 100;
+        stroke-dashoffset: 49;
+    }
+    &__fine {
+        stroke: #66D2EA;
+        stroke-dasharray: 24.4 100;
+    }
+}
+
+.legend {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 96px;
+    &__item {
+        display: flex;
+        align-items: center;
+    }
+    &__color {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        margin-right: 5px;
+        &_excellent {
+            background:linear-gradient(180deg, #FFE39C 0%, #FFBA9C 100%);
+        }
+        &_good {
+            background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+        }
+        &_fine {
+            background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+        }
+        &_disappoint {
+            background: linear-gradient(180deg, #919191 0%, #3D4975 100%);
+        }
+    }
+    &__description {
+        @include body-text;
+    }
+}
