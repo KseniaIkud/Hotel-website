@@ -315,7 +315,7 @@ h1, h2, h3, h4, h5, h6 {
 .navigation__list {
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: 445px;
   font-family: Montserrat;
   font-weight: normal;
   font-size: 14px;
@@ -353,10 +353,10 @@ header {
 .header {
   max-width: 1440px;
   height: 70px;
-  margin: auto;
   background: #FFFFFF;
-  margin-bottom: 40px;
-  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  margin: 0 auto 40px;
+  box-shadow: 0 10px 20px rgba(31, 32, 65, 0.05);
+  width: 100vw;
 }
 .header__content {
   max-width: 1163px;
@@ -367,21 +367,59 @@ header {
   justify-content: space-between;
 }
 .header__menu {
-  width: 100%;
-  display: flex;
+  display: grid;
   align-items: center;
-  justify-content: space-between;
+  grid-template-columns: 1fr 3fr 2fr;
 }
-.header__navigation {
-  width: 114%;
+@media (max-width: 960px) {
+  .header__menu {
+    display: flex;
+  }
+}
+@media (max-width: 960px) {
+  .header__burger-menu {
+    display: block;
+    min-width: 40px;
+    height: 40px;
+    border: 2px solid #8BA4F9;
+    border-radius: 4px;
+    position: relative;
+  }
+  .header__burger-menu span, .header__burger-menu:before, .header__burger-menu:after {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 2px;
+    width: 20px;
+    background-color: #BC9CFF;
+    left: 8px;
+  }
+  .header__burger-menu:before {
+    top: 10px;
+  }
+  .header__burger-menu span {
+    top: 17px;
+  }
+  .header__burger-menu:after {
+    bottom: 10px;
+  }
+}
+@media (max-width: 960px) {
+  .header__navigation {
+    display: none;
+  }
 }
 .header__buttons {
   max-width: 302px;
-  width: 100%;
   margin-left: 20px;
   align-items: center;
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 540px) {
+  .header__buttons {
+    display: none;
+  }
 }
 .header__sign-in {
   font-family: Montserrat;
@@ -404,6 +442,7 @@ header {
   position: relative;
   z-index: 1;
   padding: 8px 18px;
+  margin-right: 20px;
 }
 .header__sign-in::before {
   content: "";
@@ -697,7 +736,6 @@ header {
   background: #FFFFFF;
   box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
   border: 1px solid transparent;
-  border-top: 1px solid rgba(31, 32, 65, 0.25);
 }
 .widget-footer__content {
   max-width: 1165px;

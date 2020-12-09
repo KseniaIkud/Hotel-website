@@ -1,5 +1,6 @@
 // main buttons
-
+@import "colors";
+@import "text-templates";
 @mixin transparent-button {
     @include body-text;
     white-space: nowrap;
@@ -8,7 +9,6 @@
     font-weight: bold;
 
     color: $purple-color;
-    text-transform: uppercase;
     background-color: #FFF;
     background-clip: padding-box;
     border: 2px solid transparent;
@@ -60,8 +60,7 @@
 @mixin purple-button-arrow {
     &::after {
         content: '';
-        background: url('../src/img/arrow_forward_button.svg');
-        background-repeat: no-repeat;
+        background: url('../src/img/arrow_forward_button.svg') no-repeat;
         
         width: 20px;
         height: 20px;
@@ -162,7 +161,7 @@
     }
     &:checked::after {
         transform: translateX(calc(100% + 8px));
-        background-color: #fff;  
+        //background-color: #fff;
         background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
         transition: 0.3s;
     }
@@ -177,7 +176,6 @@
         width: 40px;
         height: 20px;
         border-radius: 10px;
-        display: flex;
         padding-left: 3px;
         padding-right: 5px;
         cursor: pointer;
