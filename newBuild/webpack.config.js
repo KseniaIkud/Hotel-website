@@ -2,8 +2,6 @@ const path = require('path')
 const HTMLWebpackPlugin = require('html-webpack-plugin')
 const {CleanWebpackPlugin} = require('clean-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-const OptimizeCssAssetsWebpackPlugin = require('optimize-css-assets-webpack-plugin')
-const TerserWebpackPlugin = require('terser-webpack-plugin')
 
 
 const isDev = process.env.NODE_ENV === 'development'
@@ -34,11 +32,23 @@ module.exports = {
             },
             {
                 test: /\.(png|jpg|svg|gif)$/,
-                use: ['file-loader']
+                use: [{
+                    loader: 'file-loader',
+                    options: {
+                        name: '[name].[ext]',
+                        outputPath: '../images/'
+                    }
+                }]
             },
             {
                 test: /\.(ttf|woff|woff2|eot)$/,
-                use: ['file-loader']
+                use: [{
+                    loader: 'file-loader',
+                    options: {
+                        name: '[name].[ext]',
+                        outputPath: '../fonts/'
+                    }
+                }]
             },
             {
                 test: /\.pug$/,
@@ -47,15 +57,7 @@ module.exports = {
             {
                 test: /\.js$/,
                 exclude: /node_modules/,
-                loader: {
-                    loader: 'babel-loader',
-                    options: {
-                        presets: [
-                            '@babel/preset-env'
-                        ]
-                    }
-                }
-
+                use: ['babel-loader']
             }
         ]
     },
@@ -84,7 +86,9 @@ module.exports = {
             chunks: ['headersFooters'],
             filename: path.resolve(__dirname, 'docs/headers-footers.html'),
             minify: isProd
-        }),
-        new CleanWebpackPlugin()
+        })
     ]
+}
+if (isProd) {
+    module.exports.plugins.push(new CleanWebpackPlugin())
 }

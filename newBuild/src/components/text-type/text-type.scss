@@ -1,0 +1,65 @@
+$dark-shade-100-color: #1F2041;
+$dark-shade-75-color: rgba(31, 32, 65, 0.75);
+$dark-shade-50-color: rgba(31, 32, 65, 0.50);
+$dark-shade-25-color: rgba(31, 32, 65, 0.25);
+$dark-shade-05-color: rgba(31, 32, 65, 0.05);
+$purple-color: #BC9CFF;
+$green-color: #6fcf97;
+
+.type {
+  &__data {
+    width: 450px;
+    display: flex;
+    margin-bottom: 50px;
+
+  }
+  &__name {
+    color: $dark-shade-25-color;
+    font-weight: normal;
+    font-family: Montserrat, sans-serif;
+    min-width: 37px;
+    text-align: right;
+
+  }
+  &__example {
+    margin-left: 30px;
+  }
+}
+#h1 {
+  font: {
+    family: Montserrat, sans-serif;
+    weight: 700;
+    size: 24px;
+  }
+  color: $dark-shade-100-color;
+  line-height: 30px;
+}
+#h2 {
+  font: {
+    family: Montserrat, sans-serif;
+    weight: 700;
+    size: 19px;
+  }
+  color: $dark-shade-100-color;
+  line-height: 24px;;
+}
+#h3 {
+  font: {
+    family: Montserrat, sans-serif;
+    weight: 700;
+    size: 12px;
+  }
+  color: $dark-shade-100-color;
+  line-height: 15px;
+  text-transform: uppercase;;
+}
+#body {
+  font: {
+    family: Montserrat, sans-serif;
+    weight: normal;
+    size: 14px;
+  }
+  color: $dark-shade-75-color;
+  line-height: 24px;
+}
+
