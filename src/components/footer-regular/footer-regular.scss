@@ -1,83 +1,63 @@
-@import '../common-inputs/common-inputs';
-.widget-footer__logo {
-  width: 50px;
-  height: 50px;
-  border: 1px solid black;
-}
-@mixin h3-text {
-  font: {
-    family: Montserrat;
-    weight: 700;
-    size: 12px;
-  }
-  color: #1F2041;
-  line-height: 15px;
-  text-transform: uppercase;
-}
+@import '../subscription-form/subscription-form.scss';
 
-
-
-.widget-footer {
-  max-width: 1440px;
-
-  &__content {
-    display: flex;
-    justify-content: space-between;
-    font: {
-      family: Montserrat, sans-serif;
-      weight: normal;
-      size: 14px;
+.footer-regular {
+    max-width: 1440px;
+    background-color: #ffffff;
+    &__content {
+        margin: 0 auto;
+        box-sizing: border-box;
+        padding-top: 85px;
+        max-width: 1160px;
+        display: flex;
+        justify-content: space-between;
+        height: 372px;
     }
-    color: rgba(31, 32, 65, 0.75);
-    line-height: 24px;
-  }
-
-  &__information {
-    width: 260px;
-
-    .logo {
-      margin: -4px 0 10px;
+    &__information {
+        max-width: 254px;
+        margin-top: 13px;
     }
-  }
-
-  &__navigation {
-    display: flex;
-    justify-content: space-between;
-    width: 550px;
-    margin-left: -10px;
-  }
-
-  &__title {
-    @include h3-text;
-    margin-bottom: 21px;
-
-    &_last {
-      @include h3-text;
-      margin-bottom: 18px;
+    &__logo {
+        margin-bottom: 13px;
     }
-
-  }
-
-  &__list {
-    li::first-letter {
-      text-transform: uppercase;
+    &__text {
+        &::first-letter {
+            text-transform: uppercase;
+        }
+        font-family: Montserrat, sans-serif;
+        font-size: 14px;
+        line-height: 24px;
+        color: rgba(31, 32, 65, 0.50);
+        margin-bottom: 13px;
     }
-
-    color: rgba(31, 32, 65, 0.50);
-    line-height: 17px;
-
-    &_shifted {
-      margin-left: -35px;
+    &__navigation {
+        width: 47%;
+        display: flex;
+        justify-content: space-between;
     }
-  }
-
-  &__text {
-    margin-bottom: 22px;
-
-  }
-
-  &__form {
-    @include subscription;
-    width: 260px;
-  }
+    &__title {
+        font: {
+            family: Montserrat, sans-serif;
+            weight: 700;
+            size: 12px;
+        }
+        white-space: nowrap;
+        color: #1F2041;
+        line-height: 15px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+    &__list {
+        padding: 0;
+        list-style: none;
+    
+    }
+    &__anchor {
+        text-decoration: none;
+        color: inherit;
+        white-space: nowrap;
+    }
+    &__subscription {
+        margin-top: 16px;
+        max-width: 260px;
+    }
 }

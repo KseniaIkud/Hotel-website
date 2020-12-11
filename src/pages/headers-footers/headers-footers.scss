@@ -1,5 +1,6 @@
-@import "../../components/header-regular/header-regular";
+@import '../../components/header-regular/header-regular';
 @import '../../components/header-designer/header-designer';
+@import '../../components/footer-regular/footer-regular.scss';
 
 @font-face {
   font-family: 'Montserrat';
@@ -33,4 +34,10 @@
   max-width: 1440px;
   min-width: 320px;
   margin: 0 auto;
+  &__regular {
+    margin-bottom: 40px;
+  }
+  &__designer {
+    margin-bottom: 40px;
+  }
 }
