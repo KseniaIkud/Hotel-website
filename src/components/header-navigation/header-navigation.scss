@@ -1,0 +1,36 @@
+.navigation {
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        width: 443px;
+        list-style: none;
+        font-family: Montserrat, sans-serif;
+        font-size: 14px;
+        color:rgba(31, 32, 65, 0.5);
+        white-space: nowrap;
+
+        &_folded {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+    &__link {
+        &::first-letter{
+            text-transform: uppercase;
+        }
+        &_main {
+            font-weight: bold;
+            color:  rgba(31, 32, 65, 0.75);
+        }
+        &_sub{
+            img {
+                margin-left: 6.5px;
+            }
+        }
+    }
+    &__anchor {
+        text-decoration: none;
+        color: inherit;
+    }
+}
+

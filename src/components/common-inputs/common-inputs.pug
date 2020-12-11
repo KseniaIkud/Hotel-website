@@ -1,0 +1,27 @@
+mixin input-email(placeholder, action)
+    form(action= action method="get").email-form
+        input(type="email" placeholder= placeholder name="email").email-form__text
+        input(type="submit" value="").email-form__arrow
+
+mixin input-password(placeholder, name, action)
+    form(action= action method="get").text-form
+        input(type="password" placeholder= placeholder name= name).text-form__input
+
+mixin input-text(placeholder, name, action)
+    form(action= action method="get").text-form
+        input(type="text" placeholder= placeholder name= name).text-form__input
+
+mixin input-dropdown(placeholder, name, action)
+    form(action= action method="get").dropdown-form
+        input(type="text" placeholder= placeholder name= name readonly).dropdown-form__input
+        input(type="button").dropdown-form__arrow
+
+mixin input-date(placeholder, name, action)
+    form(action= action method="get").dropdown-form
+        input(type="text" placeholder= placeholder name= name readonly).dropdown-form__input.datepicker-here
+        input(type="button").dropdown-form__arrow
+
+mixin input-date-range(placeholder, name, action)
+    form(action= action method="get").dropdown-form
+        input(type="text" placeholder= placeholder name= name readonly).dropdown-form__input.datepicker-here
+        input(type="button").dropdown-form__arrow

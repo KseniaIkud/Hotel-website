@@ -1,0 +1,83 @@
+@import '../common-inputs/common-inputs';
+.widget-footer__logo {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+}
+@mixin h3-text {
+  font: {
+    family: Montserrat;
+    weight: 700;
+    size: 12px;
+  }
+  color: #1F2041;
+  line-height: 15px;
+  text-transform: uppercase;
+}
+
+
+
+.widget-footer {
+  max-width: 1440px;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    font: {
+      family: Montserrat, sans-serif;
+      weight: normal;
+      size: 14px;
+    }
+    color: rgba(31, 32, 65, 0.75);
+    line-height: 24px;
+  }
+
+  &__information {
+    width: 260px;
+
+    .logo {
+      margin: -4px 0 10px;
+    }
+  }
+
+  &__navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 550px;
+    margin-left: -10px;
+  }
+
+  &__title {
+    @include h3-text;
+    margin-bottom: 21px;
+
+    &_last {
+      @include h3-text;
+      margin-bottom: 18px;
+    }
+
+  }
+
+  &__list {
+    li::first-letter {
+      text-transform: uppercase;
+    }
+
+    color: rgba(31, 32, 65, 0.50);
+    line-height: 17px;
+
+    &_shifted {
+      margin-left: -35px;
+    }
+  }
+
+  &__text {
+    margin-bottom: 22px;
+
+  }
+
+  &__form {
+    @include subscription;
+    width: 260px;
+  }
+}

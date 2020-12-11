@@ -1,0 +1,139 @@
+
+@mixin body-text {
+  font: {
+    family: Montserrat;
+    weight: normal;
+    size: 14px;
+  }
+  color: rgba(31, 32, 65, 0.75);
+  line-height: 24px;
+}
+
+@mixin subscription {
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  background-color: #FFF;
+  border-radius: 4px;
+  &:focus-within, &:hover{
+    border: 1px solid rgba(31, 32, 65, 0.5);
+  }
+  &:hover .email-form__text::placeholder{
+    color: rgba(31, 32, 65, 0.5);
+  }
+  .email-form {
+    //parent width - 260px or 267px
+    width: 90%;
+    margin: auto;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__text{
+      @include body-text;
+      &::placeholder {
+        @include body-text;
+        color: rgba(31, 32, 65, 0.25);
+        margin-left: 10px;
+      }
+      &:focus::placeholder {
+        color: transparent;
+      }
+      &:focus {
+        @include body-text;
+      }
+    }
+    &__arrow{
+      background: url('img/arrow_subscription.png') 100% 50% no-repeat;
+      width: 20px;
+      cursor: pointer;
+    }
+  }
+
+
+}
+
+@mixin default {
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  background-color: #FFF;
+  border-radius: 4px;
+  max-width: 320px;
+  height: 44px;
+  &:focus-within, &:hover {
+    border: 1px solid rgba(31, 32, 65, 0.5);
+  }
+  &:hover .text-form__input::placeholder{
+    color: rgba(31, 32, 65, 0.5);
+  }
+  .text-form {
+    padding: 14px;
+    height: 44px;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    &__input {
+      width: 100%;
+      @include body-text;
+      &::placeholder {
+        @include body-text;
+        color: rgba(31, 32, 65, 0.25);
+      }
+      &:focus {
+        @include body-text;
+        &::placeholder {
+          color: transparent;
+        }
+      }
+    }
+  }
+}
+
+// Only for UI kit, focus styles are already in default mixin
+@mixin focus-demonstration {
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  background-color: #FFF;
+  border-radius: 4px;
+  max-width: 320px;
+  .text-form {
+    height: 44px;
+    padding: 14px;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    &__input {
+      @include body-text;
+      width: 100%;
+      &::placeholder {
+        @include body-text;
+      }
+    }
+  }
+}
+
+@mixin dropdown {
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  background-color: #FFF;
+  border-radius: 4px;
+  height: 44px;
+  &:hover {
+    border: 1px solid rgba(31, 32, 65, 0.5);
+  }
+  .dropdown-form {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    &__input {
+      width: 100%;
+      &::placeholder {
+        @include body-text;
+      }
+    }
+    &__arrow{
+      background: url('img/expand_more.png') 100% 50% no-repeat;
+      width: 20px;
+      cursor: pointer;
+    }
+
+  }
+
+}

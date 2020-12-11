@@ -1,0 +1,37 @@
+include ../../components/common-inputs/common-inputs
+
+mixin widget-list(name, href)
+    li.widget-footer__text
+        a(href= href)= name
+mixin widget-list-title(name)
+    li.widget-footer__title= name
+
+.widget-footer
+    .widget-footer__content
+        .widget-footer__information
+            .widget-footer__logo
+            .widget-footer__text Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
+        nav.widget-footer__navigation
+            ul.widget-footer__list
+                +widget-list-title("Навигация")
+                +widget-list("О нас", '#')
+                +widget-list("Новости", '#')
+                +widget-list("Служба поддержки", '#')
+                +widget-list("Услуги", '#')
+            ul.widget-footer__list.widget-footer__list_shifted
+                +widget-list-title("о нас")
+                +widget-list("о сервисе", '#')
+                +widget-list("наша команда", '#')
+                +widget-list("вакансии", '#')
+                +widget-list("инвесторы", '#')
+
+            ul.widget-footer__list
+                +widget-list-title("служба поддержки")
+                +widget-list("соглашения", '#')
+                +widget-list("сообщества", '#')
+                +widget-list("связь с нами", '#')
+        .widget-footer__information
+            .widget-footer__title_last Подписка
+            .widget-footer__text Получайте специальные предложения и новости сервиса
+            .widget-footer__form
+                +input-email("Email")

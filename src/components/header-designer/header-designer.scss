@@ -1,0 +1,18 @@
+@import '../header-navigation/header-navigation.scss';
+.header-designer {
+    max-width: 1440px;
+    min-width: 320px;
+    height: 70px;
+    background-color: #ffffff;
+    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+    &__content {
+        height: 70px;
+        max-width: 1160px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+    }
+    &__logo {
+        display: block;
+    }
+}
