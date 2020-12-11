@@ -9,10 +9,32 @@
         height: 70px;
         max-width: 1160px;
         margin: 0 auto;
-        display: flex;
+        display: grid;
+        grid-template-columns: 1fr 10fr 1fr;
         align-items: center;
+    }
+    &__navigation{
+        display: flex;
+        justify-content: flex-end;
     }
     &__logo {
         display: block;
+    }
+    &__designer {
+        display: flex;
+        align-items: center;
+    }
+    &__line {
+        width: 1px;
+        height: 30px;
+        background: rgba(31, 32, 65, 0.1);
+        margin: 0 20px 0 24px;
+    }
+    &__name {
+        font-family: Montserrat, sans-serif;
+        font-size: 14px;
+        color: rgba(31, 32, 65, 0.5);
+        text-transform: capitalize;
+        white-space: nowrap;
     }
 }
