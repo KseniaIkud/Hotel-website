@@ -1,6 +1,7 @@
 @import '../../components/header-regular/header-regular';
 @import '../../components/header-designer/header-designer';
 @import '../../components/footer-regular/footer-regular.scss';
+@import '../../components/footer-ipad/footer-ipad.scss';
 
 @font-face {
   font-family: 'Montserrat';
@@ -31,13 +32,18 @@
   }
 }
 .header {
-  max-width: 1440px;
-  min-width: 320px;
-  margin: 0 auto;
   &__regular {
     margin-bottom: 40px;
   }
   &__designer {
     margin-bottom: 40px;
+  }
+}
+.footer {
+  &__regular {
+    margin-bottom: 40px;
+  }
+  &__ipad {
+    margin-bottom: 150px;
   }
 }
