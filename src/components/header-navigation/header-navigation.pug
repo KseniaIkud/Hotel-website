@@ -1,23 +1,23 @@
 mixin navigation-menu(name, href)
     li.navigation__link
-        a(href= href class='navigation__anchor')= name
+        a(href= href class="navigation__anchor")= name
 mixin navigation-menu-main(name, href)
     li.navigation__link.navigation__link_main
-        a(href= href class='navigation__anchor')= name
+        a(href= href class="navigation__anchor")= name
 mixin navigation-menu-sub(name, href)
     li.navigation__link.navigation__link_sub
-        a(href= href class='navigation__anchor')= name
-        img(src='./images/expand.svg')
+        a(href= href class="navigation__anchor")= name
+        img(src="./images/expand.svg")
 
 mixin navigation-list(isHighlighted)
     if isHighlighted
-        +navigation-menu-main('о нас', '#')
+        +navigation-menu-main("о нас", "#")
     else
-        +navigation-menu('о нас', '#')
-    +navigation-menu-sub('услуги', '#')
-    +navigation-menu('вакансии', '#')
-    +navigation-menu('новости', '#')
-    +navigation-menu-sub('соглашения', '#')
+        +navigation-menu("о нас", "#")
+    +navigation-menu-sub("услуги", "#")
+    +navigation-menu("вакансии", "#")
+    +navigation-menu("новости", "#")
+    +navigation-menu-sub("соглашения", "#")
 
 mixin navigation(isHighlighted, isFolded)
     nav.navigation
