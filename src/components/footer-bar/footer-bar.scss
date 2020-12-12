@@ -1,0 +1,25 @@
+.footer-bar {
+    height: 70px;
+    max-width: 1440px;
+    min-width: 320px;
+    border-top: 1px solid rgba(31, 32, 65, 0.25);
+    &__content {
+        max-width: 1160px;
+        min-width: 320px;
+        height: 70px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__text {
+        font-family: Montserrat, sans-serif;
+        font-size: 14px;
+        color: rgba(31, 32, 65, 0.75);
+    }
+    &__social {
+        width: 112px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
