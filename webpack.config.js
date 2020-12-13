@@ -2,7 +2,7 @@ const path = require('path')
 const HTMLWebpackPlugin = require('html-webpack-plugin')
 const {CleanWebpackPlugin} = require('clean-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-const { privateDecrypt } = require('crypto')
+const webpack = require('webpack');
 
 
 const isDev = process.env.NODE_ENV === 'development'
@@ -65,6 +65,10 @@ module.exports = {
         ]
     },
     plugins: [
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            jQuery: 'jquery'
+          }),
         new MiniCssExtractPlugin(),
         new HTMLWebpackPlugin({
             template: './pages/cards/cards.pug',
