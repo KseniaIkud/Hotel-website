@@ -1,0 +1,27 @@
+.submit{
+    position: relative;
+    &__button {
+        font-family: Montserrat, sans-serif;
+        font-size: 12px;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #FFF;
+        padding: 9px 20px;
+        border-radius: 22px;
+        background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+        text-align: center;
+        display: block;
+        &:visited {
+            color: #fff;
+        }
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+    &__arrow {
+        position: absolute;
+        top: 25%; 
+        right: 10px;
+    }
+}

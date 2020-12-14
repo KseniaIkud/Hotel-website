@@ -1,0 +1,5 @@
+mixin submit(text, isArrow, href)
+    .submit
+        a(href=href).submit__button=text
+        if(isArrow)
+            img(src="./images/arrow-white.svg", alt="submit").submit__arrow

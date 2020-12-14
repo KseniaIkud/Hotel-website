@@ -1,0 +1,1 @@
+import './images/arrow-white.svg'
