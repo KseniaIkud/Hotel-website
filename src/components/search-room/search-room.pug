@@ -2,13 +2,14 @@
     .search-room__title найдём номера под ваши пожелания
     .search-room__date
         .search-room__text прибытие
-        .search-room__picker
+        .search-room__calendar
     .search-room__date
         .search-room__text выезд
-        .search-room__picker
+        .search-room__calendar
     .search-room__guest
         .search-room__text гости
         .search-room__dropdown
+            include ../../components/dropdown/dropdown
     .search-room__button
         include ../../components/submit-button/submit-button
         +submit('подобрать номер', true, '#')
