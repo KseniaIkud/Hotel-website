@@ -1,9 +1,10 @@
-.header-regular
-    .header-regular__content
-        img(src="./images/logo-color.svg", alt="logo").header-regular__logo
-        .header-regular__navigation
-            include ../header-navigation/header-navigation
-            +navigation(true, false)
-        .header-regular__buttons
-            include ../log-in-button/log-in-button
-            include ../sign-in-button/sign-in-button
+mixin header(isHighlighted)
+    .header-regular
+        .header-regular__content
+            img(src="./images/logo-color.svg", alt="logo").header-regular__logo
+            .header-regular__navigation
+                include ../header-navigation/header-navigation
+                +navigation(isHighlighted, false)
+            .header-regular__buttons
+                include ../log-in-button/log-in-button
+                include ../sign-in-button/sign-in-button
