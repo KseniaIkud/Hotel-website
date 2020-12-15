@@ -9,6 +9,9 @@
     box-sizing: border-box;
     padding: 0 15px;
     position: relative;
+    &:hover {
+        border-color: rgba(31, 32, 65, 0.5);
+    }
     &__input {
         outline: none;
         border: none;
