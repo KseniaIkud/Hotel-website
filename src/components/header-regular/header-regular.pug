@@ -7,4 +7,5 @@ mixin header(isHighlighted)
                 +navigation(isHighlighted, false)
             .header-regular__buttons
                 include ../log-in-button/log-in-button
-                include ../sign-in-button/sign-in-button
+                include ../submit-button/submit-button
+                +submit('зарегистрироваться', false, '#')

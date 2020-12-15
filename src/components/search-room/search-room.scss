@@ -41,4 +41,9 @@
     &__guest {
         margin-bottom: 30px;
     }
+    &__button {
+        .submit__button {
+            padding: 14px 20px;
+        }
+    }
 }
