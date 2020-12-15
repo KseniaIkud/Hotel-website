@@ -15,7 +15,8 @@ module.exports = {
         cards: './pages/cards/cards.js',
         colorsType: './pages/colors-type/colors-type.js',
         formElements: './pages/form-elements/form-elements.js',
-        headersFooters: './pages/headers-footers/headers-footers.js'
+        headersFooters: './pages/headers-footers/headers-footers.js',
+        landingPage: './pages/landing-page/landing-page'
     },
     output: {
         filename: filename('js'),
@@ -92,6 +93,12 @@ module.exports = {
             template: './pages/headers-footers/headers-footers.pug',
             chunks: ['headersFooters'],
             filename: path.resolve(__dirname, 'docs/headers-footers.html'),
+            minify: isProd
+        }),
+        new HTMLWebpackPlugin({
+            template: './pages/landing-page/landing-page.pug',
+            chunks: ['landingPage'],
+            filename: path.resolve(__dirname, 'docs/landing-page.html'),
             minify: isProd
         })
     ]
