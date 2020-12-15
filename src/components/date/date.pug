@@ -1,0 +1,8 @@
+mixin date(isRight, title)
+    .date.js-date
+        if (isRight)
+            input(type="text" placeholder='ДД.ММ.ГГГГ' readonly).date__input.js-date__input_right
+        else
+            input(type="text" placeholder='ДД.ММ.ГГГГ' readonly).date__input.js-date__input
+        img(src="./images/expand.svg", alt="expand")
+    

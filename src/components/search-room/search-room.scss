@@ -1,2 +1,42 @@
-@import '../../components/submit-button/submit-button.scss';
+@import '../../components/date/date.scss';
 @import '../../components/dropdown/dropdown.scss';
+@import '../../components/submit-button/submit-button.scss';
+
+.search-room {
+    max-width: 380px;
+    min-width: 320px;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    &__content {
+        max-width: 320px;
+        min-width: 300px;
+        margin: 40px auto 30px;
+    }
+    &__title {
+        font-family: Montserrat, sans-serif;
+        font-weight: 700;
+        font-size: 24px;
+        color: #1F2041;
+        margin-bottom: 20px;
+        &::first-letter {
+            text-transform: uppercase;
+        }
+    }
+    &__period {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    &__text {
+        font-family: Montserrat, sans-serif;
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+    }
+    &__guest {
+        margin-bottom: 30px;
+    }
+}

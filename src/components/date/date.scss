@@ -1,0 +1,33 @@
+@import '../../../node_modules/air-datepicker/dist/css/datepicker.min.css';
+.date {
+    max-width: 150px;
+    height: 44px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 0 15px;
+    position: relative;
+    &__input {
+        outline: none;
+        border: none;
+        width: 100px;
+        font-family: Montserrat, sans-serif;
+        font-size: 14px;
+        color: rgba(31, 32, 65, 0.75);
+        text-transform: uppercase;
+    }
+    &__calendar {
+        display: none;
+    }
+}
+.js-calendar_visible {
+    display: block;
+    z-index: 11;
+    position: absolute;
+    top: 45px;
+    left: 0;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 4px;
+}
