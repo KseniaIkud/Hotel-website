@@ -1,25 +1,13 @@
 @import '~air-datepicker/dist/css/datepicker.min.css';
 
-.datepicker-calendar {
-    &__submit {
-        position: absolute;
-        right: 20px; bottom: 20px;
-        font: {
-            family: Montserrat, sans-serif;
-            weight: 700;
-            size: 12px;
-        }
-        text-transform: uppercase;
-        color: #BC9CFF;
-        cursor: pointer;
-        &:hover {
-            color: rgba(31, 32, 65, 0.50);
-        }
-    }
-}
 .datepicker {
     padding: 10px 15px;
     width: 287px;
+    margin-left: -16px;
+    margin-top: -10px;
+    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+        border: 1px solid rgba(31, 32, 65, 0.05);
+        border-radius: 4px;
     &-here {
         font-family: Montserrat, sans-serif;
         font-size: 14px;
@@ -27,14 +15,6 @@
     }
     &--pointer {
         display: none;
-    }
-    &-inline .datepicker {
-        box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
-        border: 1px solid rgba(31, 32, 65, 0.05);
-        border-radius: 4px;
-        position: absolute;
-        left: 0;
-        
     }
     &--nav {
         margin-bottom: 24px;
@@ -69,12 +49,12 @@
     }
     &--day-name {
         color: #BC9CFF;
-        font-family: Montserrat;
+        font-family: Montserrat, sans-serif;
         font-weight: bold;
         text-transform: capitalize;
     }
     &--cells {
-        font-family: Montserrat;
+        font-family: Montserrat, sans-serif;
         color: rgba(31, 32, 65, 0.50);
         font-size: 12px;
         width: 280px;
@@ -112,7 +92,7 @@
                 width: 60%;
                 position: absolute;
                 right: 16px;
-                background-color: #BC9CFF;
+                background: #BC9CFF;
                 opacity: 0.25;
                 z-index: -1;
             }
@@ -126,7 +106,7 @@
         &:hover {
             color: #fff;
             font-weight: bold;
-            background-color: #BC9CFF;
+            background: #BC9CFF;
             border-radius: 50%; 
         }
         &.-selected- {
@@ -136,16 +116,16 @@
             &.-current- {
                 background: #BC9CFF;
                 color: #fff;
-                &::after, &::before {
-                    background: none;
-                }
             }
             &.-focus- {
                 background: #BC9CFF;
                 color: #fff;
-                &::after, &::before {
-                    background: none;
-                }
+            }
+            &:hover {
+                color: #fff;
+                font-weight: bold;
+                background: #BC9CFF;
+                border-radius: 50%; 
             }
         }
         &.-in-range- {
@@ -173,34 +153,7 @@
             border-radius: 50%;
         }
         &.-selected- {
-            background-color: #BC9CFF;
-        }
-    }
-
-    // clear button
-    &--button {
-       font: {
-      family: Montserrat, sans-serif;
-      weight: 700;
-      size: 12px;
-    }
-    text-transform: uppercase;
-        padding: 0;
-        margin: 0;
-        color: rgba(31, 32, 65, 0.50);
-        display: block;
-        max-width: 75px;
-        height: 20px;
-        &:hover {
-            color: #BC9CFF;
-            background: none;
-        }
-        &s {
-            border: none;
-            display: flex;
-            margin-top: 14px;
-            justify-content: space-between;
-            
+            background: #BC9CFF;
         }
     }
 }
