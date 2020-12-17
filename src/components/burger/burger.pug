@@ -1,0 +1,10 @@
+include ../header-navigation/header-navigation
+.burger
+    .burger__sign.js-burger__sign.js-burger__sign_closed
+        span
+    .burger__content.js-burger__content.js-burger_hidden
+        .burger__menu
+            .burger__navigation
+                +navigation(isHighlighted, true)
+            a(href="#").burger__button войти
+            a(href="#").burger__button зарегистрироваться

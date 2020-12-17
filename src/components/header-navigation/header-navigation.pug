@@ -22,7 +22,7 @@ mixin navigation-list(isHighlighted)
 mixin navigation(isHighlighted, isFolded)
     nav.navigation
         if isFolded
-            ul.navigation__list_folded
+            ul.navigation__list.navigation__list_folded
                 +navigation-list(isHighlighted)
         else
             ul.navigation__list

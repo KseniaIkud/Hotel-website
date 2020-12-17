@@ -12,6 +12,10 @@
         &_folded {
             flex-direction: column;
             text-align: center;
+            padding-left: 0;
+            width: inherit;
+            font-size: 18px;
+            height: 150px;
         }
     }
     &__link {

@@ -1,6 +1,7 @@
 @import '../header-navigation/header-navigation.scss';
 @import '../log-in-button/log-in-button.scss';
 @import '../submit-button/submit-button.scss';
+@import '../burger/burger.scss';
 
 .header-regular {
     max-width: 1440px;
@@ -15,6 +16,12 @@
         display: grid;
         grid-template-columns: 1fr 2fr 1fr;
         align-items: center;
+        @media (max-width: 840px) {
+            box-sizing: border-box;
+            padding: 0 7px;
+            display: flex;
+            justify-content: space-between;
+        }
     }
     &__logo {
         display: block;
@@ -23,15 +30,48 @@
         margin-right: 22px;
         display: flex;
         justify-content: flex-end;
-    }
-    &__menu {
-        max-width: 447px;
-        margin-right: 0;
+        @media (max-width: 840px) {
+            display: none;
+        }
     }
     &__buttons {
         width: 303px;
         justify-content: space-between;
         display: flex;
         align-items: center;
+        @media (max-width: 992px) {
+            display: none;
+        }
+    }
+    &__anchors {
+        display: none;
+        @media (max-width: 992px) {
+            display: block;
+            width: 225px;
+            display: flex;
+            justify-content: space-between;
+        }
+        @media (max-width: 840px) {
+            display: none;
+        }
+    }
+    &__link {
+        text-decoration: none;
+        font-family: Montserrat, sans-serif;
+        font-weight: 700;
+        font-size: 12px;
+        text-transform: uppercase;
+        &_log-in {
+            color: #BC9CFF;
+        }
+        &_sign-up {
+            color: #8BA4F9;
+        }
+    }
+    &__burger {
+        display: none;
+        @media (max-width: 840px) {
+            display: block;
+        }
     }
 }

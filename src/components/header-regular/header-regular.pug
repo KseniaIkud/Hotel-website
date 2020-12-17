@@ -9,3 +9,8 @@ mixin header(isHighlighted)
                 include ../log-in-button/log-in-button
                 include ../submit-button/submit-button
                 +submit('зарегистрироваться', false, '#')
+            .header-regular__anchors
+                a(href="#").header-regular__link.header-regular__link_log-in войти
+                a(href="#").header-regular__link.header-regular__link_sign-up зарегистрироваться
+            .header-regular__burger
+                include ../burger/burger

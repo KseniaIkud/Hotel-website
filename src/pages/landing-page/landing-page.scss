@@ -1,5 +1,6 @@
 @import '../../components/header-regular/header-regular.scss';
 @import '../../components/footer-regular/footer-regular.scss';
+@import '../../components/footer-ipad/footer-ipad.scss';
 @import '../../components/search-room/search-room.scss';
 
 @font-face {
@@ -31,8 +32,9 @@
         max-width: 1160px;
         height: 830px;
         margin: 0 auto;
-        position: relative;
-        border: 1px solid transparent;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
     &__search {
         margin-top: 70px;
@@ -43,11 +45,23 @@
         color: rgba(31, 32, 65, 0.75);
         max-width: 297px;
         text-align: right;
-        position: absolute;
-        right: 0;
-        bottom: 18px;
+        margin-bottom: 18px;
+        align-self: flex-end;
         &::first-letter {
             text-transform: uppercase;
+        }
+    }
+    &__footer {
+        &_regular {
+            @media (max-width: 840px) {
+                display: none;
+            }
+        }
+        &_ipad {
+            display: none;
+            @media (max-width: 840px) {
+                display: block;
+            }
         }
     }
 }
