@@ -6,4 +6,5 @@ html(lang="en")
         title Form Elements
     body
         .form-elements
-            .form-elements__item some input
+            include ../../components/input-default/input-default
+            +input('text field', 'Email', 'default', 'email-kit')

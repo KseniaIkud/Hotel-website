@@ -1,0 +1,8 @@
+mixin input(title, placeholder, subtitle, name, action)
+    .text-field
+        .text-field__description
+            .text-field__description_main=title
+            .text-field__description_add=subtitle
+        .text-field__default
+            form(action= action method="get").text-field__form
+                input(type="text" placeholder= placeholder name= name).text-field__input

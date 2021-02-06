@@ -1,0 +1,57 @@
+.text-field {
+    max-width: 320px;
+    &__description {
+        display: flex;
+        justify-content: space-between;
+        font-family: Montserrat, sans-serif;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: rgba(31, 32, 65, 0.50);
+        &_main {
+            font-weight: 700;
+            color: #1F2041;
+        }
+    }
+    &__default {
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        background-color: #FFF;
+        border-radius: 4px;
+        max-width: 320px;
+        height: 44px;
+        &:focus-within, &:hover {
+            border: 1px solid rgba(31, 32, 65, 0.50);
+        }
+        &:hover .text-field__input::placeholder{
+            color: rgba(31, 32, 65, 0.50);
+        }   
+    }
+    &__form {
+        max-width: 320px;
+        padding: 0 14px;
+        height: 44px;
+        display: flex;
+        text-align: center;
+    }
+    &__input {
+        width: 100%;
+        font-family: Montserrat, sans-serif;
+        font-size: 14px;
+        color: rgba(31, 32, 65, 0.75);
+        border: none;
+        outline: none;
+        &::placeholder {
+            font-family: Montserrat, sans-serif;
+            font-size: 14px;
+            color: rgba(31, 32, 65, 0.25);
+        }
+        &::placeholder::first-letter {
+            color: red;
+        }
+        &:focus {
+            color: rgba(31, 32, 65, 0.75);
+            &::placeholder {
+                color: transparent;
+            }
+        }    
+    }
+}
