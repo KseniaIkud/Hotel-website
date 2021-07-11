@@ -44,15 +44,8 @@ module.exports = {
                 }]
             },
             {
-                test: /\.(ttf|woff|woff2|eot|svg)$/,
-                include: /src\/fonts/,
-                use: [{
-                    loader: 'file-loader',
-                    options: {
-                        name: '[name].[ext]',
-                        outputPath: '../fonts/'
-                    }
-                }]
+                test: /\.(woff|woff2|ttf|eot|svg)$/,
+                use: 'file-loader?name=fonts/[name].[ext]!static'
             },
             {
                 test: /\.pug$/,
