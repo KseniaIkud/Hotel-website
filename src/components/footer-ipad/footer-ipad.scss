@@ -1,3 +1,4 @@
+@import '../../common.scss';
 .footer-ipad {
   max-width: 768px;
   height: 367px;
@@ -24,4 +25,8 @@
     display: flex;
     justify-content: space-between;
   }
+  &__item::after {
+    content: 'keyboard_arrow_down';
+    font-family: $material-icon;
+}
 }
