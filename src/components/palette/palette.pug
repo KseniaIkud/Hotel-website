@@ -1,29 +1,8 @@
-.palette
-    .palette__data
-        .palette__box.palette__box_dark100
-        .palette__text Dark Shade 100%
-            .palette__number #1F2041
-    .palette__data
-        .palette__box.palette__box_dark75
-        .palette__text Dark Shade 75%
-            .palette__number #1F2041
-    .palette__data
-        .palette__box.palette__box_dark50
-        .palette__text Dark Shade 50%
-            .palette__number #1F2041
-    .palette__data
-        .palette__box.palette__box_dark25
-        .palette__text Dark Shade 25%
-            .palette__number #1F2041
-    .palette__data
-        .palette__box.palette__box_dark5
-        .palette__text Dark Shade 5%
-            .palette__number #1F2041
-    .palette__data
-        .palette__box.palette__box_purple
-        .palette__text Purple
-            .palette__number #BC9CFF
-    .palette__data
-        .palette__box.palette__box_green
-        .palette__text Green
-            .palette__number #6FCF97
+mixin palette(data)
+  .palette
+    each i in data
+        - const {classModifier, text, colorNumber} = i
+        .palette__data
+            div(class=`palette__box palette__box_${classModifier}`)
+            .palette__text= text
+                .pulette__number= colorNumber

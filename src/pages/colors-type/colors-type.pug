@@ -1,4 +1,30 @@
 extends ../../templates/ui-kit.pug
+include ../../components/palette/palette
+include ../../components/text-type/text-type        
 
 block title
     title Colors Type
+
+block content
+    .colors-type
+        - 
+            const colorData = [
+                { classModifier: "dark100", text: "Dark Shade 100%", colorNumber: "#1F2041" },
+                { classModifier: "dark75", text: "Dark Shade 75%", colorNumber: "#1F2041" },
+                { classModifier: "dark50", text: "Dark Shade 50%", colorNumber: "#1F2041" },
+                { classModifier: "dark25", text: "Dark Shade 25%", colorNumber: "#1F2041" },
+                { classModifier: "dark5", text: "Dark Shade 5%", colorNumber: "#1F2041" },
+                { classModifier: "purple", text: "Purple", colorNumber: "#BC9CFF" },
+                { classModifier: "green", text: "Green", colorNumber: "#6FCF97" }
+            ]
+
+            const fontData = [
+                { classModifier: "h1", name: "H1", text: "This one is the sub-section or widget title"},
+                { classModifier: "h2", name: "H2", text: "Next one is the item title inside widgets"},
+                { classModifier: "h3", name: "H3", text: "This is a label or CTA text"},
+                { classModifier: "body", name: "body", text: "This is the body text which is used for most of the design, like paragraphs, lists, etc."}
+            ]
+        +palette(colorData)
+        +text-type(fontData)
+        
+
