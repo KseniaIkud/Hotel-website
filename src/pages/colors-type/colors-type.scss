@@ -1,15 +1,14 @@
-@import "../../fonts/Montserrat/montserrat.css";
-@import "../../fonts/material-icons/material-icons.css";
+@import "../../common-styles/fonts.css";
+@import "../../common-styles/variables.scss";
 @import "../../templates/ui-kit.scss";
 @import "../../components/palette/palette";
 @import "../../components/text-type/text-type";
 
 .colors-type {
-  max-width: 1440px;
-  min-width: 320px;
-  display: flex;
-  justify-content: space-between;
   max-width: 1147px;
   min-width: 320px;
   margin: 145px 0 0 142px;  
+
+  display: flex;
+  justify-content: space-between;
 }

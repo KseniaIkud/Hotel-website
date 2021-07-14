@@ -3,12 +3,11 @@
     width: 450px;
     display: flex;
     margin-bottom: 50px;
-    color: #1F2041;
+    color: $dark100;
     font: {
       family: Montserrat, sans-serif;
       weight: 700;
     }
-
     &_h1 {
       font-size: 24px;
     }
@@ -26,17 +25,16 @@
         weight: normal;
         size: 14px;
       }
-      color: rgba(31, 32, 65, 0.75);
+      color: $dark75;
       line-height: 24px;
       width: 380px;
     }
   }
   &__name {
-    color: rgba(31, 32, 65, 0.25);
+    color: $dark25;
     font-weight: normal;
     min-width: 37px;
     text-align: right;
-
   }
   &__example {
     margin-left: 30px;

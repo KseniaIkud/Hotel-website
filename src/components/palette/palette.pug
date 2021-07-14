@@ -1,8 +1,8 @@
 mixin palette(data)
   .palette
     each i in data
-        - const {classModifier, text, colorNumber} = i
-        .palette__data
-            div(class=`palette__box palette__box_${classModifier}`)
-            .palette__text= text
-                .pulette__number= colorNumber
+      - const {classModifier, text, colorNumber} = i
+      .palette__data
+        div(class=`palette__box palette__box_${classModifier}`)
+        .palette__text= text
+          .pulette__number= colorNumber
