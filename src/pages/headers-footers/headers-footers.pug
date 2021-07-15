@@ -1,21 +1,49 @@
-<!DOCTYPE html>
-html(lang="en")
-    head
-        meta(charset="UTF-8")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        title Headers & footers
-        script(src="./main.js")
-    body.headers-footers
-            .headers-footers__logo
-                img(src="./images/logo-bw.svg")
-            .header
-                .header__regular
-                    include ../../components/header-regular/header-regular
-                    +header(true)
-                .header__designer
-                    include ../../components/header-designer/header-designer
-            .footer
-                .footer__regular
-                    include ../../components/footer-regular/footer-regular
-                .footer__ipad
-                    include ../../components/footer-ipad/footer-ipad
+extends ../../templates/ui-kit.pug
+include ../../components/header/header.pug
+include ../../components/navigation/navigation.pug
+include ../../components/button/button.pug
+
+block title
+    title headers & footers
+
+block content
+    .header
+        - 
+            const headerData = {
+                isAuth: false,
+                userName: "John Doe",
+                navigation: ["О нас", "Комнаты", "Карьера"],
+                signIn: {
+                    text: "Войти",
+                    url: "#"
+                },
+                signUp: {
+                    text: "Зарегистрироваться",
+                    url: "#"
+                }
+            }
+        +header(headerData)
+
+
+
+//- <!DOCTYPE html>
+//- html(lang="en")
+//-     head
+//-         meta(charset="UTF-8")
+//-         meta(name="viewport", content="width=device-width, initial-scale=1.0")
+//-         title Headers & footers
+//-         script(src="./main.js")
+//-     body.headers-footers
+//-             .headers-footers__logo
+//-                 img(src="./images/logo-bw.svg")
+//-             .header
+//-                 .header__regular
+//-                     include ../../components/header-regular/header-regular
+//-                     +header(true)
+//-                 .header__designer
+//-                     include ../../components/header-designer/header-designer
+//-             .footer
+//-                 .footer__regular
+//-                     include ../../components/footer-regular/footer-regular
+//-                 .footer__ipad
+//-                     include ../../components/footer-ipad/footer-ipad
