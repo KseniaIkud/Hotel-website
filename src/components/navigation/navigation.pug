@@ -1,4 +1,6 @@
 mixin navigation(list)
-    .navigation
-        each linkName in list
-            li= linkName
+    nav.navigation
+        ul
+            each item in list
+                li
+                    a(href= item.link)= item.text

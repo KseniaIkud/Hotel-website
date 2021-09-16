@@ -9,10 +9,16 @@ block title
 block content
     .header
         - 
-            const headerData = {
+            let headerData = {
                 isAuth: false,
-                userName: "John Doe",
-                navigation: ["О нас", "Комнаты", "Карьера"],
+                userName,
+                navigation: [
+                    {text: "О нас", link: "#"},
+                    {text: "Услуги", link: "#"},
+                    {text: "Вакансии", link: "#"},
+                    {text: "Новости", link: "#"},
+                    {text: "Соглашения", link: "#"},
+                ],
                 signIn: {
                     text: "Войти",
                     url: "#"
@@ -21,6 +27,13 @@ block content
                     text: "Зарегистрироваться",
                     url: "#"
                 }
+            }
+        +header(headerData)
+        - 
+            headerData = {
+                ...headerData,
+                isAuth: true,
+                userName: "Юлий Цезарь"
             }
         +header(headerData)
 

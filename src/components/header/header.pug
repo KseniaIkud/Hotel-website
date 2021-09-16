@@ -7,7 +7,7 @@ mixin header(data)
             +navigation(navigation)
         .header__auth
             if isAuth
-                .header__name userName
+                .header__name= userName
             else
                 +button(signIn)
                 +button(signUp)
