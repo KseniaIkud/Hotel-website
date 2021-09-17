@@ -1,6 +1,13 @@
 mixin navigation(list)
     nav.navigation
-        ul
+        ul.navigation__list
             each item in list
-                li
-                    a(href= item.link)= item.text
+                li.navigation__item
+                    if item.isExpanded
+                        .navigation__link.navigation__link_expanded
+                            a(href= item.link)= item.text
+                    else
+                        .navigation__link
+                            a(href= item.link)= item.text
+                        
+                    

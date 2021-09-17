@@ -1,0 +1,8 @@
+.navigation__link_expanded {
+    width: 20px;
+    height: 20px;
+    &::after {
+        font-family: material-icons;
+        content: 'expand_more'
+    }
+}
