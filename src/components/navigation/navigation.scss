@@ -1,8 +1,32 @@
-.navigation__link_expanded {
-    width: 20px;
-    height: 20px;
-    &::after {
-        font-family: material-icons;
-        content: 'expand_more'
+.navigation {
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 445px;
+        list-style: none;
+    }
+    &__link {
+        font-family: Montserrat, sans-serif;
+        font-size: 14px;
+        color: $dark50;
+        text-decoration: none;
+        white-space: nowrap;
+        &::first-letter{
+            text-transform: uppercase;
+        }
+        &:hover {
+            font-weight: bold;
+            color: $dark75;
+        }
+        &_expanded {
+            display: flex;
+            align-items: center;
+            &::after {
+                font-family: material-icons;
+                content: 'expand_more';
+                font-size: 24px;
+            }
+        }
     }
 }
