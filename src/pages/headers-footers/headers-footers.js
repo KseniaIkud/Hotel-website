@@ -1,6 +1,1 @@
 import './headers-footers.scss'
-import '../../components/header-regular/header-regular'
-import '../../components/header-designer/header-designer'
-import '../../components/footer-regular/footer-regular'
-import '../../components/footer-ipad/footer-ipad'
-import './images/logo-bw.svg'

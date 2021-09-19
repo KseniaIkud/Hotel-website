@@ -1,1 +1,0 @@
-import './images/expand.svg'
