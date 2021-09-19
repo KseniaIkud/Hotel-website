@@ -1,9 +1,43 @@
-// .header {
-//     display: flex;
-//     &__navigation {
-//         display: flex;
-//     }
-//     &__auth {
-//         display: flex;
-//     }
-// }
+.header {
+    max-width: 1440px;
+    min-width: 320px;
+    height: 70px;
+    background-color: #ffffff;
+    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+    &__content {
+        height: 70px;
+        max-width: 1160px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 10fr 1fr;
+        align-items: center;
+    }
+    &__navigation{
+        display: flex;
+        justify-content: flex-end;
+    }
+    &__logo {
+        display: block;
+    }
+    &__auth {
+        display: flex;
+        align-items: center;
+    }
+    &__name {
+        font-family: Montserrat, sans-serif;
+        font-size: 14px;
+        color: rgba(31, 32, 65, 0.5);
+        text-transform: capitalize;
+        white-space: nowrap;
+        display: flex;
+        align-items: center;
+        &::before {
+            content: '';
+            width: 1px;
+            height: 30px;
+            display: block;
+            background: rgba(31, 32, 65, 0.1);
+            margin: 0 20px 0 20px;
+        }
+    }
+}

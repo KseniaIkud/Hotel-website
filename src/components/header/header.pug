@@ -1,13 +1,14 @@
 mixin header(data)
     .header
-        - const {isAuth, userName, navigation, signIn, signUp} = data
-        .header__logo
-            include ../../images/logo-color.svg
-        .header__navigation
-            +navigation(navigation)
-        .header__auth
-            if isAuth
-                .header__name= userName
-            else
-                +button(signIn)
-                +button(signUp)
+        .header__content
+            - const {isAuth, userName, navigation, signIn, signUp} = data
+            .header__logo
+                include ../../images/logo-color.svg
+            .header__navigation
+                +navigation(navigation)
+            .header__auth
+                if isAuth
+                    .header__name= userName
+                else
+                    +button(signIn)
+                    +button(signUp)
