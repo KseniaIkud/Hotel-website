@@ -1,4 +1,5 @@
 mixin button(data)
     .button
-        - const {text, url} = data
-        a(href=url)= text
+        - const {text, url, mod = ''} = data
+        - const className = `button__link button__link_${mod}`
+        a(href=url class=className)= text

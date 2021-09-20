@@ -1,0 +1,48 @@
+.button{
+    position: relative;
+    &__link {
+        font-family: Montserrat, sans-serif;
+        font-size: 12px;
+        font-weight: bold;
+        text-transform: uppercase;
+        white-space: nowrap;
+        text-decoration: none;
+        border-radius: 22px;
+        &_purple {
+            color: #FFF;
+            background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+            padding: 9px 20px;
+            &:visited {
+                color: #fff;
+            }
+            &:hover {
+                opacity: 0.5;
+            }
+        }
+        &_gradient-border {
+            color: #BC9CFF;
+            background-color: #FFF;
+            background-clip: padding-box;
+            border: 2px solid transparent;
+            padding: 6.5px 17.5px;
+            margin: auto;
+            position: relative;
+            z-index: 1;
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0; left: 0; bottom: 0; right:0;
+                margin: -2px;
+                z-index: -1;
+                background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+                border-radius: 22px;
+            }
+            &:visited {
+                color: #BC9CFF;
+            }
+            &:hover {
+                border: 2px solid rgba(225, 225, 225, 0.5);
+            }
+        }
+    }
+}
