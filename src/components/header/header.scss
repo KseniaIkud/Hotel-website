@@ -17,11 +17,19 @@
         justify-content: flex-end;
     }
     &__logo {
-        display: block;
+        svg {
+            display: block;
+        }
     }
     &__auth {
         display: flex;
         align-items: center;
+    }
+    &__buttons {
+        display: flex;
+        justify-content: space-between;
+        width: 303px;
+        margin-left: 20px;
     }
     &__name {
         font-family: Montserrat, sans-serif;

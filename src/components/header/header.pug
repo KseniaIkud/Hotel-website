@@ -10,5 +10,6 @@ mixin header(data)
                 if isAuth
                     .header__name= userName
                 else
-                    +button(signIn)
-                    +button(signUp)
+                    .header__buttons
+                        +button(signIn)
+                        +button(signUp)
