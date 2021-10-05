@@ -8,7 +8,12 @@
 
 
 
-
+.headerBlock {
+    margin-top: 140px;
+    &__item {
+        margin-bottom: 40px;
+    }
+}
 
 // @import '../../components/header-regular/header-regular';
 // @import '../../components/header-designer/header-designer';

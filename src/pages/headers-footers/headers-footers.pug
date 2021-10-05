@@ -31,14 +31,16 @@ block content
                     mod: "purple"
                 }
             }
-        +header(headerData)
+        .headerBlock__item
+            +header(headerData)
         - 
             headerData = {
                 ...headerData,
                 isAuth: true,
                 userName: "Юлий Цезарь"
             }
-        +header(headerData)
+        .headerBlock__item
+            +header(headerData)
 
 
 
