@@ -1,10 +1,13 @@
-include ../header-navigation/header-navigation
-.burger
-    .burger__sign.js-burger__sign.js-burger__sign_closed
-        span
-    .burger__content.js-burger__content.js-burger_hidden
-        .burger__menu
+mixin burger(data)
+    .burger
+        - const {isAuth, userName, navigation, signIn, signUp} = data
+        .burger__sign.burger__sign_closed.js-burger__sign
+            span 
+        .burger__content.burger__content_hidden.js-burger__content 
             .burger__navigation
-                +navigation(isHighlighted, true)
-            a(href="#").burger__button войти
-            a(href="#").burger__button зарегистрироваться
+                    +header-navigation(navigation, true)
+            if isAuth 
+                .burger__name= userName
+            else
+                a(href=signIn.url).burger__button= signIn.text
+                a(href=signUp.url).burger__button= signUp.text

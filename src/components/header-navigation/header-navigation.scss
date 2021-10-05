@@ -5,6 +5,11 @@
         align-items: center;
         width: 445px;
         list-style: none;
+        &_organized {
+            padding: 0;
+            width: inherit;
+            flex-direction: column;
+        }
     }
     &__link {
         font-family: Montserrat, sans-serif;
