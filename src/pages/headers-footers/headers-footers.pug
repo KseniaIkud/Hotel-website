@@ -3,6 +3,7 @@ include ../../components/header/header.pug
 include ../../components/header-navigation/header-navigation.pug
 include ../../components/button/button.pug
 include ../../components/burger/burger.pug
+include ../../components/footer/footer.pug
 
 block title
     title headers & footers
@@ -41,7 +42,20 @@ block content
             }
         .headerBlock__item
             +header(headerData)
-
+    .footerBlock
+        -
+            let footerData = {
+                adText: "Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»",
+                navigation: ["навигация", "о нас", "новости", "служба поддержки", "услуги"],
+                about: ["о нас", "о сервисе", "наша команда", "вакансии", "инвесторы"],
+                support: ["служба поддержки", "соглашения", "сообщества", "связь с нами"],
+                subscription: ["подписка"],
+                subText: "Получайте специальные предложения и новости сервиса",
+                mainText: "Copyright © 2018 Toxin отель. Все права зачищены."
+            }
+        .footerBlock__item
+            +footer(footerData)
+        .footerBlock__item
 
 
 //- <!DOCTYPE html>
