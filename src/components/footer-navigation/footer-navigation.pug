@@ -1,0 +1,7 @@
+mixin footer-navigation(data)
+    ul.footer-navigation 
+        - const {title, list} = data
+        li.footer-navigation__title= title 
+            each item in list 
+                li.footer-navigation__item
+                    a(href= item.link).footer-navigation__link= item.text

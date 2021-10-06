@@ -1,3 +1,8 @@
-.text {
-    color: red;
+.footer__brand {
+    font-family: "awesome-5-brands-regular-400";
+    font-size: 24px;
+    text-decoration: none;
+    -webkit-background-clip: text;
+    background-clip: text;
+    // -webkit-text-fill-color: transparent;
 }

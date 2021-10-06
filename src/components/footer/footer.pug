@@ -1,2 +1,18 @@
-mixin footer(data) 
-    .text= data.mainText
+mixin footer(data)
+    .footer
+        - const {adText, navigation, subscription, mainText} = data
+        .footer__content 
+            .footer__information
+                .footer__logo 
+                    include ../../images/logo-color.svg
+                .footer__ad= adText 
+            nav.footer__navigation 
+                for item in navigation
+                    +footer-navigation(item)
+            .footer__subscription 
+                .footer__title= subscription.title 
+                .footer__text= subscription.text
+                input(type="text" placeholder= subscription.placeholder)
+        .footer__bar 
+            .footer__mainText= mainText
+            a.footer__brand #{'twitter'}

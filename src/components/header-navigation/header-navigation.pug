@@ -1,11 +1,11 @@
 mixin header-navigation(list, isBurger)
     nav.header-navigation
         ul(class=`header-navigation__list ${isBurger ? "header-navigation__list_organized" : ''}`)
-                each item in list
-                    li.header-navigation__item
-                        if item.isExpanded
-                            a(href= item.link).header-navigation__link.header-navigation__link_expanded= item.text
-                        else
-                            a(href= item.link).header-navigation__link= item.text
+            each item in list
+                li.header-navigation__item
+                    if item.isExpanded
+                        a(href= item.link).header-navigation__link.header-navigation__link_expanded= item.text
+                    else
+                        a(href= item.link).header-navigation__link= item.text
                         
                     

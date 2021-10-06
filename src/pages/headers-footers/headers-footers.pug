@@ -4,6 +4,7 @@ include ../../components/header-navigation/header-navigation.pug
 include ../../components/button/button.pug
 include ../../components/burger/burger.pug
 include ../../components/footer/footer.pug
+include ../../components/footer-navigation/footer-navigation.pug
 
 block title
     title headers & footers
@@ -44,14 +45,41 @@ block content
             +header(headerData)
     .footerBlock
         -
-            let footerData = {
+            const footerData = {
                 adText: "Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»",
-                navigation: ["навигация", "о нас", "новости", "служба поддержки", "услуги"],
-                about: ["о нас", "о сервисе", "наша команда", "вакансии", "инвесторы"],
-                support: ["служба поддержки", "соглашения", "сообщества", "связь с нами"],
-                subscription: ["подписка"],
-                subText: "Получайте специальные предложения и новости сервиса",
-                mainText: "Copyright © 2018 Toxin отель. Все права зачищены."
+                navigation: [
+                    {
+                        title: "навигация",
+                        list: [
+                            {text: "о нас", link: "#"},
+                            {text: "новости", link: "#"},
+                            {text: "служба поддержки", link: "#"},
+                            {text: "услуги", link: "#"},
+                        ]
+                    },
+                    {
+                        title: "о нас",
+                        list: [
+                            {text: "о сервисе", link: "#"},
+                            {text: "наша команда", link: "#"},
+                            {text: "вакансии", link: "#"},
+                            {text: "инвесторы", link: "#"},
+                        ]
+                    },
+                    {
+                        title: "служба поддержки",
+                        list: [
+                            {text: "соглашения", link: "#"},
+                            {text: "сообщества", link: "#"},
+                            {text: "связь с нами", link: "#"},
+                        ]
+                    }
+                ],
+                subscription: {
+                    title: "подписка",
+                    text: "получайте специальные предложения и новости сервиса",
+                    placeholder: "Email"
+                }
             }
         .footerBlock__item
             +footer(footerData)
