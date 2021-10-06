@@ -1,6 +1,6 @@
 mixin footer(data)
+    - const {adText, navigation, subscription, mainText, socialIcons} = data
     .footer
-        - const {adText, navigation, subscription, mainText, socialIcons} = data
         .footer__content 
             .footer__information
                 .footer__logo 
@@ -12,7 +12,7 @@ mixin footer(data)
             .footer__subscription 
                 .footer__title= subscription.title 
                 .footer__text= subscription.text
-                input(type="text" placeholder= subscription.placeholder)
+                +text-field(subscription.inputData)
         .footer__bar 
             .footer__mainText= mainText
             for icon in socialIcons

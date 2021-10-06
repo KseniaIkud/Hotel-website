@@ -6,6 +6,7 @@ include ../../components/burger/burger.pug
 include ../../components/footer/footer.pug
 include ../../components/footer-navigation/footer-navigation.pug
 include ../../components/social-icon/social-icon.pug
+include ../../components/text-field/text-field.pug
 
 block title
     title headers & footers
@@ -79,7 +80,14 @@ block content
                 subscription: {
                     title: "подписка",
                     text: "получайте специальные предложения и новости сервиса",
-                    placeholder: "Email"
+                    inputData: {
+                        action: "#",
+                        method: "post",
+                        type: "email",
+                        name: "email",
+                        placeholder: "Email",
+                        mod: 'with-arrow'
+                    }
                 },
                 socialIcons: [
                     {

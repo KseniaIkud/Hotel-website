@@ -1,0 +1,5 @@
+mixin text-field(data)
+    - const {action, method, type, name, placeholder, mod} = data
+    - const className = mod ? `text-field_${mod}` : ''
+    form(action= action method= method class= className).text-field
+        input(type= type, placeholder= placeholder, name= name).text-field__input

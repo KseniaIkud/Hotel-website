@@ -1,0 +1,61 @@
+.text-field {
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    background-color: #FFF;
+    border-radius: 4px;
+    max-width: 260px;
+    height: 44px;
+    overflow: hidden;
+    &:focus-within, &:hover{
+        border: 1px solid $dark50;
+    }
+    &__input {
+        width: 100%;
+        height: 100%;
+        border: none;
+        font-family: Montserrat, sans-serif;
+        font-size: 14px;
+        color: $dark50;
+        padding-left: 13px;
+        background: #FFF;
+        &:-webkit-autofill,
+        &:-webkit-autofill:hover, 
+        &:-webkit-autofill:focus, 
+        &:-webkit-autofill:active{
+            -webkit-box-shadow: 0 0 0 30px #FFF inset !important;
+            box-shadow: 0 0 0 30px #FFF inset !important;
+        }
+        &::placeholder {
+            font-family: Montserrat, sans-serif;
+            font-size: 14px;
+            color: $dark25;
+        }
+        &:hover::placeholder{
+            color: $dark75;
+        }
+        
+        &:focus {
+            font-family: Montserrat, sans-serif;
+            font-size: 14px;
+        }
+        &:focus::placeholder {
+            color: transparent;
+        }
+        
+    }
+    &_with-arrow {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        padding-right: 12px;
+        &::after {
+            font-family: material-icons;
+            content: 'arrow_forward';
+            font-size: 24px;
+            position: absolute;
+            background: linear-gradient(#BC9CFF 0%, #8BA4F9 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+}
