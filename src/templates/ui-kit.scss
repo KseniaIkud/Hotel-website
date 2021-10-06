@@ -1,5 +1,10 @@
-.logo {
-    position: absolute;
-    left: 30px;
-    top: 30px;
+.ui-kit {
+    background: #E5E5E5;
+    padding: 0;
+    margin: 0;
+    &__logo {
+        position: absolute;
+        left: 30px;
+        top: 30px;
+    }
 }

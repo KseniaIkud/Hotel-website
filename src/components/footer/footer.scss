@@ -1,7 +1,97 @@
-.footer__brand {
-    font-family: "awesome-5-brands-regular-400";
-    font-size: 24px;
-    text-decoration: none;
-    -webkit-background-clip: text;
-    background-clip: text;
+.footer {
+    background-color: #FFF;
+    @media (max-width: 930px) {
+        height: 367px;
+        margin: auto;
+        background: #FFFFFF;
+        box-shadow: 0 10px 20px rgba(31, 32, 65, 0.05);
+        box-sizing: border-box;
+        padding-top: 118px;
+    }
+    &__content {
+        margin: 0 auto;
+        padding-top: 85px;
+        max-width: 1160px;
+        display: flex;
+        justify-content: space-between;
+        height: 372px;
+        @media (max-width: 930px) {
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            height: 75px;
+        }
+    }
+    &__information {
+        max-width: 254px;
+        margin-top: 13px;
+    }
+    &__logo svg {
+        display: block;
+        margin-bottom: 13px;
+    }
+    &__text,
+    &__ad {
+        &::first-letter {
+            text-transform: uppercase;
+        }
+        font-family: Montserrat, sans-serif;
+        font-size: 14px;
+        line-height: 24px;
+        color: $dark50;
+        margin-bottom: 13px;
+    }
+    &__ad {
+        @media (max-width: 930px) {
+            display: none;
+        }
+    }
+    &__title {
+        font-family: Montserrat, sans-serif;
+        font-weight: 700;
+        font-size: 12px;
+        color: $dark100;
+        line-height: 15px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+    &__navigation {
+        width: 549px;
+        display: flex;
+        justify-content: space-between;
+        @media (max-width: 930px) {
+            display: none;
+        }
+    }
+    &__subscription {
+        margin-top: 16px;
+        max-width: 260px;
+        @media (max-width: 930px) {
+            display: none;
+        }
+    }
+    &__wrapper {
+        box-shadow: 0px -1px 0px rgba(31, 32, 65, 0.1);
+        @media (max-width: 930px) {
+            box-shadow: none;
+        }
+    }
+    &__bar {
+        max-width: 1160px;
+        min-width: 320px;
+        margin: 0 auto;
+        height: 70px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media (max-width: 930px) {
+            flex-direction: column;
+
+        }
+    }
+    &__social {
+        width: 112px;
+        display: flex;
+        justify-content: space-between;
+    }
 }

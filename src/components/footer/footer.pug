@@ -13,8 +13,10 @@ mixin footer(data)
                 .footer__title= subscription.title 
                 .footer__text= subscription.text
                 +text-field(subscription.inputData)
-        .footer__bar 
-            .footer__mainText= mainText
-            for icon in socialIcons
-                +social-icon(icon)
+        .footer__wrapper
+            .footer__bar
+                .footer__text= mainText
+                .footer__social
+                    for icon in socialIcons
+                        +social-icon(icon)
             

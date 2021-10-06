@@ -17,6 +17,14 @@
         margin-bottom: 40px;
     }
 }
+.footerBlock {
+    &__item {
+        margin-bottom: 40px;
+        &_small {
+            width: 700px;
+        }
+    }
+}
 
 // @import '../../components/header-regular/header-regular';
 // @import '../../components/header-designer/header-designer';
