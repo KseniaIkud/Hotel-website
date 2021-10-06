@@ -1,6 +1,6 @@
 mixin footer(data)
     .footer
-        - const {adText, navigation, subscription, mainText} = data
+        - const {adText, navigation, subscription, mainText, socialIcons} = data
         .footer__content 
             .footer__information
                 .footer__logo 
@@ -15,4 +15,6 @@ mixin footer(data)
                 input(type="text" placeholder= subscription.placeholder)
         .footer__bar 
             .footer__mainText= mainText
-            a.footer__brand #{'twitter'}
+            for icon in socialIcons
+                +social-icon(icon)
+            

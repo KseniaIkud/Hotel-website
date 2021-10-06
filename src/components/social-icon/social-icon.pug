@@ -1,0 +1,4 @@
+mixin social-icon(data)
+    .social-icon
+        - const {icon, link} = data
+        a(href= link).social-icon__button #{icon} 

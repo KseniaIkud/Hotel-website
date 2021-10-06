@@ -5,6 +5,7 @@ include ../../components/button/button.pug
 include ../../components/burger/burger.pug
 include ../../components/footer/footer.pug
 include ../../components/footer-navigation/footer-navigation.pug
+include ../../components/social-icon/social-icon.pug
 
 block title
     title headers & footers
@@ -79,7 +80,21 @@ block content
                     title: "подписка",
                     text: "получайте специальные предложения и новости сервиса",
                     placeholder: "Email"
-                }
+                },
+                socialIcons: [
+                    {
+                        icon: "twitter",
+                        link: "//twitter.com"
+                    },
+                    {
+                        icon: "facebook-square",
+                        link: "//facebook.com"
+                    },
+                    {
+                        icon: "instagram",
+                        link: "//instagram.com"
+                    }
+                ]
             }
         .footerBlock__item
             +footer(footerData)
