@@ -9,7 +9,7 @@
 @import "../../components/footer-navigation/footer-navigation.scss";
 @import "../../components/social-icon/social-icon.scss";
 @import "../../components/text-field/text-field.scss";
-
+@import "../../components/footer-small/footer-small.scss";
 
 .headerBlock {
     margin-top: 140px;
@@ -21,7 +21,8 @@
     &__item {
         margin-bottom: 40px;
         &_small {
-            width: 700px;
+            width: 768px;
+            margin: 0 auto;
         }
     }
 }

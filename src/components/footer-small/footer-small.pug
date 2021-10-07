@@ -1,0 +1,12 @@
+mixin footer-small(data)
+    - const {mainText, socialIcons} = data
+    .footer-small
+        .footer-small__content 
+            .footer-small__logo 
+                    include ../../images/logo-color.svg
+            .footer-small__bar
+                .footer-small__text= mainText
+                .footer-small__social
+                    for icon in socialIcons
+                        +social-icon(icon)
+            

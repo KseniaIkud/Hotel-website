@@ -7,6 +7,7 @@ include ../../components/footer/footer.pug
 include ../../components/footer-navigation/footer-navigation.pug
 include ../../components/social-icon/social-icon.pug
 include ../../components/text-field/text-field.pug
+include ../../components/footer-small/footer-small.pug
 
 block title
     title headers & footers
@@ -107,6 +108,8 @@ block content
             }
         .footerBlock__item
             +footer(footerData)
+        .footerBlock__item.footerBlock__item_small 
+            +footer-small(footerData)
         
 
 //- <!DOCTYPE html>

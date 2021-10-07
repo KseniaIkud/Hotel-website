@@ -1,0 +1,38 @@
+.footer-small {
+    background-color: #FFF;
+    box-shadow: 0 10px 20px $dark5;
+    padding: 120px 0;
+    &__content {
+        margin: 0 auto;
+        height: 127px;
+        max-width: 1160px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+    &__text {
+        &::first-letter {
+            text-transform: uppercase;
+        }
+        font-family: Montserrat, sans-serif;
+        font-size: 14px;
+        line-height: 24px;
+        color: $dark50;
+    }
+    &__logo svg {
+        display: block;
+    }
+    &__bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        height: 67px;
+    }
+    &__social {
+        width: 112px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
