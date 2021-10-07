@@ -3,6 +3,8 @@
     background-color: #ffffff;
     box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
     position: relative;
+    display: flex;
+    align-items: center;
     &__burger {
         @media (min-width: 930px) {
             display: none;
@@ -14,8 +16,8 @@
         margin: 0 auto;
         @media (min-width: 930px) {
             display: grid;
-            align-items: center;
             grid-template-columns: 1fr 10fr 1fr;
+            align-items: center;
         }
     }
     &__navigation{
