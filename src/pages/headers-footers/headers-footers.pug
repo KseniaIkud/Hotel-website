@@ -13,7 +13,7 @@ block title
     title headers & footers
 
 block content
-    .headerBlock
+    .headers-footers
         - 
             let headerData = {
                 isAuth: false,
@@ -36,7 +36,7 @@ block content
                     mod: "purple"
                 }
             }
-        .headerBlock__item
+        .headers-footers__item
             +header(headerData)
         - 
             headerData = {
@@ -44,9 +44,8 @@ block content
                 isAuth: true,
                 userName: "Юлий Цезарь"
             }
-        .headerBlock__item
+        .headers-footers__item
             +header(headerData)
-    .footerBlock
         -
             const footerData = {
                 adText: "Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»",
@@ -106,30 +105,7 @@ block content
                     }
                 ]
             }
-        .footerBlock__item
+        .headers-footers__item
             +footer(footerData)
-        .footerBlock__item.footerBlock__item_small 
+        .headers-footers__item.headers-footers__item_small 
             +footer-small(footerData)
-        
-
-//- <!DOCTYPE html>
-//- html(lang="en")
-//-     head
-//-         meta(charset="UTF-8")
-//-         meta(name="viewport", content="width=device-width, initial-scale=1.0")
-//-         title Headers & footers
-//-         script(src="./main.js")
-//-     body.headers-footers
-//-             .headers-footers__logo
-//-                 img(src="./images/logo-bw.svg")
-//-             .header
-//-                 .header__regular
-//-                     include ../../components/header-regular/header-regular
-//-                     +header(true)
-//-                 .header__designer
-//-                     include ../../components/header-designer/header-designer
-//-             .footer
-//-                 .footer__regular
-//-                     include ../../components/footer-regular/footer-regular
-//-                 .footer__ipad
-//-                     include ../../components/footer-ipad/footer-ipad
