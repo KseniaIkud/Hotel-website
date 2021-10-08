@@ -10,7 +10,7 @@
         border-radius: 22px;
         &_purple {
             color: #FFF;
-            background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+            background: $gradientPurpleBlue;
             padding: 9px 20px;
             &:visited {
                 color: #fff;
@@ -20,7 +20,7 @@
             }
         }
         &_gradient-border {
-            color: #BC9CFF;
+            color: $purple;
             background-color: #FFF;
             background-clip: padding-box;
             border: 2px solid transparent;
@@ -34,11 +34,11 @@
                 top: 0; left: 0; bottom: 0; right:0;
                 margin: -2px;
                 z-index: -1;
-                background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+                background: $gradientPurpleBlue;
                 border-radius: 22px;
             }
             &:visited {
-                color: #BC9CFF;
+                color: $purple;
             }
             &:hover {
                 border: 2px solid rgba(225, 225, 225, 0.5);
