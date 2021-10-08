@@ -11,11 +11,11 @@ mixin footer(data)
                     +footer-navigation(item)
             .footer__subscription 
                 .footer__title= subscription.title 
-                .footer__text= subscription.text
+                .footer__ad= subscription.text
                 +text-field(subscription.inputData)
-        .footer__wrapper
+        .footer__bottom
             .footer__bar
-                .footer__text= mainText
+                .footer__copyright= mainText
                 .footer__social
                     for icon in socialIcons
                         +social-icon(icon)
