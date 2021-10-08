@@ -1,16 +1,6 @@
-@import '../../components/input-default/input-default.scss';
-@font-face {
-  font-family: 'Montserrat';
-  src: url('../../fonts/Montserrat/Montserrat-Regular.eot');
-  src: local('☺'), url('../../fonts/Montserrat/Montserrat-Regular.woff') format('woff'), url('../../fonts/Montserrat/Montserrat-Regular.ttf') format('truetype'), url('../../fonts/Montserrat/Montserrat-Regular.svg') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
+@import "../../common-styles/fonts.css";
+@import "../../common-styles/variables.scss";
+@import "../../templates/ui-kit.scss";
 
-@font-face {
-  font-family: 'Montserrat';
-  src: url('../../fonts/Montserrat/Montserrat-Bold.eot');
-  src: local('☺'), url('../../fonts/Montserrat/Montserrat-Bold.woff') format('woff'), url('../../fonts/Montserrat/Montserrat-Bold.ttf') format('truetype'), url('../../fonts/Montserrat/Montserrat-Bold.svg') format('svg');
-  font-weight: 700;
-  font-style: normal;
-}
+@import "../../components/inputs/inputs.scss";
+@import "../../components/text-field/text-field.scss";

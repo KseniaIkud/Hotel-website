@@ -1,25 +1,100 @@
-<!DOCTYPE html>
-html(lang="en")
-    head
-        meta(charset="UTF-8")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        title Form Elements
-    body
-        .form-elements
-            include ../../components/input-default/input-default
-            +input('text field', 'Email', 'default', 'email-kit')
-            //- .ui-kit__grid-item-1
-                //- +sample-form('Text field', 'Default')
-                //-   +input()(type='email', placeholder='Email')
-                //- +sample-form('Text field', 'Hover / Focus')
-                //-   +input()(class='input_active', value='This is pretty awesome')
-                //- +sample-form('Dropdown', 'Default')
-                //-   +dropdown('', 'guests')
-                //- +sample-form('Masked text field', 'Default')
-                //-   +input('date')
-                //- +sample-form
-                //-   +date-picker('double', 'Date dropdown', 'Date dropdown')
-                //- +sample-form
-                //-   +date-picker('single', 'Filter date dropdown')
-                //- +sample-form('Subscription text field')
-                //-   +subscription
+extends ../../templates/ui-kit.pug
+include ../../components/inputs/inputs.pug
+include ../../components/text-field/text-field.pug
+
+
+block title
+    title Form Elements
+
+block content
+    -
+        const inputsData = [
+            {
+                title: "text field",
+                subtitle: "default",
+                placeholder: "Email"
+            },
+            {
+                title: "text field",
+                subtitle: "hover / focus",
+                placeholder: "This is pretty awesome",
+                mod: "focus"
+            },
+            {
+                title: "dropdown",
+                placeholder: "Сколько гостей",
+                mod: "expanded"
+            },
+            {
+                title: "date dropdown",
+                mod: ["expanded", "short"],
+                className: "js-inputs__date-dropdown"
+            },
+            {
+                title: "date dropdown",
+                mod: ["expanded", "short"],
+                className: "js-inputs__date-dropdown js-inputs__date-dropdown_chosen"
+            },
+            {
+                title: "filter date dropdown",
+                mod: "expanded",
+                className: "js-inputs__filter-date"
+            },
+            {
+                title: "subscription text field",
+                placeholder: "Email",
+                mod: "with-arrow"
+            }
+        ]
+    .form-elements
+        .form-elements__item
+            +inputs(inputsData)
+        .form-elements__item
+        .form-elements__item
+        .form-elements__item
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//- <!DOCTYPE html>
+//- html(lang="en")
+//-     head
+//-         meta(charset="UTF-8")
+//-         meta(name="viewport", content="width=device-width, initial-scale=1.0")
+//-         title Form Elements
+//-     body
+//-         .form-elements
+//-             //- .ui-kit__grid-item-1
+//-                 //- +sample-form('Text field', 'Default')
+//-                 //-   +input()(type='email', placeholder='Email')
+//-                 //- +sample-form('Text field', 'Hover / Focus')
+//-                 //-   +input()(class='input_active', value='This is pretty awesome')
+//-                 //- +sample-form('Dropdown', 'Default')
+//-                 //-   +dropdown('', 'guests')
+//-                 //- +sample-form('Masked text field', 'Default')
+//-                 //-   +input('date')
+//-                 //- +sample-form
+//-                 //-   +date-picker('double', 'Date dropdown', 'Date dropdown')
+//-                 //- +sample-form
+//-                 //-   +date-picker('single', 'Filter date dropdown')
+//-                 //- +sample-form('Subscription text field')
+//-                 //-   +subscription
