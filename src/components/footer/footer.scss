@@ -20,7 +20,7 @@
             display: grid;
             align-items: flex-start;
             height: auto;
-            grid-template-columns: 260px 1fr 1fr;
+            grid-template-columns: minmax(100px, 260px) 1fr minmax(100px, 270px);
             column-gap: 40px;
         }
     }
@@ -54,7 +54,7 @@
     &__navigation {
         display: none;
         @media (min-width: 930px) {
-            margin-top: 4px;
+            margin-top: 5px;
             display: grid;
             grid-template-columns: 150px 150px 150px;
             column-gap: 50px;
@@ -63,9 +63,9 @@
     &__subscription {
         display: none;
         @media (min-width: 930px) {
-            margin-top: 4px;
+            margin-top: 5px;
             display: block;
-            margin-left: 12px;
+            margin-left: 10px;
         }
     }
     &__bottom {
@@ -76,7 +76,6 @@
     }
     &__bar {
         max-width: 1160px;
-        min-width: 320px;
         margin: 0 auto;
         height: 70px;
         display: flex;
