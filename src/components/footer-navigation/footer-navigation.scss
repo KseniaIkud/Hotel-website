@@ -20,6 +20,11 @@
         line-height: 24px;
         color: rgba(31, 32, 65, 0.50);
         margin-bottom: 13px;
+        &:hover, 
+        &:active {
+            color: $dark100;
+            font-weight: 700;
+        }
     }
     &__link {
         text-decoration: none;
