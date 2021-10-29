@@ -1,3 +1,3 @@
 mixin inputs(data)
-    - const {action = "#", method = "post", type = "text", name = "name", placeholder, mod} = data
-    +text-field(data)
+    each input in data
+        +text-field(input)
