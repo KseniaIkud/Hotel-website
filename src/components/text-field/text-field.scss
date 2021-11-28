@@ -1,12 +1,44 @@
 .text-field {
-    border: 1px solid rgba(31, 32, 65, 0.25);
-    background-color: #FFF;
-    border-radius: 4px;
-    max-width: 260px;
-    height: 44px;
-    overflow: hidden;
-    &:focus-within, &:hover{
-        border: 1px solid $dark50;
+    max-width: 320px;
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        font-family: Montserrat;
+        font-weight: 700;
+        font-size: 12px;
+        color: $dark100;
+        text-transform: uppercase;
+    }
+    &__subtitle {
+        font-weight: 400;
+    }
+    &__form {
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        background-color: #FFF;
+        border-radius: 4px;
+        height: 44px;
+        overflow: hidden;
+        &:focus-within, &:hover{
+            border: 1px solid $dark50;
+        }
+        &_with-arrow {
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            padding-right: 12px;
+            box-sizing: border-box;
+            max-width: 267px;
+            &::after {
+                font-family: material-icons;
+                content: 'arrow_forward';
+                font-size: 24px;
+                position: absolute;
+                background: $gradientPurpleBlue;
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
     }
     &__input {
         width: 100%;
@@ -39,23 +71,6 @@
         }
         &:focus::placeholder {
             color: transparent;
-        }
-        
-    }
-    &_with-arrow {
-        display: flex;
-        align-items: center;
-        justify-content: end;
-        padding-right: 12px;
-        &::after {
-            font-family: material-icons;
-            content: 'arrow_forward';
-            font-size: 24px;
-            position: absolute;
-            background: $gradientPurpleBlue;
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
         }
     }
 }

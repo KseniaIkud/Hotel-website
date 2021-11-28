@@ -2,8 +2,12 @@ mixin text-field(data)
     -
         const {action = "#", method = "post", type = "text", name = "name", 
             title, subtitle, placeholder, mods} = data
-        let className = 'text-field'
+        let formClassName = 'text-field__form'
     if mods 
-        - mods.forEach(item => {className += ` text-field_${item}`})
-    form(action= action method= method class= className)
-        input(type= type, placeholder= placeholder, name= name).text-field__input
+        - mods.forEach(item => {formClassName += ` text-field__form_${item}`})
+    .text-field
+        .text-field__header
+            .text-field__title= data.title
+            .text-field__subtitle= data.subtitle
+        form(action= action method= method class= formClassName)
+            input(type= type, placeholder= placeholder, name= name).text-field__input
