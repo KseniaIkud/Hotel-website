@@ -1,7 +1,7 @@
 mixin text-field(data)
     -
-        const {action = "#", method = "post", type = "text", name = "name", 
-            title, subtitle, placeholder, mods} = data
+        const {action = "#", method = "post", type = "text", name = "name", isExpanded,
+            title, subtitle, placeholder, mods, dropdownType, dropdownData} = data
         let formClassName = 'text-field__form'
     if mods 
         - mods.forEach(item => {formClassName += ` text-field__form_${item}`})
@@ -11,3 +11,6 @@ mixin text-field(data)
             .text-field__subtitle= data.subtitle
         form(action= action method= method class= formClassName)
             input(type= type, placeholder= placeholder, name= name).text-field__input
+        if data.isExpanded
+            .text-field__dropdown
+                +dropdown(data.dropdownType, data.dropdownData)

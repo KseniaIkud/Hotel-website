@@ -1,27 +1,3 @@
-.guest.js-guest
-    .guest__form.js-guest__expand
-        input(type="text" readonly placeholder='Сколько гостей').guest__input.js-guest__input
-        img(src="./images/expand.svg", alt="expand").guest__expand
-    .guest__dropdown.js-guest-dropdown.js-guest__dropdown_hidden
-        .guest__row
-            .guest__name Взрослые
-            .guest__counter.js-counter
-                button(data-direction="minus").guest__sign.js-counter__button -
-                input(type="text" value="0").guest__number.js-counter__input.js-counter__adults
-                button(data-direction="plus").guest__sign.js-counter__button +
-        .guest__row
-            .guest__name Дети
-            .guest__counter.js-counter
-                button(data-direction="minus").guest__sign.js-counter__button -
-                input(type="text" value="0").guest__number.js-counter__input.js-counter__children
-                button(data-direction="plus").guest__sign.js-counter__button +
-        .guest__row
-            .guest__name Младенцы
-            .guest__counter.js-counter
-                button(data-direction="minus").guest__sign.js-counter__button -
-                input(type="text" value="0").guest__number.js-counter__input.js-counter__infants
-                button(data-direction="plus").guest__sign.js-counter__button +
-        .guest__event
-            .guest__button.js-clear-button.js-guest__button_hidden Очистить
-            .guest__button.js-submit-button Применить
-            
+mixin dropdown(type, data)
+    if type === "guests"
+        +guests(data)

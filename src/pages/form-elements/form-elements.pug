@@ -1,6 +1,8 @@
 extends ../../templates/ui-kit.pug
 include ../../components/inputs/inputs.pug
 include ../../components/text-field/text-field.pug
+include ../../components/dropdown/dropdown.pug
+include ../../components/guests/guests.pug
 
 
 block title
@@ -23,6 +25,24 @@ block content
             {
                 title: "dropdown",
                 placeholder: "Сколько гостей",
+                className: "js-inputs__guest-counter",
+                isExpanded: true,
+                dropdownType: "guests",
+                dropdownData: {
+                    types: ["Взрослые", "Дети", "Младенцы"],
+                    countForms: {
+                        guests: {
+                            single: "Гость",
+                            several: "Гостя",
+                            plural: "Гостей"
+                        },
+                        infants: {
+                            single: "Младенец",
+                            several: "Младенца",
+                            plural: "Младенцев"
+                        }
+                    }
+                },
                 mods: ["expanded"]
             },
             {

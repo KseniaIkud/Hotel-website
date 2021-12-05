@@ -1,0 +1,103 @@
+.guest {
+    &__form {
+        width: 320px;
+        padding: 0 15px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        border-radius: 4px;
+        height: 44px;
+        &:hover {
+            border: 1px solid rgba(31, 32, 65, 0.5);
+        }
+    }
+    &__input {
+        outline: none;
+        border: none;
+        &::placeholder {
+            font-family: Montserrat, sans-serif;
+            font-size: 14px;
+            color: rgba(31, 32, 65, 0.75);
+        }
+    }
+    &__expand {
+        cursor: pointer;
+    }
+    &__dropdown {
+        box-sizing: border-box;
+        padding: 7px 8px 0 11px;
+        position: absolute;
+        z-index: 10;
+        background: #ffffff;
+        border: 1px solid rgba(31, 32, 65, 0.5);
+        border-top: none;
+        border-radius: 0 0 4px 4px;
+        width: 320px;
+    }
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 7px;
+    }
+    &__name {
+        text-transform: uppercase;
+        font-family: Montserrat, sans-serif;
+        font-size: 12px;
+        font-weight: 700;
+    }
+    &__sign {
+        width: 30px;
+        height: 30px;
+        outline: none;
+        color: rgba(31, 32, 65, 0.5);
+        font-size: 18px;
+        font-family: Montserrat, sans-serif;
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        border-radius: 50%;
+        background: #ffffff;
+        cursor: pointer;
+    }
+    &__number {
+        outline: none;
+        border: none;
+        width: 30px;
+        text-align: center;
+        font-family: Montserrat, sans-serif;
+        font-size: 12px;
+        font-weight: 700;
+    }
+    &__event {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 0 12px;
+    }
+    &__button {
+        font-family: Montserrat, sans-serif;
+        color: rgba(31, 32, 65, 0.5);
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        cursor: pointer;
+        &:hover {
+            color: #BC9CFF
+        }
+    }
+}
+
+.js-guest_expand {
+    border: 1px solid rgba(31, 32, 65, 0.5);
+    border-radius: 4px 4px 0 0;
+}
+.js-guest__button_visible {
+    display: block;
+    cursor: pointer;
+}
+.js-guest__button_hidden {
+    opacity: 0;
+    cursor: default;
+}
+.js-guest__dropdown_hidden {
+    display: none;
+}
