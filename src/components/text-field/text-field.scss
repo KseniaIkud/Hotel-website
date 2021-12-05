@@ -13,13 +13,33 @@
         font-weight: 400;
     }
     &__form {
-        border: 1px solid rgba(31, 32, 65, 0.25);
+        border: 1px solid $dark25;
         background-color: #FFF;
         border-radius: 4px;
         height: 44px;
         overflow: hidden;
         &:focus-within, &:hover{
             border: 1px solid $dark50;
+        }
+        &_focus {
+            border: 1px solid $dark50;
+            .text-field__input::placeholder {
+                color: $dark75;
+            }
+        }
+        &_expanded {
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            padding-right: 12px;
+            box-sizing: border-box;
+            &::after {
+                font-family: material-icons;
+                content: '';
+                content: 'expand_more';
+                font-size: 24px;
+                color: $dark50;   
+            }
         }
         &_with-arrow {
             display: flex;
@@ -68,6 +88,7 @@
         &:focus {
             font-family: Montserrat, sans-serif;
             font-size: 14px;
+            outline: none;
         }
         &:focus::placeholder {
             color: transparent;
