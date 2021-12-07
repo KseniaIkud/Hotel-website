@@ -1,5 +1,8 @@
 .button{
     position: relative;
+    &_hidden {
+        visibility: hidden;
+    }
     &__link {
         font-family: Montserrat, sans-serif;
         font-size: 12px;

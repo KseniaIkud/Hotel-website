@@ -11,14 +11,12 @@ $('.js-guest__sign').on('click', function () {
             input.attr({'value': newValue})
         }
     }
-    // const showButton = (button) => {
-    //     button.removeClass('js-guest__button_hidden')
-    //     button.addClass('js-guest-button_visible')
-    // }
-    // const hideButton = (button) => {
-    //     button.addClass('js-guest__button_hidden')
-    //     button.removeClass('js-guest__button_visible')
-    // }
+    const showButton = (button) => {
+        button.removeClass('button_hidden')
+    }
+    const hideButton = (button) => {
+        button.addClass('button_hidden')
+    }
     // const clearValues = (elements) => {
     //     elements.forEach(el => {
     //         el.attr({'value': 0})

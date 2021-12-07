@@ -9,3 +9,5 @@ mixin guests(data)
                     input(type="text", value="0", 
                         class=`js-guest__${guest.id}` readonly).guest__number.js-guest__number
                     button(sign="plus").guest__sign.js-guest__sign +
+        +button({text: 'очистить'})
+        +button({text: 'применить'})
