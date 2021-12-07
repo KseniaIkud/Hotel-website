@@ -29,7 +29,18 @@ block content
                 isExpanded: true,
                 dropdownType: "guests",
                 dropdownData: {
-                    types: ["Взрослые", "Дети", "Младенцы"],
+                    types: [
+                        {
+                            name: "Взрослые",
+                            id: adults
+                        }, {
+                            name: "Дети",
+                            id: kids
+                        } , {
+                            name: "Младенцы",
+                            id: infants
+                        }
+                    ],
                     countForms: {
                         guests: {
                             single: "Гость",

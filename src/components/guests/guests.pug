@@ -1,2 +1,11 @@
 mixin guests(data)
-    .test= data
+    - const {types, countForms} = data
+    .guest
+        each guest in types 
+            .guest__item
+                .guest__name= guest.name
+                .guest__counter.js-guest__counter 
+                    button(sign="minus").guest__sign.js-guest__sign -
+                    input(type="text", value="0", 
+                        class=`js-guest__${guest.id}` readonly).guest__number.js-guest__number
+                    button(sign="plus").guest__sign.js-guest__sign +
